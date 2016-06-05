@@ -14,8 +14,14 @@ exports.portafolio = function(req, res) {
 }
 
 exports.perfiles = function(req, res) {
-  //res.render('perfiles');
-  res.render('work_in_progress');
+  res.render('perfiles');
+  //res.render('work_in_progress');
+}
+
+exports.perfil = function(req, res) {
+  var name = req.params.name;
+  res.render('profiles/' + name);
+  //res.render('work_in_progress');
 }
 
 exports.apoyanos = function(req, res) {

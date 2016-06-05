@@ -7,6 +7,7 @@ module.exports = function(app, mountPoint) {
   router.get('/about', controllers.about);
   router.get('/portafolio', controllers.portafolio);
   router.get('/perfiles', controllers.perfiles);
+  router.get('/perfiles/:name', controllers.perfil);
   router.get('/apoyanos', controllers.apoyanos);
   router.get('/comunidad', controllers.comunidad);
   router.get('/blog', controllers.blog);
