@@ -4,7 +4,7 @@
 
 ## web
 
-* http://www.jointdeveloper.com
+* http://jointdeveloper.com
 
 ### Integrantes:
 
@@ -42,4 +42,3 @@ ___
 <a href="mailto:developerjoint@gmail.com"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/email.png" alt="E-mail-jointDeveloper" /></a>
 <a href="https://jointdeveloper.github.io/Aprendizaje-Web/"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/internet.png" alt="Web-jointDeveloper" /></a>
 ___
-
