@@ -533,7 +533,7 @@ progress[value]::-moz-progress-bar {
 }
 
 /* Medias */
-
+/*
 @media (min-width: 1024px) and (max-width: 1205px) {
   ul.topnav li a {
     padding: 16px 8px;
@@ -561,7 +561,7 @@ progress[value]::-moz-progress-bar {
     float: left;
   }
 
-}
+} */
 
 /*
 mobile-portrait: min:320px - max:479px;
