@@ -4,7 +4,7 @@
       "name": "Carolina Gómez Trejos",
       "img": "/IMG/carogt.jpg",
       "page": "/perfiles/carogt",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Yensy Helena Gómez Villegas",
@@ -16,7 +16,7 @@
       "name": "Carolina Jiménez Gómez",
       "img": "/IMG/cjg.jpg",
       "page": "/perfiles/cjg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "Giseth Johana Grimaldo B.",
@@ -45,8 +45,8 @@
     {
       "name": "Alejandro Rendon",
       "img": "/IMG/arendon.jpg",
-      "page": "//github.com/aerendon",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "page": "/perfiles/aerendon",
+      "description": "Estudiante de Ingeniería de Sistemas y Computación. Grupo de Investigación Sirius."
     },
     {
       "name": "Sebastian Duque",
@@ -59,6 +59,12 @@
       "img": "/IMG/github.png",
       "page": "//github.com/leiverandres",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+    },
+    {
+      "name": "John H. Osorio Ríos",
+      "img": "/IMG/josorio.jpg",
+      "page": "/perfiles/josorio.html",
+      "description": "Ingeniero de Sistemas y Computación"
     }
   ]
 }
