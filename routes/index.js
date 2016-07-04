@@ -4,7 +4,7 @@ var router = express.Router();
 
 module.exports = function(app, mountPoint) {
   router.get('/', controllers.home);
-  router.get('/about', controllers.about);
+  router.get('/acercade', controllers.about);
   router.get('/portafolio', controllers.portafolio);
   router.get('/perfiles', controllers.perfiles);
   router.get('/perfiles/:name', controllers.perfil);

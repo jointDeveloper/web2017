@@ -114,15 +114,19 @@ progress[value]::-moz-progress-bar {
     -moz-linear-gradient(
       left,
       #C06FFF,
-      #8217CC;
+      #8217CC
     );
   border-radius: 0px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
-.div-border {
+.div-border-c {
   margin: 10px;
-  height: 300px;
+  width: 70%;
+  height: 270px;
   border: 2px solid #555;
-  border-radius: 20px;
+}
+
+.info-style {
+  font-size: 25px;
 }

@@ -5,8 +5,8 @@ exports.home = function (req, res) {
 }
 
 exports.about = function(req, res) {
-  //res.render('about');
-  res.render('work_in_progress');
+  res.render('acercade');
+  // res.render('work_in_progress');
 }
 
 exports.portafolio = function(req, res) {
