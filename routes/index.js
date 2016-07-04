@@ -13,6 +13,7 @@ module.exports = function(app, mountPoint) {
   router.get('/blog', controllers.blog);
   router.get('/eventos', controllers.eventos);
   router.get('/contacto', controllers.contacto);
+  router.get('*', controllers.notFound);
 
   app.use(mountPoint, router);
 }

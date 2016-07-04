@@ -48,3 +48,7 @@ exports.eventos = function(req, res) {
 exports.contacto = function(req, res) {
   res.render('contacto');
 }
+
+exports.notFound = function(req, res) {
+  res.render('notFound');
+}
