@@ -25,7 +25,7 @@
       "name": "Carolina Jiménez Gómez",
       "img": "/IMG/cjg.jpg",
       "page": "/perfiles/cjg",
-      "email": "",
+      "email": "krito_j_g@utp.edu.co ",
       "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
@@ -60,6 +60,7 @@
       "name": "Alejandro Rendon",
       "img": "/IMG/arendon.jpg",
       "page": "/perfiles/aerendon",
+      "email": "arendondiosa@acm.org",
       "description": "Estudiante de Ingeniería de Sistemas y Computación. Grupo de Investigación Sirius."
     },
     {
@@ -80,8 +81,15 @@
       "name": "John H. Osorio Ríos",
       "img": "/IMG/josorio.jpg",
       "page": "/perfiles/josorio",
-      "email": "",
+      "email": "john@sirius.utp.edu.co",
       "description": "Ingeniero de Sistemas y Computación"
+    },
+    {
+      "name": "Angie Melissa Delgado",
+      "img": "/IMG/meli.jpg",
+      "page": "/perfiles/melidelgado",
+      "email": "adelgadoleon@acm.org",
+      "description": "Estudiante de Ingeniería de Sistemas"
     }
   ]
 }
