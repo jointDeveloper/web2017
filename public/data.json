@@ -1,45 +1,59 @@
 {
   "perfiles": [
     {
+      "name": "Angelica Aguirre Castro",
+      "img": "/IMG/angelica_aguirre.jpg",
+      "page": "/perfiles/angelicaaguirre",
+      "email": "anaguirre@utp.edu.co",
+      "description": "Ingeniera de Sistemas y Computación"
+    },
+    {
       "name": "Carolina Gómez Trejos",
       "img": "/IMG/carogt.jpg",
       "page": "/perfiles/carogt",
+      "email": "",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Yensy Helena Gómez Villegas",
       "img": "/IMG/yenGomez.jpg",
-      "page": "/perfiles/yenGomez",
+      "page": "/perfiles/yhgv",
+      "email": "yensy@sirius.utp.edu.co",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "Carolina Jiménez Gómez",
       "img": "/IMG/cjg.jpg",
       "page": "/perfiles/cjg",
+      "email": "",
       "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "Giseth Johana Grimaldo B.",
-      "img": "/IMG/fotoGiseth.JPG",
-      "page": "/perfiles/gisethInfo",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
-    },
-    {
-      "name": "Vanessa Velásquez Gómez",
-      "img": "/IMG/Emma_Yo.jpg",
-      "page": "/perfiles/vanessa",
+      "img": "/IMG/imagenPerfilGjg.jpg",
+      "page": "/perfiles/giseth",
+      "email": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "Naranjita Golden",
       "img": "/IMG/naranjita.jpg",
       "page": "/perfiles/naranjita",
+      "email": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
-      "name": "Tatiana Amariles",
-      "img": "/IMG/tatiana.jpg",
-      "page": "/perfiles/tatianaAmariles",
+      "name": "María Victoria Gasca",
+      "img": "/IMG/vicky.jpg",
+      "page": "/perfiles/vicky",
+      "email": "mvgasca@utp.edu.co",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+    },
+    {
+      "name": "Angie Melissa Delgado",
+      "img": "/IMG/meli.jpg",
+      "page": "/perfiles/melidelgado",
+      "email": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
@@ -50,20 +64,23 @@
     },
     {
       "name": "Sebastian Duque",
-      "img": "/IMG/robot_negro.png",
-      "page": "//github.com/sebas095",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "img": "/IMG/sduque.jpg",
+      "page": "/perfiles/sduque",
+      "email": "sebas.duque@utp.edu.co",
+      "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Leiver Campeón",
       "img": "/IMG/github.png",
       "page": "//github.com/leiverandres",
+      "email": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "John H. Osorio Ríos",
       "img": "/IMG/josorio.jpg",
-      "page": "/perfiles/josorio.html",
+      "page": "/perfiles/josorio",
+      "email": "",
       "description": "Ingeniero de Sistemas y Computación"
     }
   ]

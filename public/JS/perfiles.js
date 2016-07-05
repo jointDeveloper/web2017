@@ -1,5 +1,7 @@
 $(function () {
+  var width = window.screen.width;
   var path = window.location.pathname;
+
   $.getJSON("../data.json", function (data) {
     var items = [];
     data.perfiles.forEach(function (perfil, index) {
@@ -26,6 +28,8 @@ $(function () {
       "class": "profileList",
       html: items.join("")
     }).appendTo("#integrantes");
+
+    $('.footer').css("bottom", `${-width * 0.8}px`);
   });
 });
 
