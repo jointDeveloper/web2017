@@ -3,6 +3,7 @@ const controllers = require('../controllers');
 var router = express.Router();
 
 module.exports = function(app, mountPoint) {
+  // GET
   router.get('/', controllers.home);
   router.get('/acercade', controllers.about);
   router.get('/portafolio', controllers.portafolio);
@@ -13,7 +14,11 @@ module.exports = function(app, mountPoint) {
   router.get('/blog', controllers.blog);
   router.get('/eventos', controllers.eventos);
   router.get('/contacto', controllers.contacto);
-  router.get('*', controllers.notFound);
+  router.get('/*', controllers.notFound);
+
+  // POST
+  router.post('/contacto', controllers.jointEmail);
+  router.post('/contacto/:name', controllers.perfilEmail);
 
   app.use(mountPoint, router);
 }
