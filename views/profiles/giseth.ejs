@@ -276,23 +276,25 @@
 
             </div>
             <div class="scroll" id="contacto">
+              <form action="/contacto/giseth" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
                 <h2 class=left>Contacto</h2>
                 <div class=" left vertical-center">
-                    <div class="row">
-                        <div class="col-6">
-                            <input type="text" placeholder="Nombre" >
-                        </div>
-                        <div class="col-6">
-                            <input type="text" placeholder="Correo" ><br><br>
-                        </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <input type="text" placeholder="Nombre" name="name" required>
                     </div>
-                    <div class="row">
-                        <textarea cols="20" rows="10" class="text-description" placeholder="Mensaje"></textarea><br>
+                    <div class="col-6">
+                      <input type="text" placeholder="Correo" name="email" required><br><br>
                     </div>
-                    <div class="center">
-                        <button type="submit">Enviar</button>
-                    </div>
+                  </div>
+                  <div class="row">
+                    <textarea cols="20" rows="10" class="text-description" placeholder="Mensaje" name="msj" required></textarea><br>
+                  </div>
+                  <div class="center">
+                    <button type="submit">Enviar</button>
+                  </div>
                 </div>
+              </form>
             </div>
             <div class="footer">
                 <div class="row">

@@ -75,7 +75,7 @@ exports.perfilEmail = function(req, res) {
 
   Email.sendMail({
     from: config.auth.user,
-    to: emailList[name].email,
+    to: emailList[name].email || 'developerjoint@gmail.com',
     subject: 'contacto@jointdeveloper.com',
     html: `<p>Estimad@ ${emailList[name].name},<br><br>El usuario <strong>${req.body.name}</strong> con correo <strong>${req.body.email}</strong>` +
           ` quiere comunicarse contigo a traves del siguiente mensaje: <p><br>` +

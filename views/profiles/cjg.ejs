@@ -238,7 +238,7 @@
 
           </div>
 
-          <div class="col-4">
+          <div class="col-4">arendon
             <!-- SQL -->
             <div class="row">
 
@@ -291,7 +291,7 @@
            				     <h4>Terminación: 07 de Junio del 2010</h4>
                    </div>
                </div>
-
+arendonarendon
                <div class="col-6">
                    <div class="div-border">
                        <h3>CÁTEDRA VIRTUAL DE PENSAMIENTO EMPRESARIAL</h3>
@@ -400,23 +400,25 @@
         </div>
         <!-- C O N T A C T O-->
         <div class="scroll" id="contacto">
-          <h2 class=left>Contacto</h2>
-          <div class=" left vertical-center">
-  					<div class="row">
-  						<div class="col-6">
-  							<input type="text" placeholder="Nombre" >
-  						</div>
-  						<div class="col-6">
-  							<input type="text" placeholder="Correo" ><br><br>
-  						</div>
-  					</div>
-  					<div class="row">
-  						<textarea cols="20" rows="10" class="text-description" placeholder="Mensaje"></textarea><br>
-  					</div>
-  					<div class="center">
-              <button type="submit">Enviar</button>
+          <form action="/contacto/cjg" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
+            <h2 class=left>Contacto</h2>
+            <div class=" left vertical-center">
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" placeholder="Nombre" name="name" required>
+                </div>
+                <div class="col-6">
+                  <input type="text" placeholder="Correo" name="email" required><br><br>
+                </div>
+              </div>
+              <div class="row">
+                <textarea cols="20" rows="10" class="text-description" placeholder="Mensaje" name="msj" required></textarea><br>
+              </div>
+              <div class="center">
+                <button type="submit">Enviar</button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
         <!-- F O O T E R-->
   			<div class="footer">
