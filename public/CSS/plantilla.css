@@ -8,7 +8,9 @@ html, body {
   /*font-family: 'Arima-Madurai', cursive;*/
   font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
   font-size: 20px;
-  background: rgba(240, 99, 146, 0.1);
+  /*background: #118811;*/
+  background: #f06292;
+  /*background: rgba(240, 99, 146, 0.1);*/
 }
 
 /*Fonts*/
@@ -597,6 +599,7 @@ span.text-content span {
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
+  min-width: 100%;
 }
 
 span.text-content {
