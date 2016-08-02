@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   font-size: 1.063em;
   background-color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Arima-Madurai', cursive;
 }
 
 /*Fonts*/
@@ -569,7 +569,7 @@ progress[value]::-moz-progress-bar {
 }
 
 /* Medias */
-/*
+
 @media (min-width: 1024px) and (max-width: 1205px) {
   ul.topnav li a {
     padding: 16px 8px;
@@ -626,11 +626,10 @@ progress[value]::-moz-progress-bar {
     font-size: 20px;
     font-weight: bold;
 }
-*/
-/*
-mobile-portrait: min:320px - max:479px;
-mobile-landscape: min:480px - max:599px;
-small-tablet-portrait: min:600px - max:799px;
-small-tablet-landscape: min:800px - max:767px;
-tablet-portrait: min:768px - max:1023px;
-tablet-landscape: min:1024px; */
+
+canvas.skills {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: baseline;
+}
