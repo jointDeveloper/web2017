@@ -318,14 +318,25 @@
       </div>
 
       <div class="content content-header" id="contacto">
-        <div class="col-12">
-          <div class="titulo section-title">
-            <h3 class="titulo title-section">Contacto</h3>
+        <form action="/contacto/melidelgado" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
+          <h2 class=left>Contacto</h2>
+          <div class=" left vertical-center">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" placeholder="Nombre" name="name" required>
+              </div>
+              <div class="col-6">
+                <input type="text" placeholder="Correo" name="email" required><br><br>
+              </div>
+            </div>
+            <div class="row">
+              <textarea cols="20" rows="10" class="text-description" placeholder="Mensaje" name="msj" required></textarea><br>
+            </div>
+            <div class="center">
+              <button type="submit">Enviar</button>
+            </div>
           </div>
-        </div>
-
-        <div class="section-body">
-        </div>
+        </form>
       </div>
 
 			<div class="footer">
