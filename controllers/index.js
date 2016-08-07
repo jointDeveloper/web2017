@@ -24,8 +24,7 @@ exports.perfiles = function(req, res) {
 }
 
 exports.perfil = function(req, res) {
-  var name = req.params.name;
-  res.render('profiles/' + name);
+  res.render('profiles/' + req.params.name);
   // res.render('work_in_progress');
 }
 
@@ -72,7 +71,6 @@ exports.jointEmail = function(req, res) {
 
 exports.perfilEmail = function(req, res) {
   const name = req.params.name;
-
   Email.sendMail({
     from: config.auth.user,
     to: emailList[name].email || 'developerjoint@gmail.com',
