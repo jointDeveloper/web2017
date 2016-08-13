@@ -4,84 +4,72 @@
       "name": "Angelica Aguirre Castro",
       "img": "/IMG/angelica_aguirre.jpg",
       "page": "/perfiles/angelicaaguirre",
-      "email": "anaguirre@utp.edu.co",
       "description": "Ingeniera de Sistemas y Computación"
     },
     {
       "name": "Carolina Gómez Trejos",
       "img": "/IMG/carogt.jpg",
       "page": "/perfiles/carogt",
-      "email": "caro_gomezt@utp.edu.co",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Yensy Helena Gómez Villegas",
       "img": "/IMG/yenGomez.jpg",
       "page": "/perfiles/yhgv",
-      "email": "yensy@sirius.utp.edu.co",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "Carolina Jiménez Gómez",
       "img": "/IMG/cjg.jpg",
       "page": "/perfiles/cjg",
-      "email": "carolina.jimenez@utp.edu.co",
       "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "Giseth Johana Grimaldo B.",
       "img": "/IMG/imagenPerfilGjg.jpg",
       "page": "/perfiles/giseth",
-      "email": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
-      "name": "Naranjita Golden",
-      "img": "/IMG/naranjita.jpg",
-      "page": "/perfiles/naranjita",
-      "email": "",
+      "name": "Juliana Hernández",
+      "img": "/IMG/julianah.png",
+      "page": "/perfiles/julianah",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "María Victoria Gasca",
       "img": "/IMG/vicky.jpg",
       "page": "/perfiles/vicky",
-      "email": "mvgasca@utp.edu.co",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
     },
     {
       "name": "Alejandro E. Rendón",
       "img": "/IMG/arendon.jpg",
       "page": "/perfiles/arendon",
-      "email": "arendondiosa@acm.org",
       "description": "Estudiante de Ingeniería de Sistemas y Computación.<br /> Grupo de Investigación Sirius."
     },
     {
       "name": "Sebastian Duque",
       "img": "/IMG/sduque.jpg",
       "page": "/perfiles/sduque",
-      "email": "sebas.duque@utp.edu.co",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Leiver Campeón",
       "img": "/IMG/leiver.jpg",
       "page": "/perfiles/leiver",
-      "email": "leiverandres@utp.edu.co",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "John H. Osorio Ríos",
       "img": "/IMG/josorio.jpg",
       "page": "/perfiles/josorio",
-      "email": "john@sirius.utp.edu.co",
       "description": "Ingeniero de Sistemas y Computación"
     },
     {
       "name": "Angie Melissa Delgado",
       "img": "/IMG/meli.jpg",
       "page": "/perfiles/melidelgado",
-      "email": "adelgadoleon@acm.org",
       "description": "Estudiante de Ingeniería de Sistemas"
     },
     {
