@@ -15,7 +15,7 @@
 * Carolina Jimenez Gómez `krito_j_g@utp.edu.co`
 * Catalina Castro `catalina.cst@hotmail.es`
 * Giseth Grimaldo
-* Juli (Naranjita - Completar Nombre :D)
+* Juliana Hernández `julianahdiaz@analyticboard.com`
 * Leiver Andres Campeon
 * Maria Paz Muñoz
 * Maria Victoria Gasca
