@@ -1,28 +1,10 @@
 {
   "perfiles": [
     {
-      "name": "Angelica Aguirre Castro",
-      "img": "/IMG/angelica_aguirre.jpg",
-      "page": "/perfiles/angelicaaguirre",
-      "description": "Ingeniera de Sistemas y Computación"
-    },
-    {
-      "name": "Carolina Gómez Trejos",
-      "img": "/IMG/carogt.jpg",
-      "page": "/perfiles/carogt",
-      "description": "Estudiante Ingenieria de Sistemas y Computación"
-    },
-    {
       "name": "Yensy Helena Gómez Villegas",
       "img": "/IMG/yenGomez.jpg",
       "page": "/perfiles/yhgv",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
-    },
-    {
-      "name": "Carolina Jiménez Gómez",
-      "img": "/IMG/cjg.jpg",
-      "page": "/perfiles/cjg",
-      "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "Giseth Johana Grimaldo B.",
@@ -35,6 +17,24 @@
       "img": "/IMG/julianah.png",
       "page": "/perfiles/julianah",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+    },
+    {
+      "name": "Angelica Aguirre Castro",
+      "img": "/IMG/angelica_aguirre.jpg",
+      "page": "/perfiles/angelicaaguirre",
+      "description": "Ingeniera de Sistemas y Computación"
+    },
+    {
+      "name": "Carolina Gómez Trejos",
+      "img": "/IMG/carogt.jpg",
+      "page": "/perfiles/carogt",
+      "description": "Estudiante Ingenieria de Sistemas y Computación"
+    },
+    {
+      "name": "Carolina Jiménez Gómez",
+      "img": "/IMG/cjg/cjg.jpg",
+      "page": "/perfiles/cjg",
+      "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "María Victoria Gasca",
