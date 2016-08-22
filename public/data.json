@@ -2,16 +2,15 @@
   "perfiles": [
     {
       "name": "Yensy Helena Gómez Villegas",
-      "img": "/IMG/yenGomez.jpg",
+      "img": "/IMG/yhgv/yenGomez.jpg",
       "page": "/perfiles/yhgv",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "description": "Fundadora - jointDeveloper<br />Ingeniera de Sistemas y Computación"
     },
     {
       "name": "Giseth Johana Grimaldo B.",
       "img": "/IMG/imagenPerfilGjg.jpg",
       "page": "/perfiles/giseth",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
-    },
+      "description": "Ingeniera de Sistemas y Computación"    },
     {
       "name": "Juliana Hernández",
       "img": "/IMG/julianah.png",
@@ -20,7 +19,7 @@
     },
     {
       "name": "Angelica Aguirre Castro",
-      "img": "/IMG/angelica_aguirre.jpg",
+      "img": "/IMG/angelicaaguirre/angelica_aguirre.jpg",
       "page": "/perfiles/angelicaaguirre",
       "description": "Ingeniera de Sistemas y Computación"
     },
@@ -44,13 +43,13 @@
     },
     {
       "name": "Alejandro E. Rendón",
-      "img": "/IMG/arendon.jpg",
+      "img": "/IMG/arendon/arendon.jpg",
       "page": "/perfiles/arendon",
       "description": "Estudiante de Ingeniería de Sistemas y Computación.<br /> Grupo de Investigación Sirius."
     },
     {
       "name": "Sebastian Duque",
-      "img": "/IMG/sduque.jpg",
+      "img": "/IMG/sduque/sduque.jpg",
       "page": "/perfiles/sduque",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },

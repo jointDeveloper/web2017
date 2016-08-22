@@ -15,6 +15,11 @@ html, body {
   src: url(../../FONTS/Cinzel/Cinzel-Regular.ttf);
 }
 
+@font-face {
+  font-family: Arima-Madurai;
+  src: url(../../FONTS/Arima_Madurai/ArimaMadurai-Regular.ttf);
+}
+
 .letra {
   font-family: 'Lato', sans-serif
 }
@@ -163,9 +168,13 @@ ul.topnav li a {
   text-decoration: none;
 }
 
-a {
-  color: black;
+a { color: #000; }
+a i {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
 }
+a i:hover { opacity: 0.7; }
 
 ul.topnav li a:hover:not(.active) {
   color: #f06292;
