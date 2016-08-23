@@ -2,7 +2,9 @@
 
 # Comunidad jointDeveloper
 
-## web
+## Web
+[![Build Status](https://travis-ci.org/jointDeveloper/web.svg?branch=master)](https://travis-ci.org/jointDeveloper/web)
+[![dependencies Status](https://david-dm.org/jointDeveloper/web/status.svg)](https://david-dm.org/jointDeveloper/web)
 
 * http://jointdeveloper.com
 
