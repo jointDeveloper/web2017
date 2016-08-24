@@ -5,6 +5,7 @@
 ## Web
 [![Build Status](https://travis-ci.org/jointDeveloper/web.svg?branch=master)](https://travis-ci.org/jointDeveloper/web)
 [![dependencies Status](https://david-dm.org/jointDeveloper/web/status.svg)](https://david-dm.org/jointDeveloper/web)
+[![Github Issues](https://img.shields.io/github/issues/jointDeveloper/web.svg)](http://github.com/jointDeveloper/web/issues)
 
 * http://jointdeveloper.com
 
