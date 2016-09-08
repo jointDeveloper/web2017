@@ -8,11 +8,6 @@ exports.home = function (req, res) {
   res.render('index');
 }
 
-exports.about = function(req, res) {
-  // res.render('acercade');
-   res.render('work_in_progress');
-}
-
 exports.portafolio = function(req, res) {
   // res.render('portafolio');
   res.render('work_in_progress');
@@ -28,14 +23,9 @@ exports.perfil = function(req, res) {
   // res.render('work_in_progress');
 }
 
-exports.apoyanos = function(req, res) {
-  // res.render('apoyanos');
-  res.render('work_in_progress');
-}
-
 exports.comunidad = function(req, res) {
-  // res.render('comunidad');
-  res.render('work_in_progress');
+  res.render('comunidad');
+  // res.render('work_in_progress');
 }
 
 exports.blog = function(req, res) {
@@ -44,8 +34,13 @@ exports.blog = function(req, res) {
 }
 
 exports.eventos = function(req, res) {
-  // res.render('eventos');
-  res.render('work_in_progress');
+  res.render('eventos');
+  // res.render('work_in_progress');
+}
+
+exports.evento = function(req, res) {
+  res.render(req.params.eventName);
+  // res.render('work_in_progress');
 }
 
 exports.contacto = function(req, res) {

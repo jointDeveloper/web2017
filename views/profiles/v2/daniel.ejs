@@ -1,13 +1,13 @@
 <% include header.ejs %>
-    <link href="/CSS/angelica.css" rel="stylesheet">
-    <title>Angélica Aguirre Castro - jointDeveloper</title>
+    <link href="/CSS/plantilladaniel.css" rel="stylesheet">
+    <title>Daniel F.L.G. - jointDeveloper</title>
   </head>
   <body>
     <div class="container center">
       <header>
         <div class="banner">
           <a id="jointDev" href="/">jointDeveloper</a>
-          <a id="nombre">Angélica Aguirre Castro</a>
+          <a id="nombre">Daniel Fernando Largo Guerrero</a>
         </div>
         <div class="navbar">
           <a id="nav-inicio" class="group active" href="#inicio">Inicio</a>
@@ -15,9 +15,9 @@
           <a id="nav-aptitudes" class="group" href="#aptitudes">Aptitudes</a>
           <a id="nav-educacion" class="group" href="#educacion">Educación</a>
           <a id="nav-cursos" class="group" href="#cursos">Cursos</a>
+          <a id="nav-eventos" class="group" href="#eventos">Eventos</a>
           <a id="nav-proyectosport" class="group" href="#proyectosport">Portafolio</a>
           <a id="nav-pasatiempos" class="group" href="#pasatiempos">Pasatiempos</a>
-          <a id="nav-articulos" class="group" href="#articulos">Artículos</a>
           <a id="nav-contacto" class="group" href="#contacto">Contacto</a>
         </div>
       </header>
@@ -26,24 +26,25 @@
           <div class="fondo-intro">
             <div class="col-4">
               <div class="titulo right">
-                <img src="/IMG/angelicaaguirre/angelica_aguirre.jpg" class="circular-intro" alt="" />
+                <img src="/IMG/daniell.jpg" class="circular-intro" alt="" />
               </div>
             </div>
             <div class="col-8">
               <div class="right">
                 <div class="nombre-intro">
-                  Angélica Aguirre Castro
+                  Daniel Fernando Largo Guerrero
                 </div>
-                <a href="/IMG/angelicaaguirre/CV_angelicaaguirre.pdf" download="John H. Osorio" class="btn-inicio center">Descargar CV</a>
+                <a href="/IMG/HojaDeVida-DanielF.pdf" download="Daniel F.L.G." class="btn-inicio center">Descargar CV</a>
                 <h3 style="color: #fff">
-                  Ingeniera de Sistemas y Computación
+                  Técnico en Documentación y Registro de Operaciones Contables <br />
+                  Estudiante de Ingeniería de Sistemas y Computación <br />
                 </h3>
                 <div class="row">
-                  <a href="//github.com/anaguicas" target="_blank"><i class="fa fa-github-square icon-title fa-3x" aria-hidden="true"></i></a>
-                  <a href="mailto:anaguirre@utp.edu.co" target="_blank"><i class="fa fa-envelope-square icon-title fa-3x" aria-hidden="true"></i></a>
-                  <a href="//facebook.com/angelica.aguirrecastro" target="_blank"><i class="fa fa-facebook-square icon-title fa-3x" aria-hidden="true"></i></a>
-                  <a href="" target="_blank"><i class="fa fa-twitter-square icon-title fa-3x" aria-hidden="true"></i></a>
-                  <a href="//www.linkedin.com/in/angelica-aguirre-castro-50abb5110" target="_blank"><i class="fa fa-linkedin-square icon-title fa-3x" aria-hidden="true"></i></a>
+                  <a href="//github.com/danielguerrero15" target="_blank"><i class="fa fa-github-square icon-title fa-3x" aria-hidden="true"></i></a>
+                  <a href="mailto:danielfernandolargo@gmail.com" target="_blank"><i class="fa fa-envelope-square icon-title fa-3x" aria-hidden="true"></i></a>
+                  <a href="//facebook.com/daniel.guerrero.9066389" target="_blank"><i class="fa fa-facebook-square icon-title fa-3x" aria-hidden="true"></i></a>
+                  <a href="//twitter.com/DanielDafelagu" target="_blank"><i class="fa fa-twitter-square icon-title fa-3x" aria-hidden="true"></i></a>
+                  <a href="//www.linkedin.com/in/daniel-largo-09337486?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square icon-title fa-3x" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -53,13 +54,15 @@
       <div class="content scroll" id="info">
 				<div class="row vertical-center">
           <div class="titulo center">
-            <img src="/IMG/angelicaaguirre/angelica_aguirre.jpg" class="circular" alt="" />
-            <div class="nombre">Angelica Aguirre Castro</div>
+            <img src="/IMG/daniell.jpg" class="circular" alt="" />
+            <div class="nombre">Daniel Fernando Largo Guerrero</div>
           </div>
           <div class="left">
-            <p>Ingeniera de sistemas y computación de la Universidad Tecnológica de Pereira, durante el año 2013 participe
-              en maratones de programaciones. En la actualidad me dedico al desarrollo web. </p>
-            <p>Me gusta estar aprendiendo constantemente. Me interesa la gestión de proyectos y la ingeniería de software, por lo que me gustaría relizar estudios de postgrado de estas areas. En mi trabajo de grado tuve la oportunidad de trabajar con sonidos 3D para una propuesta de una metodologia de enseñanza para la física.</p>
+            <p>Interesado en aprender los procesos que conllevan la automatización de tareas por parte de sistemas electromecánicos como los robots,
+            buscando así, una apropiación de conocimientos que permita generar nuevas alternativas de implementación de estos procesos en nuevos sistemas.<br />
+            Adicional a esto, me gusta lo relacionado con el procesamiento de imagenes y el diseño asistido por computadora.</p>
+            <p>Soy una persona que disfruta de la naturaleza, me gusta fotografiar paisajes y animales singulares, además de aprender sobre fenomenos físicos y astronómicos de la cotidianidad.</p>
+            <p> Tengo habilidades para dibujar, y dedico parte de mi tiempo libre para ello.</p>
           </div>
 				</div>
       </div>
@@ -70,28 +73,25 @@
         <div class="contenido">
           <div class="row">
             <div class="col-6">
-              <h4>Desarrollo Web</h4>
+              <h4>Derrollo Web</h4>
               <canvas id="myChart" class="chart-aptitudes center"></canvas>
               <script>
               var ctx = document.getElementById("myChart").getContext("2d");
               var data_web = {
                 labels: [
-                  "HTML",
-                  "CSS",
-                  "Javascript"
-                ],
+                "HTML",
+                "CSS"
+                  ],
                   datasets: [
                     {
-                      data: [70, 50, 80],
+                      data: [30, 20],
                       backgroundColor: [
                           "#F22613",
-                          "#4183D7",
-                          "#81db1a"
+                          "#4183D7"
                       ],
                       hoverBackgroundColor: [
                           "#EF4836",
-                          "#446CB3",
-                          "rgba(129, 219, 26, 0.85)"
+                          "#446CB3"
                       ]
                 }]
               };
@@ -119,23 +119,20 @@
                 labels: [
                 "C++",
                 "C",
-                "C#",
                 "Python",
                 "Java"
                   ],
                   datasets: [
                     {
-                      data: [25, 20, 25, 10 , 20],
+                      data: [25, 20, 25, 30],
                       backgroundColor: [
                           "#4B77BE",
-                          "#a91e8b",
                           "#3A539B",
                           "#ABB7B7",
                           "#F89406"
                       ],
                       hoverBackgroundColor: [
                           "#5C97BF",
-                          "rgba(169, 30, 139, 0,85)",
                           "#5C97BF",
                           "#6C7A89",
                           "#E87E04"
@@ -169,11 +166,19 @@
             <div class="col-4">
               <div class="tabla-contenido claro">
                 <p class="bold">
-                  Ingeniera de Sistemas y Computación
-                </p>
-                Duración: 10 Semestres<br>
-                Universidad Tecnológica de Pereira<br />
+                Técnico en Documentación y Registro de Operaciones Contables </p>
+                Servicio Nacional de Aprendizaje SENA<br>
                 Estado: Finalizado
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="tabla-contenido oscuro">
+                <p class="bold">
+                  Estudiante de Ingeniería de Sistemas y Computación
+                </p>
+                Duración: 10 Semestres<br />
+                Universidad Tecnológica de Pereira<br />
+                Estado: Cursando octavo(8) semestre
               </div>
             </div>
           </div>
@@ -181,22 +186,72 @@
       </div>
       <div class="content scroll" id="cursos">
         <div class="titulo center">
-          Cursos
+            Cursos
         </div>
         <div class="contenido">
           <div class="row">
             <div class="col-4">
               <div class="tabla-contenido claro">
                 <p class="bold">
-                  Certificación Scrum Master
+                  Emprendimiento basico
                 </p>
-                SEONTI<br />
-                Estado: Finalizado
+                Duración: 60 horas<br />
+                Servicio Nacional de Aprendizaje SENA<br />
+                Estado: Terminado
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="tabla-contenido claro">
+                <p class="bold">
+                  Ingles I y II
+                </p>
+                Duración: 120 horas<br />
+                Servicio Nacional de Aprendizaje SENA<br />
+                Estado: Terminado
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="tabla-contenido claro">
+                <p class="bold">
+                  Ingles
+                </p>
+                Duración: 480 horas<br />
+                Universidad Tecnologica de Pereira<br />
+                Estado: Terminado
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="content scroll" id="eventos">
+      <div class="titulo center">
+        Eventos
+      </div>
+      <div class="contenido">
+        <div class="row">
+          <div class="col-4">
+            <div class="tabla-contenido claro">
+              <p class="bold">
+              Noveno Congreso Colombiano de Computación 9CCC
+              </p>
+              Universidad Tecnológica de Pereira<br />
+              3,4 y 5 de Septiembre de 2014<br />
+              Pereira, Colombia
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="tabla-contenido oscuro">
+              <p class="bold">
+              Powerful Big Data: Ciclo de Conferencias
+              </p>
+              Universidad Tecnológica de Pereira<br />
+              25 de Mayo de 2016<br />
+              Pereira, Colombia
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="content scroll" id="proyectosport">
         <div class="titulo center">
           Proyectos - Portafolio
@@ -206,19 +261,9 @@
             <div class="col-3">
               <div class="img-list tabla-contenido-portafolio claro">
                 <div class="item">
-                  <a href="">
-                    <img src="/IMG/angelicaaguirre/sonidos_3d.png" />
-                    <span class="text-content"><span>Diseño de una metodologia para la enseñana de la física a traves del sentido del oido y medio virtuales audio-localizables</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="img-list tabla-contenido-portafolio claro">
-                <div class="item">
-                  <a href="https://github.com/jointdeveloper/">
-                    <img src="/IMG/sduque/robot_normal.png" />
-                    <span class="text-content"><span>Comunidad - jointDeveloper - Web</span></span>
+                  <a href="//github.com/jointdeveloper/">
+                    <img src="/IMG/robot_negro.png" />
+                    <span class="text-content"><span>Comunidad jointDeveloper - Nodebot</span></span>
                   </a>
                 </div>
               </div>
@@ -235,14 +280,14 @@
             <div class="col-5">
               <div class="tabla-pasatiempo right">
                 <div class="bold">
-                  Leer / Read
+                  Fútbol / Soccer
                 </div>
                 I like...
               </div>
             </div>
             <div class="col-1">
-              <div class="tabla-pasatiempo oscuro right">
-                <img src="/IMG/sduque/read.svg">
+              <div class="tabla-pasatiempo claro left">
+                <img src="/IMG/icons/template/futbol.png">
               </div>
             </div>
             <div class="col-1">
@@ -263,14 +308,14 @@
             <div class="col-5">
               <div class="tabla-pasatiempo right">
                 <div class="bold">
-                  Viajar / Travel
+                  Dibujo / Pintar
                 </div>
                 I like...
               </div>
             </div>
             <div class="col-1">
-              <div class="tabla-pasatiempo claro left">
-                <img src="/IMG/sduque/travel.svg">
+              <div class="tabla-pasatiempo oscuro left">
+                <img src="/IMG/icons/template/dibujo.png">
               </div>
             </div>
             <div class="col-1">
@@ -289,34 +334,29 @@
           </div>
         </div>
       </div>
-      <div class="content scroll" id="articulos">
-        <div class="titulo center">
-          Artículos
-        </div>
-        <div class="contenido">
-        </div>
-      </div>
       <div class="scroll" id="contacto">
         <div class="titulo center">
           Contacto
         </div>
         <div class="contenido center">
-          <form action="/contacto/angelicaaguirre" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
-            <div class="row">
-              <div class="col-6">
-                <input type="text" placeholder="Nombre" name="name" required>
+          <div class="contenido center">
+            <form action="/contacto/daniel" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" placeholder="Nombre" name="name" required>
+                </div>
+                <div class="col-6">
+                  <input type="email" placeholder="Correo Electrónico" name="email" required>
+                </div>
               </div>
-              <div class="col-6">
-                <input type="email" placeholder="Correo Electrónico" name="email" required>
+              <div class="row">
+                <textarea placeholder="Mensaje" rows="3" name="msj" required></textarea>
               </div>
-            </div>
-            <div class="row">
-              <textarea placeholder="Mensaje" rows="3" name="msj" required></textarea>
-            </div>
-            <div class="row center">
-              <input class="btn" type="submit" name="enviar" value="Enviar" />
-            </div>
-          </form>
+              <div class="row center">
+                <input class="btn" type="submit" name="enviar" value="Enviar" />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 <% include footer.ejs %>

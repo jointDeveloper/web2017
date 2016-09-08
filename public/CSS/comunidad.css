@@ -97,18 +97,10 @@ html, body {
   clear: both;
   display: block;
   background-color: white;
-  margin: 10px auto;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   min-height: 95% !important;
   padding-top: 5%;
-}
-
-.container{
-  max-width: 100%;
-  margin: 10px auto;
-  background-color:  #fff;
-  height: 100% !important;
 }
 
 .center {
@@ -121,7 +113,6 @@ html, body {
 
 .footer {
   position: relative;
-  height: 50%;
   background-color: #333;
   padding: 10px;
   color: white;
@@ -185,6 +176,10 @@ ul.topnav li a.active {
 ul.topnav ul.right {
   float: right;
   list-style-type: none;
+}
+
+ul.topnav li {
+    float: right;
 }
 
 .style-title {
@@ -413,12 +408,6 @@ progress[value]::-moz-progress-bar {
 
 /*Iconos*/
 
-.icon-title {
-  width: 4%;
-  height: 4%;
-  padding: 5px;
-}
-
 .icon-footer {
   width: 10%;
   height: 10%;
@@ -473,8 +462,8 @@ progress[value]::-moz-progress-bar {
 
 .img-circle{
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .container-img img {
@@ -651,7 +640,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .pioneras{
-  padding: 30px 0;
+  padding: 110px 0;
 }
 
 .nodesource{
@@ -660,7 +649,7 @@ progress[value]::-moz-progress-bar {
 
 .pereirajs{
   margin-left: 189px;
-  padding: 30px 0;
+  padding: 102px 0;
 }
 
 .texto-comu{
@@ -678,11 +667,20 @@ a{
 .titulo-content{
   font-size: 40px;
   padding: 2% 0;
+  font-weight: bold;
 }
 
 .texto-titulo{
   padding: 32px 150px;
   margin-bottom: 37px;
+}
+
+.content-gray{
+  background-color: #f7f7f7;
+}
+
+.texto-comu > h4 {
+  font-weight: bold;
 }
 /*
 mobile-portrait: min:320px - max:479px;

@@ -15,7 +15,7 @@
       "name": "Juliana Hernández",
       "img": "/IMG/julianah.png",
       "page": "/perfiles/julianah",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "description": "Diseñadora Estrategica<br /> Antropóloga"
     },
     {
       "name": "Angelica Aguirre Castro",
@@ -37,9 +37,9 @@
     },
     {
       "name": "María Victoria Gasca",
-      "img": "/IMG/vicky.jpg",
+      "img": "/IMG/vicky/perfil.jpg",
       "page": "/perfiles/vicky",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tortor diam  in ullamcorper malesuada."
+      "description": "Ingeniera Electricista."
     },
     {
       "name": "Alejandro E. Rendón",
@@ -63,7 +63,7 @@
       "name": "John H. Osorio Ríos",
       "img": "/IMG/josorio.jpg",
       "page": "/perfiles/josorio",
-      "description": "Ingeniero de Sistemas y Computación"
+      "description": "Ingeniero de Sistemas y Computación<br />Especialista en Electrónica Digital<br />Investigador Principal Centro de Educación GPU nVidia<br />Director de Investigación Grupo Sirius HPC"
     },
     {
       "name": "Angie Melissa Delgado",
