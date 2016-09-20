@@ -25,7 +25,7 @@
     },
     {
       "name": "Carolina Gómez Trejos",
-      "img": "/IMG/carogt.jpg",
+      "img": "/IMG/carogt/carogt.jpg",
       "page": "/perfiles/carogt",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
@@ -67,7 +67,7 @@
     },
     {
       "name": "Angie Melissa Delgado",
-      "img": "/IMG/meli.jpg",
+      "img": "/IMG/melidelgado/meli.jpg",
       "page": "/perfiles/melidelgado",
       "description": "Estudiante de Ingeniería de Sistemas"
     },
