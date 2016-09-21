@@ -1,12 +1,12 @@
 <% include header.ejs %>
-  <link href="../../CSS/carogt.css" rel="stylesheet">
+  <link href="/CSS/carogt.css" rel="stylesheet">
   <title>Angelica Aguirre - jointDeveloper</title>
 </head>
 <body>
   <nav id="inicio" class="container_nav">
     <ul class="topnav" id="menu">
-      <li style="float: left;"><img src="../../IMG/robot.png" class="robo-nav" /></li>
-      <li style="float: left;"><a id="logo-nav" href="../../index.html" style="padding-right: 2px">jointDeveloper</a></li>
+      <li style="float: left;"><img src="/IMG/robot.png" class="robo-nav" /></li>
+      <li style="float: left;"><a id="logo-nav" href="/" style="padding-right: 2px">jointDeveloper</a></li>
       <li><a href="#contacto1" class="group"><span>Contacto</span></a></li>
       <li><a href="#eventos" class="group"><span>Eventos</span></a></li>
       <li><a href="#pasatiempos" class="group"><span>Pasatiempos</span></a></li>
@@ -21,7 +21,7 @@
     <div class="row name">
       <div class="col-3">
         <div class="card-img center">
-          <img src="../../IMG/angelicaaguirre/angelica_aguirre.jpg" alt="" />
+          <img src="/IMG/angelicaaguirre/angelica_aguirre.jpg" alt="" />
           <h2>Angelica Aguirre Castro</h2>
         </div>
       </div>
@@ -35,7 +35,7 @@
             <a href="mailto:anaguirre@utp.edu.co" target="_blank"><i class="fa fa-envelope-square icon-info fa-4x" aria-hidden="true"></i></a>
             <a href="//facebook.com/angelica.aguirrecastro" target="_blank"><i class="fa fa-facebook-square icon-info fa-4x" aria-hidden="true"></i></a>
             <a href="//www.linkedin.com/in/angelica-aguirre-castro-50abb5110" target="_blank"><i class="fa fa-linkedin-square icon-info fa-4x" aria-hidden="true"></i></a>
-            <a href="../../IMG/angelicaaguirre/CV_angelicaaguirre.pdf" target="_blank">
+            <a href="/IMG/angelicaaguirre/CV_angelicaaguirre.pdf" target="_blank">
               <span class="fa-stack icon-info fa-2x" style="vertical-align: bottom"aria-hidden="true">
                 <i class="fa fa-square fa-stack-2x"></i>
                 <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
@@ -209,7 +209,7 @@
       <div class="row portafolio">
         <div class="col-4">
           <div class="card-img center">
-            <a href="//github.com/jointdeveloper/" target="_blank"><img src="../../IMG/carogt/robot_normal.png" alt="" /></a>
+            <a href="//github.com/jointdeveloper/" target="_blank"><img src="/IMG/carogt/robot_normal.png" alt="" /></a>
             <p>
               Comunidad jointDeveloper - Web
             </p>
@@ -217,7 +217,7 @@
         </div>
         <div class="col-4">
           <div class="card-img center">
-            <a href="//github.com/in-silico/judge-frontend" target="_blank"><img src="../../IMG/angelicaaguirre/sonidos_3d.png" alt="" /></a>
+            <a href="//github.com/in-silico/judge-frontend" target="_blank"><img src="/IMG/angelicaaguirre/sonidos_3d.png" alt="" /></a>
             <p>
               Diseño de una metodologia para la enseñanza de la física a traves del sentido del oido y medios virtuales audio-localizables
             </p>
@@ -232,7 +232,7 @@
       <div class="row">
         <div class="col-2">
           <div class="card-img card-img-fixed center">
-            <img src="../../IMG/carogt/travel.png" alt="" />
+            <img src="/IMG/carogt/travel.png" alt="" />
             <p>
               Viajar
             </p>
@@ -240,7 +240,7 @@
         </div>
         <div class="col-2">
           <div class="card-img card-img-fixed center">
-            <img src="../../IMG/icons/template/movie128.png" alt="" />
+            <img src="/IMG/icons/template/movie128.png" alt="" />
             <p>
               Cine - Películas
             </p>
@@ -248,7 +248,7 @@
         </div>
         <div class="col-2">
           <div class="card-img card-img-fixed center">
-            <img src="../../IMG/icons/template/programar.png" alt="" />
+            <img src="/IMG/icons/template/programar.png" alt="" />
             <p>
               Programación
             </p>
@@ -256,7 +256,7 @@
         </div>
         <div class="col-2">
           <div class="card-img card-img-fixed center">
-            <img src="../../IMG/carogt/book.png" alt="" />
+            <img src="/IMG/carogt/book.png" alt="" />
             <p>
               Leer
             </p>
@@ -264,7 +264,7 @@
         </div>
         <div class="col-2">
           <div class="card-img card-img-fixed center">
-            <img src="../../IMG/carogt/dancing.png" alt="" />
+            <img src="/IMG/carogt/dancing.png" alt="" />
             <p>
               Bailar
             </p>
@@ -296,14 +296,13 @@
       </div>
       <div class="row" id="contacto">
         <div class="card" style="background: #444">
-          <form action="#" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
-            <div class="row">
-              <div class="col-6">
-                <input type="text" placeholder="Nombre" name="name" required>
-              </div>
-              <div class="col-6">
-                <input type="email" placeholder="Correo Electrónico" name="email" required>
-              </div>
+          <form action="/contacto/angelicaaguirre" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">            <div class="row">
+            <div class="col-6">
+              <input type="text" placeholder="Nombre" name="name" required>
+            </div>
+            <div class="col-6">
+              <input type="email" placeholder="Correo Electrónico" name="email" required>
+            </div>
             </div>
             <div class="row">
               <textarea name="name" placeholder="Mensaje" rows="3" name="msj" required></textarea>

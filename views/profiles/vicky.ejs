@@ -1,11 +1,11 @@
 <% include header.ejs %>
-    <title>María Victoria Gasca - jointDeveloper</title>
+  <title>María Victoria Gasca - jointDeveloper</title>
   </head>
   <body>
   <nav id="inicio" class="container_nav">
     <ul class="topnav" id="menu">
-      <li style="float: left;"><img src="../../IMG/robot.png" class="robo-nav" /></li>
-      <li style="float: left;"><a id="logo-nav" href="../../index.html" style="padding-right: 2px">jointDeveloper</a></li>
+      <li style="float: left;"><img src="/IMG/robot.png" class="robo-nav" /></li>
+      <li style="float: left;"><a id="logo-nav" href="/" style="padding-right: 2px">jointDeveloper</a></li>
       <li><a href="#contacto1" class="group"><span>Contacto</span></a></li>
       <li><a href="#articulos" class="group"><span>Artículos</span></a></li>
       <li><a href="#pasatiempos" class="group"><span>Pasatiempos</span></a></li>
@@ -20,7 +20,7 @@
     <div class="row name">
       <div class="col-3">
         <div class="card-img center">
-          <img src="../../IMG/vicky/perfil.jpg" alt="" />
+          <img src="/IMG/vicky/perfil.jpg" alt="" />
           <h2>María Victoria Gasca S</h2>
         </div>
       </div>
@@ -36,7 +36,7 @@
             <a href="//facebook.com/vickyvip.g" target="_blank"><i class="fa fa-facebook-square icon-info fa-4x" aria-hidden="true"></i></a>
             <a href="//twitter.com/VictoriaGasca" target="_blank"><i class="fa fa-twitter-square icon-info fa-4x" aria-hidden="true"></i></a>
             <!--<a href="//www.linkedin.com/in/john-h-osorio-r%C3%ADos-74b547b4?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square icon-info fa-4x" aria-hidden="true"></i></a>
-            <a href="../../IMG/josorio/HojaDeVida-JohnOsorio.pdf" target="_blank">
+            <a href="/IMG/josorio/HojaDeVida-JohnOsorio.pdf" target="_blank">
               <span class="fa-stack icon-info fa-2x" style="vertical-align: bottom"aria-hidden="true">
                 <i class="fa fa-square fa-stack-2x"></i>
                 <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
@@ -198,7 +198,7 @@
     <div class="row portafolio">
       <div class="col-4">
         <div class="card-img center">
-          <img src="../../IMG/josorio/fpga.jpg" alt="" />
+          <img src="/IMG/josorio/fpga.jpg" alt="" />
           <p>
             Implementación de Controladores de Tráfico sobre la Ciudad de Pereira Utilizando FPGAs
           </p>
@@ -206,7 +206,7 @@
       </div>
       <div class="col-4">
         <div class="card-img center">
-          <img src="../../IMG/josorio/global.jpg" alt="" />
+          <img src="/IMG/josorio/global.jpg" alt="" />
           <p>
             Integración de Unidades de Medida Inercial y Sistemas de Posicionamiento Global utilizando Filtros de Kalman
           </p>
@@ -214,7 +214,7 @@
       </div>
       <div class="col-4">
         <div class="card-img center">
-          <img src="../../IMG/josorio/gpu.jpeg" alt="" />
+          <img src="/IMG/josorio/gpu.jpeg" alt="" />
           <p>
             Detección de Displasias Corticales Focales Utilizando GPU
           </p>
@@ -224,7 +224,7 @@
     <div class="row portafolio">
       <div class="col-4">
         <div class="card-img center">
-          <img src="../../IMG/josorio/modelo-cardiaco.jpg" alt="" />
+          <img src="/IMG/josorio/modelo-cardiaco.jpg" alt="" />
           <p>
             Simulación y Visualización de Modelo Eléctrico Auricular Cardíaco utilizando GPUs
           </p>
@@ -232,7 +232,7 @@
       </div>
       <div class="col-4">
         <div class="card-img center">
-          <img src="../../IMG/josorio/ecuaciones.jpeg" alt="" />
+          <img src="/IMG/josorio/ecuaciones.jpeg" alt="" />
           <p>
             Aceleración del Método de Diferencias Finitas para Solucionar Sistemas de Ecuaciones Diferenciales
           </p>
@@ -247,7 +247,7 @@
     <div class="row">
       <div class="col-2">
         <div class="card-img center">
-          <img src="../../IMG/vicky/baile.png" alt="" />
+          <img src="/IMG/vicky/baile.png" alt="" />
           <p>
             Bailar
           </p>
@@ -255,7 +255,7 @@
       </div>
       <div class="col-2">
         <div class="card-img center">
-          <img src="../../IMG/icons/template/movie128.png" alt="" />
+          <img src="/IMG/icons/template/movie128.png" alt="" />
           <p>
             Cine - Películas
           </p>
@@ -263,7 +263,7 @@
       </div>
       <div class="col-2">
         <div class="card-img center">
-          <img src="../../IMG/vicky/bici.png" alt="" />
+          <img src="/IMG/vicky/bici.png" alt="" />
           <p>
             Ejercicio - Bici
           </p>
@@ -271,7 +271,7 @@
       </div>
       <div class="col-2">
         <div class="card-img center">
-          <img src="../../IMG/icons/template/programar.png" alt="" />
+          <img src="/IMG/icons/template/programar.png" alt="" />
           <p>
             Programación
           </p>
@@ -302,14 +302,13 @@
     </div>
     <div class="row" id="contacto">
       <div class="card" style="background: #444">
-        <form action="#" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">
-          <div class="row">
-            <div class="col-6">
-              <input type="text" placeholder="Nombre" name="name" required>
-            </div>
-            <div class="col-6">
-              <input type="email" placeholder="Correo Electrónico" name="email" required>
-            </div>
+        <form action="/contacto/vicky" method="post" onsubmit="return confirm('¿Esta seguro se hacer el envio?')">          <div class="row">
+          <div class="col-6">
+            <input type="text" placeholder="Nombre" name="name" required>
+          </div>
+          <div class="col-6">
+            <input type="email" placeholder="Correo Electrónico" name="email" required>
+          </div>
           </div>
           <div class="row">
             <textarea placeholder="Mensaje" rows="3" name="msj" required></textarea>
