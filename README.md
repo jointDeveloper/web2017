@@ -24,16 +24,6 @@
 * Maria Victoria Gasca
 * Sebastian Duque Restrepo `sebas.duque@utp.edu.co`
 * Yensy Gómez Villegas `yensy@sirius.utp.edu.co`
-* ...
-* ...
-
-### Proyectos
-* Creación del portafolio de cada integrante de JointDeveloper.
-* Creación página Micro-red Eléctrica.
-
-___
-
-## Guía de Contribución a la Comunidad
 
 ___
 #### _Más Información_
