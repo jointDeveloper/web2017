@@ -3,6 +3,7 @@ $(function() {
   var perfiles = [];
   var index = 0;
   var size = 0;
+  var imageCarousel = null;
 
 $.getJSON("./data.json", function (data) {
     data.perfiles.forEach(function(perfil) {
@@ -15,7 +16,7 @@ $.getJSON("./data.json", function (data) {
 
     view();
     size = perfiles.length;
-    setInterval(moveRight, 2000);
+    imageCarousel = setInterval(moveRight, 2000);
     $('#left').click(moveLeft);
     $('#right').click(moveRight);
     $('#perfiles').click(viewProfile);
@@ -27,6 +28,12 @@ $.getJSON("./data.json", function (data) {
     if (id != 'perfiles') window.location = name;
   });
 
+  $('.link').hover(function() {
+    window.clearInterval(imageCarousel);
+  }, function() {
+    imageCarousel = setInterval(moveRight, 2800);
+  });
+  
   function moveLeft() {
     index--;
     index = (index < 0)? size - 1 : index;
