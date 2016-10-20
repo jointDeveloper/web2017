@@ -7,14 +7,17 @@
   },
   "dependencies": {
     "body-parser": "~1.15.2",
+    "colors": "1.1.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "ejs": "~2.5.1",
     "express": "~4.14.0",
     "express-partials": "^0.3.0",
     "morgan": "~1.7.0",
-    "nodemailer": "2.5.0",
-    "nodemon": "1.10.2",
-    "serve-favicon": "~2.3.0"
+    "nodemailer": "2.6.4",
+    "nodemon": "1.11.0",
+    "resourceful": "0.3.5",
+    "serve-favicon": "~2.3.0",
+    "uuid": "2.0.3"
   }
 }

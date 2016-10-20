@@ -2,7 +2,7 @@ const express = require('express');
 const controllers = require('../controllers');
 var router = express.Router();
 
-module.exports = function(app, mountPoint) {
+module.exports = (app, mountPoint) => {
   // GET
   router.get('/', controllers.home);
   // router.get('/acercade', controllers.about);
@@ -19,6 +19,7 @@ module.exports = function(app, mountPoint) {
 
   // POST
   router.post('/contacto', controllers.jointEmail);
+  router.post('/eventos/:eventName', controllers.createForm);
   router.post('/contacto/:name', controllers.perfilEmail);
 
   app.use(mountPoint, router);

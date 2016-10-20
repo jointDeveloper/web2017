@@ -3,55 +3,73 @@ const nodemailer = require('nodemailer');
 const config = require('../config');
 const Email = nodemailer.createTransport({service: 'Gmail', auth: config.auth});
 const emailList = require('../data/emails.json');
+const Form = require('../models/form');
+const uuid = require('uuid');
 
-exports.home = function (req, res) {
+exports.home =  (req, res) => {
   res.render('index');
 }
 
-exports.portafolio = function(req, res) {
+exports.portafolio = (req, res) => {
   // res.render('portafolio');
   res.render('work_in_progress');
 }
 
-exports.perfiles = function(req, res) {
+exports.perfiles = (req, res) => {
   res.render('perfiles');
   // res.render('work_in_progress');
 }
 
-exports.perfil = function(req, res) {
+exports.perfil = (req, res) => {
   res.render('profiles/' + req.params.name);
   // res.render('work_in_progress');
 }
 
-exports.comunidad = function(req, res) {
+exports.comunidad = (req, res) => {
   res.render('comunidad');
   // res.render('work_in_progress');
 }
 
-exports.blog = function(req, res) {
+exports.blog = (req, res) => {
   // res.render('blog');
   res.render('work_in_progress');
 }
 
-exports.eventos = function(req, res) {
+exports.eventos = (req, res) => {
   res.render('eventos');
   // res.render('work_in_progress');
 }
 
-exports.evento = function(req, res) {
-  res.render(req.params.eventName);
+exports.evento = (req, res) => {
+  res.render('events/' + req.params.eventName);
   // res.render('work_in_progress');
 }
 
-exports.contacto = function(req, res) {
+exports.createForm = (req, res) => {
+  Form.create({
+    id: uuid.v4(),
+    email: req.body.email,
+    name1: req.body.nameH,
+    gender: req.body.gender,
+    name2: req.body.nameM
+  }, (err, data) => {
+    if (err) {
+      console.log('Error: ', err);
+      return res.send(500, err);
+    }
+    res.redirect('/');
+  });
+}
+
+exports.contacto = (req, res) => {
   res.render('contacto');
 }
 
-exports.notFound = function(req, res) {
+exports.notFound = (req, res) => {
   res.render('notFound');
 }
 
-exports.jointEmail = function(req, res) {
+exports.jointEmail = (req, res) => {
   Email.sendMail({
     from: config.auth.user,
     to: 'developerjoint@gmail.com',
@@ -64,7 +82,7 @@ exports.jointEmail = function(req, res) {
   res.redirect('/');
 }
 
-exports.perfilEmail = function(req, res) {
+exports.perfilEmail = (req, res) => {
   const name = req.params.name;
   Email.sendMail({
     from: config.auth.user,
