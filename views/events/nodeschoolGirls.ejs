@@ -1,52 +1,56 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>jointDeveloper</title>
-    <link href="/CSS/fonts.css" rel="stylesheet">
-		<link href="/CSS/index.css" rel="stylesheet">
-		<link rel="icon" type="image/png" href="/IMG/favicon.ico" />
-		<link rel="stylesheet" href="/CSS/font-awesome.min.css">
-		<!--<link href="CSS/perfiles.css" rel="stylesheet">-->
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Linden+Hill:400italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-	  <header>
-			<nav class="container_nav">
-	      <ul class="topnav border" id="menu">
-	        <li style="float: left;"><img src="/IMG/robot.png" class="robo-nav" /></li>
-	        <li style="float: left;"><a id="logo-nav" href="/" style="padding-right: 2px">jointDeveloper</a></li>
-					<li><a href="/contacto" class="group"><span>Contacto</span></a></li>
-					<li><a href="/blog" class="group"><span>Blog</span></a></li>
-					<!--<li><a href="/apoyanos" class="group"><span>Apóyanos</span></a></li>-->
-					<li><a href="/eventos" class="group"><span>Eventos</span></a></li>
-					<li><a href="/perfiles" class="group"><span>Perfiles</span></a></li>
-					<li><a href="/portafolio" class="group"><span>Portafolio</span></a></li>
-					<li><a href="/comunidad" class="group"><span>Comunidad</span></a></li>
-	      </ul>
-	    </nav>
-	  </header>
-		<div class="row intro-index">
-			<img src="./IMG/navlogo.png" alt="" />
-		</div>
-		<main id="inicio">
+<% include ../profiles/header.ejs %>
+    <link href="/CSS/index.css" rel="stylesheet">
+    <title>Incripciones</title>
+  </head>
+  <body>
+     <header>
+      <nav class="container_nav">
+        <ul class="topnav border" id="menu">
+          <li style="float: left;"><img src="/IMG/robot.png" class="robo-nav" /></li>
+          <li style="float: left;"><a id="logo-nav" href="/" style="padding-right: 2px">jointDeveloper</a></li>
+          <li><a href="/contacto" class="group"><span>Contacto</span></a></li>
+          <li><a href="/blog" class="group"><span>Blog</span></a></li>
+          <!--<li><a href="/apoyanos" class="group"><span>Apóyanos</span></a></li>-->
+          <li><a href="/eventos" class="group"><span>Eventos</span></a></li>
+          <li><a href="/perfiles" class="group"><span>Perfiles</span></a></li>
+          <li><a href="/portafolio" class="group"><span>Portafolio</span></a></li>
+          <li><a href="/comunidad" class="group"><span>Comunidad</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row intro-index" style="padding-top: 50px;">
+      <img src="../IMG/navlogo.png" alt="" />
+    </div>
+		<main id="inicio" style="padding: 0;">
+      <div id="contacto1" class="row">
+        <div class="card-title">
+          <h3 class="center">Contacto</h3>
+        </div>
+      </div>
       <div class="container">
-        <div class="row">
-          <form action="/eventos/nodeschoolGirls" method="post">
-            <br>Correo:<br>
-            <input type="email" name="email" value="" required><br>
-            Nombre:<br>
-            <input type="text" name="nameH" value="" required><br>
-            Genero:<br>
-            <select name="gender" required>
-              <option value="female">Femenino</option>
-              <option value="male">Masculino</option>
-            </select><br>
-            <div id="opt"></div>
-            <input type="submit" name="send" value="ENVIAR">
-          </form>
+        <div class="card" style="background: #444; min-height: auto;">
+          <div class="row">
+            <form action="/eventos/nodeschoolGirls" method="post">
+              <div class="row">
+                <div class="col-6">
+                  <input type="email" name="email" value="" required placeholder="Correo Electrónico"><br>
+                </div>
+                <div class="col-6">
+                  <input type="text" name="nameH" value="" required placeholder="Nombre Completo"><br>
+                </div>
+              </div>
+              Genero:<br>
+              <select name="gender" required>
+                <option value="female">Femenino</option>
+                <option value="male">Masculino</option>
+              </select><br>
+              <div id="opt"></div>
+              <div class="center">
+                <input class="btn" type="submit" name="send" value="ENVIAR">
+              </div>
+            </form>
+          </div>
+          
         </div>
       </div>
 		</main>

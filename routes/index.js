@@ -12,7 +12,7 @@ module.exports = (app, mountPoint) => {
   // router.get('/apoyanos', controllers.apoyanos);
   router.get('/comunidad', controllers.comunidad);
   router.get('/blog', controllers.blog);
-  // router.get('/registrados', controllers.registers);
+  router.get('/registrados', controllers.registers);
   router.get('/eventos', controllers.eventos);
   router.get('/eventos/:eventName', controllers.evento);
   router.get('/contacto', controllers.contacto);
