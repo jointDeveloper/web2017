@@ -45,6 +45,23 @@ exports.evento = (req, res) => {
   // res.render('work_in_progress');
 }
 
+exports.registers = (req, res) => {
+  let users = [];
+  Form.all((err, data) => {
+    if (err) {
+      console.log('Error: ', err);
+      return res.send(500, err);
+    }
+    for (let user in data) {
+      users.push({
+        name: data[user].name1,
+        email: data[user].email
+      });
+    }
+    res.json({users: users});
+  });
+}
+
 exports.createForm = (req, res) => {
   Form.create({
     id: uuid.v4(),
