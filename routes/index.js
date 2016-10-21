@@ -1,6 +1,6 @@
 const express = require('express');
 const controllers = require('../controllers');
-var router = express.Router();
+const router = express.Router();
 
 module.exports = (app, mountPoint) => {
   // GET
