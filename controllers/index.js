@@ -55,9 +55,17 @@ exports.registers = (req, res) => {
     for (let user in data) {
       users.push({
         name: data[user].name1,
-        email: data[user].email
+        email: data[user].email1
       });
+
+      if (data[user].name2) {
+        users.push({
+          name: data[user].name2,
+          email: data[user].email2
+        });
+      }
     }
+
     res.json({users: users});
   });
 }
@@ -65,10 +73,11 @@ exports.registers = (req, res) => {
 exports.createForm = (req, res) => {
   Form.create({
     id: uuid.v4(),
-    email: req.body.email,
+    email1: req.body.email1,
     name1: req.body.nameH,
     gender: req.body.gender,
-    name2: req.body.nameM
+    name2: req.body.nameM,
+    email2: req.body.email2
   }, (err, data) => {
     if (err) {
       console.log('Error: ', err);
