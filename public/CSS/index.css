@@ -137,6 +137,7 @@ ul.topnav li { float: right; }
   clear: both;
   display: block;
   margin: auto;
+  max-width: 1200px;
   width: 100%;
 }
 
