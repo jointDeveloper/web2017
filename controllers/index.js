@@ -6,6 +6,19 @@ const emailList = require('../data/emails.json');
 const Form = require('../models/form');
 const uuid = require('uuid');
 
+// Get unique values in any array
+Array.prototype.getUnique = function () {
+  let u = {}, a = [];
+  for(let i = 0; i < this.length; ++i) {
+    if(u.hasOwnProperty(this[i]) || !this[i]) {
+      continue;
+    }
+    a.push(this[i]);
+    u[this[i]] = 1;
+  }
+  return a;
+}
+
 exports.home =  (req, res) => {
   res.render('index');
 }
@@ -53,20 +66,14 @@ exports.registers = (req, res) => {
       return res.send(500, err);
     }
     for (let user in data) {
-      users.push({
-        name: data[user].name1,
-        email: data[user].email1
-      });
+      users.push(data[user].email1);
 
       if (data[user].name2) {
-        users.push({
-          name: data[user].name2,
-          email: data[user].email2
-        });
+        users.push(data[user].email2);
       }
     }
 
-    res.json({users: users});
+    res.json({users: users.getUnique()});
   });
 }
 
