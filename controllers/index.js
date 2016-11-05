@@ -66,10 +66,10 @@ exports.registers = (req, res) => {
       return res.send(500, err);
     }
     for (let user in data) {
-      users.push(data[user].email1);
+      users.push(data[user].name1);
 
       if (data[user].name2) {
-        users.push(data[user].email2);
+        users.push(data[user].name2);
       }
     }
 
