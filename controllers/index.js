@@ -58,6 +58,11 @@ exports.evento = (req, res) => {
   // res.render('work_in_progress');
 }
 
+exports.registro = (req, res) => {
+  res.render('registro');
+  // res.render('work_in_progress');
+}
+
 exports.registers = (req, res) => {
   let users = [];
   Form.all((err, data) => {
