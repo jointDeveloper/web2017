@@ -1,7 +1,7 @@
 {
   "next": [
     {
-      "alert": "Próximo evento",
+      "alert": "Próximo charla",
       "title": "Introducción jQuery",
       "author": "baldor",
       "profile": {
@@ -11,6 +11,21 @@
       "content": "",
       "date": "23 Jun 2017",
       "hour": "00:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "R-003",
+      "image": ""
+    },
+    {
+      "alert": "Próximo evento",
+      "title": "jointDeveloper Kids",
+      "author": "baldor",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "23 Jun 2017",
+      "hour": "12:00 pm",
       "place": "Universidad Tecnológica de Pereira",
       "room": "R-003",
       "image": ""

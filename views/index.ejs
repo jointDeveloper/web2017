@@ -82,18 +82,25 @@
                 Comunidad y Semillero de Investigación de la<br /> <b>Universidad Tecnológica de Pereira</b>
               </h1>
               <div class="row">
-                <% for (event in next) { %>
-                  <% if(next[event].title !== ``) { %>
-                    <div class="col-lg-<%= 12 / next.length %>">
-                      <h1 class="brand-heading oswald"><%= next[event].alert %></h1>
-                      <div class="brand-heading oswald"><%= next[event].title %></div>
-                      <h3><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[event].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[event].hour %></h3>
+                  <% if(next[0].title !== ``) { %>
+                    <div class="col-lg-12">
+                      <h1 class="brand-heading oswald"><%= next[0].alert %></h1>
+                      <div class="brand-heading oswald"><%= next[0].title %></div>
+                      <h3><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h3>
+                      <p class="oswald">
+                        <b>Más información</b>
+                      </p>
+                    </div>
+                  <% } else { %>
+                    <div class="col-lg-12">
+                      <h1 class="brand-heading oswald"><%= next[1].alert %></h1>
+                      <div class="brand-heading oswald"><%= next[1].title %></div>
+                      <h3><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h3>
                       <p class="oswald">
                         <b>Más información</b>
                       </p>
                     </div>
                   <% } %>
-                <% } %>
               </div>
               <a href="#about" class="btn btn-circle page-scroll">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -159,24 +166,22 @@
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
             <% let j = 0 %>
-            <% for (event in next) { %>
-              <% if(next[event].title !== ``) { %>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-12 event">
-                    <h2><%= next[event].alert %></h2>
-                    <p class="oswald"><%= next[event].title %></p>
-                    <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[event].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[event].hour %></h4>
-                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[event].place %></h4>
-                    <a class="btn">INSCRIPCIÓN</a>
-                  </div>
-                  <% j++ %>
-              <% } %>
+            <% if(next[0].title !== ``) { %>
+              <div class="row">
+                <div class="col-lg-4 col-sm-12 event">
+                  <h2><%= next[0].alert %></h2>
+                  <p class="oswald"><%= next[0].title %></p>
+                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[0].place %></h4>
+                  <a class="btn">INSCRIPCIÓN</a>
+                </div>
             <% } %>
+            <% j++ %>
             <% for (charla in charlas) { %>
               <% if (j % 3 === 0) { %>
                 <div class="row">
               <% } %>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-12 event">
                 <h2><%= charlas[charla].title %></h2>
               </div>
               <% j++ %>
@@ -191,6 +196,18 @@
             <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
+            <% let k = 0 %>
+            <% if(next[1].title !== ``) { %>
+              <div class="row">
+                <div class="col-lg-4 col-sm-12 event">
+                  <h2><%= next[1].alert %></h2>
+                  <p class="oswald"><%= next[1].title %></p>
+                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[1].place %></h4>
+                  <a class="btn">INSCRIPCIÓN</a>
+                </div>
+            <% } %>
+            <% k++ %>
           </div>
         </div>
       </section>
