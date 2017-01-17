@@ -91,7 +91,7 @@
                         <b>Más información</b>
                       </p>
                     </div>
-                  <% } else { %>
+                  <% } else if(next[1].title !== ``) { %>
                     <div class="col-lg-12">
                       <h1 class="brand-heading oswald"><%= next[1].alert %></h1>
                       <div class="brand-heading oswald"><%= next[1].title %></div>
@@ -199,7 +199,7 @@
             <% let k = 0 %>
             <% if(next[1].title !== ``) { %>
               <div class="row">
-                <div class="col-lg-4 col-sm-12 event">
+                <div class="col-lg-6 col-sm-12 event">
                   <h2><%= next[1].alert %></h2>
                   <p class="oswald"><%= next[1].title %></p>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
@@ -276,10 +276,11 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA58q2BYIJqsv8FOT5Rhh_3pXWnrPgmoZs"></script>-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAwKTx32i9LUE1KGf3TY5cQ7DQuGfRGgeM "></script>
+    <%# <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAwKTx32i9LUE1KGf3TY5cQ7DQuGfRGgeM "></script>%>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script src="js/height.js"></script>
 
   </body>
 
