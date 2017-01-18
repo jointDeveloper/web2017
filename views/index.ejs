@@ -212,13 +212,13 @@
             <% } %>
             <% for (event in events) { %>
               <% k++; %>
-              <% if (j % 2 === 1) { %>
+              <% if (k % 2 === 1) { %>
                 <div class="row">
               <% } %>
               <div class="col-lg-6 col-sm-12 event">
                 <h2><%= events[event].title %></h2>
               </div>
-              <% if (j % 2 === 0) { %>
+              <% if (k % 2 === 0) { %>
                 </div>
               <% } %>
             <% } %>
