@@ -6,7 +6,7 @@ exports.index = function(req, res) {
   const next = event.next;
   const charla = event.charlas;
   const {events} = event;
-  console.log(events);
+  // console.log(events);
 
   res.render('index', {
                         profiles: profiles,

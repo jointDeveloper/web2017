@@ -457,9 +457,12 @@ a:focus {
 }
 
 .event {
-  background: #ec7ca2;
+  background-image:url('/img/charla/jQuery/intro.jpg');
+  background-color: #e097b0;
+  background-blend-mode: multiply;
+  background-size: cover;
   color: #fff;
-  padding: 10px;
+  padding: 0;
 }
 
 .event h2 {
@@ -508,30 +511,14 @@ a:focus {
 
 
 
-#box    {
-  width:300px;
-  border-bottom:2px solid #fff;
-  border-right:2px solid #fff;
-  margin:5% auto 0 auto;
-  background-image:url('/img/charla/jQuery/intro.jpg');
-  background-color: #e097b0;
-  background-blend-mode: multiply;
-  background-size:cover;
-    border-radius:5px;
-    overflow:hidden;
+.overlay {
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  padding: 10px;
+  opacity:0;
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
 }
 
-#overlay    {  background:rgba(0,0,0,.75);
-               text-align:center;
-               padding:45px 0 66px 0;
-               opacity:0;
-               -webkit-transition: opacity .7s ease;
--moz-transition: opacity .7s ease;}
-
-#box:hover #overlay {
+.event:hover .overlay {
                opacity:1;}
-
-#plus       {  font-family:Helvetica;
-               font-weight:900;
-               color:rgba(255,255,255,.85);
-               font-size:96px;}

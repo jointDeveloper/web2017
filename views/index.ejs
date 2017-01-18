@@ -169,7 +169,7 @@
             <% if(next[0].title !== ``) { %>
               <% j++; event = true; %>
               <div class="row">
-                <div class="col-lg-4 col-sm-12 event">
+                <div class="col-lg-4 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[0].alert %></h2>
                   <p class="oswald"><%= next[0].title %></p>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
@@ -183,7 +183,9 @@
                 <div class="row">
               <% } %>
               <div class="col-lg-4 col-sm-12 event">
-                <h2><%= charlas[charla].title %></h2>
+                <div class="overlay">
+                  <h2><%= charlas[charla].title %></h2>
+                </div>
               </div>
               <% if (j % 3 === 0) { %>
                 </div>
@@ -199,7 +201,7 @@
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
 
-
+<!--
             <div id="box">
 
               <div id="overlay">
@@ -207,7 +209,7 @@
                 <button>Botón</button>
               </div>
 
-            </div>
+            </div> -->
 
 
             <% let k = 0; let ev = false  %>
@@ -228,7 +230,9 @@
                 <div class="row">
               <% } %>
               <div class="col-lg-6 col-sm-12 event">
-                <h2><%= events[event].title %></h2>
+                <div class="overlay">
+                  <h2><%= events[event].title %></h2>
+                </div>
               </div>
               <% if (k % 2 === 0) { %>
                 </div>
