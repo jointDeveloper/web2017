@@ -516,8 +516,8 @@ a:focus {
   text-align:center;
   padding: 10px;
   opacity:0;
-  -webkit-transition: opacity .7s ease;
-  -moz-transition: opacity .7s ease;
+  -webkit-transition: opacity .4s ease;
+  -moz-transition: opacity .4s ease;
 }
 
 .event:hover .overlay {
