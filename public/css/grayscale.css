@@ -290,8 +290,6 @@ a:focus {
 }
 
 .events {
-  height: auto;
-  min-height: 100%;
   background: #eee;
 }
 

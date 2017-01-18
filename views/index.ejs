@@ -165,11 +165,9 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <% let j = 0 %>
-            <% let event = false; %>
+            <% let j = 0; let event = false; %>
             <% if(next[0].title !== ``) { %>
-              <% event = true; %>
-              <% j++ %>
+              <% j++; event = true; %>
               <div class="row">
                 <div class="col-lg-4 col-sm-12 event">
                   <h2><%= next[0].alert %></h2>
@@ -180,7 +178,7 @@
                 </div>
             <% } %>
             <% for (charla in charlas) { %>
-              <% j++ %>
+              <% j++; %>
               <% if (j % 3 === 1) { %>
                 <div class="row">
               <% } %>
@@ -191,20 +189,18 @@
                 </div>
               <% } %>
             <% } %>
-            <% console.log(charlas.length) %>
             <% if (event) { %>
               <% if ((charlas.length + 1) % 3 !== 0) { %>
                 </div>
-                <% console.log("Estoy aqui") %>
               <% } %>
             <% } else if (charlas.length % 3 !== 0) { %>
               </div>
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-            <% let k = 0 %>
+            <% let k = 0; let ev = false  %>
             <% if(next[1].title !== ``) { %>
-              <% k++ %>
+              <% k++; ev = true %>
               <div class="row">
                 <div class="col-lg-6 col-sm-12 event">
                   <h2><%= next[1].alert %></h2>
@@ -214,6 +210,26 @@
                   <a class="btn">INSCRIPCIÓN</a>
                 </div>
             <% } %>
+            <% for (event in events) { %>
+              <% k++; %>
+              <% if (j % 2 === 1) { %>
+                <div class="row">
+              <% } %>
+              <div class="col-lg-6 col-sm-12 event">
+                <h2><%= events[event].title %></h2>
+              </div>
+              <% if (j % 2 === 0) { %>
+                </div>
+              <% } %>
+            <% } %>
+            <% if (ev) { %>
+              <% if ((events.length + 1) % 2 !== 0) { %>
+                </div>
+              <% } %>
+            <% } else if (events.length % 2 !== 0) { %>
+              </div>
+              <% } %>
+            <br />
           </div>
         </div>
       </section>
