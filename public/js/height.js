@@ -1,9 +1,7 @@
 (function($) {
   $(function() {
     function changeHeight(element) {
-      console.log('hola');
       let el = $("." + element);
-      console.log(el.length);
       let maxHeight = 0;
 
       for (let i = 0; i < el.length; i++) {
@@ -11,7 +9,7 @@
         maxHeight = Math.max(maxHeight, height);
       }
 
-      for (let i = 0; i < el.length; i++) 
+      for (let i = 0; i < el.length; i++)
         $(el[i]).css('height', `${maxHeight}px`);
     }
 

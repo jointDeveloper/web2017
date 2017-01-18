@@ -2,7 +2,7 @@
   "next": [
     {
       "alert": "Próximo charla",
-      "title": "Introducción jQuery",
+      "title": "Introducción a algo",
       "author": "baldor",
       "profile": {
         "username": "baldor"
@@ -59,7 +59,78 @@
       "place": "Universidad Tecnológica de Pereira",
       "room": "",
       "image": ""
+    },
+    {
+      "title": "jQuery",
+      "author": "",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "",
+      "hour": "",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": ""
+    },
+    {
+      "title": "jQuery",
+      "author": "",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "",
+      "hour": "",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": ""
     }
   ],
-  "events:":[]
+  "events:":[
+    {
+      "title": "jQuery",
+      "author": "",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "",
+      "hour": "",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": ""
+    },
+    {
+      "title": "jQuery",
+      "author": "",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "",
+      "hour": "",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": ""
+    },
+    {
+      "title": "jQuery",
+      "author": "",
+      "profile": {
+        "username": "baldor"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "",
+      "hour": "",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": ""
+    }
+  ]
 }
