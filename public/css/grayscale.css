@@ -466,14 +466,14 @@ a:focus {
   padding: 0;
 }
 
-.event h2 {
+.event h3 {
   margin: 0 0 30px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
 }
 
 .event p,
-.event h3,
+.event h2,
 .event h4,
 .event h5,
 .event h6 {
