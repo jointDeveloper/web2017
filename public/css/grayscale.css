@@ -457,8 +457,9 @@ a:focus {
 }
 
 .event {
-  background-image:url('/img/charla/jQuery/intro.jpg');
-  background-color: #e097b0;
+  /*background-image:url('/img/charla/jQuery/intro.jpg');*/
+  background-color: #ec7ca2;
+  background-position: center;
   background-blend-mode: multiply;
   background-size: cover;
   color: #fff;
@@ -516,8 +517,12 @@ a:focus {
   text-align:center;
   padding: 10px;
   opacity:0;
-  -webkit-transition: opacity .4s ease;
-  -moz-transition: opacity .4s ease;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+}
+
+.overlay img {
+  height: 60px;
 }
 
 .event:hover .overlay {

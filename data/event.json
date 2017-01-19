@@ -33,6 +33,77 @@
   ],
   "charlas":[
     {
+      "title": "HTML/CSS II",
+      "author": "",
+      "profile": {
+        "username": "alejandro"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "15 Oct 2016",
+      "hour": "14:00-17:00",
+      "place": "Edificio 3-Universidad Tecnológica de Pereira",
+      "room": "3-205(R-205)",
+      "image": "HTML-CSS-II"
+    },
+    {
+      "title": "Repetición HTML/CSS I",
+      "author": "",
+      "profile": {
+        "username": "angelica"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "1 Oct 2016",
+      "hour": "14:00-17:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": "r_HTML-CSS-I"
+    },
+    {
+      "title": "HTML/CSS I",
+      "author": "",
+      "profile": {
+        "username": "angelica"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "20 Ago 2016",
+      "hour": "14:00-17:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": "HTML-CSS-I"
+    },
+    {
+      "title": "Pensamiento Lógico",
+      "author": "",
+      "profile": {
+        "username": "yen",
+        "username": "vicky"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "20 Ago 2016",
+      "hour": "14:00-17:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": "pensamiento_logico"
+    },
+    {
+      "title": "Introducción a Linux",
+      "author": "Iván Dario",
+      "profile": {
+        "username": ""
+      },
+      "Resume": "",
+      "content": "",
+      "date": "17 Sep 2016",
+      "hour": "14:00-17:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": "linux"
+    },
+    {
       "title": "jQuery",
       "author": "",
       "profile": {
@@ -40,53 +111,11 @@
       },
       "Resume": "",
       "content": "",
-      "date": "",
-      "hour": "",
-      "place": "Universidad Tecnológica de Pereira",
-      "room": "",
+      "date": "2 Jul 2016",
+      "hour": "14:00-17:00",
+      "place": "Edificio 3-Universidad Tecnológica de Pereira",
+      "room": "3-211(R-211)",
       "image": "jQuery"
-    },
-    {
-      "title": "jQuery",
-      "author": "",
-      "profile": {
-        "username": "baldor"
-      },
-      "Resume": "",
-      "content": "",
-      "date": "18 Ene 2017",
-      "hour": "18:00",
-      "place": "Universidad Tecnológica de Pereira",
-      "room": "",
-      "image": ""
-    },
-    {
-      "title": "jQuery",
-      "author": "",
-      "profile": {
-        "username": "baldor"
-      },
-      "Resume": "",
-      "content": "",
-      "date": "",
-      "hour": "",
-      "place": "Universidad Tecnológica de Pereira",
-      "room": "",
-      "image": ""
-    },
-    {
-      "title": "jQuery",
-      "author": "",
-      "profile": {
-        "username": "baldor"
-      },
-      "Resume": "",
-      "content": "",
-      "date": "",
-      "hour": "",
-      "place": "Universidad Tecnológica de Pereira",
-      "room": "",
-      "image": ""
     }
   ],
   "events":[

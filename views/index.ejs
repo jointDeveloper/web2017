@@ -182,10 +182,16 @@
               <% if (j % 3 === 1) { %>
                 <div class="row">
               <% } %>
-              <div class="col-lg-4 col-sm-12 event">
+              <div class="col-lg-4 col-sm-12 event"
+                <% if (charlas[charla].image !== ``) { %>
+                  style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
+                <% } %>
+              >
                 <div class="overlay">
+                  <% if (charlas[charla].image !== ``) { %>
+                    <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
+                  <% } %>
                   <h2><%= charlas[charla].title %></h2>
-
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= charlas[charla].place %></h4>
                   <a class="btn">DETALLES</a>
