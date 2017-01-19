@@ -1,40 +1,53 @@
 #!/usr/bin/env node
 
-const os = require('os');
-const app = require('../app');
-const debug = require('debug')('test:server');
-const http = require('http');
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('webjointdeveloper:server');
+var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = process.env.PORT || '3000';
-const server = http.createServer(app);
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
- server.listen(port, (err) => {
-   if (err) throw err;
-   console.log('Starting server\nAvailable on:'.yellow);
-   const ifaces = os.networkInterfaces();
-   Object.keys(ifaces).forEach((dev) => {
-     ifaces[dev].forEach((details) => {
-       if (details.family === 'IPv4') {
-         console.log(` http://${details.address}:${port}`.green);
-       }
-     });
-   });
- });
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
 
- server.on('error', onError);
+/**
+ * Normalize a port into a number, string, or false.
+ */
 
-process.on('SIGINT', () => {
-  console.log("\nShutdown the server, bye (:".yellow);
-  process.exit();
-});
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
 
 /**
  * Event listener for HTTP server "error" event.
@@ -45,7 +58,7 @@ function onError(error) {
     throw error;
   }
 
-  const bind = typeof port === 'string'
+  var bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -62,4 +75,16 @@ function onError(error) {
     default:
       throw error;
   }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
 }
