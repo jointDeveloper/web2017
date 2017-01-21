@@ -134,46 +134,48 @@
   ],
   "events":[
     {
-      "title": "jQuery",
+      "title": "jointDeveloper Kids",
       "author": "",
       "profile": {
-        "username": "baldor"
+        "username": ""
       },
-      "Resume": "",
+      "Resume": "Evento patrocinado por el Jardín Botánico de la Universidad Tecnológica de Pereira en el cual compartimos una tarde de mucho aprendizaje con niños entre los 4 a 12 años",
       "content": "",
-      "date": "",
-      "hour": "",
+      "date": "7 Dic 2016",
+      "hour": "14:00-18:00",
       "place": "Universidad Tecnológica de Pereira",
       "room": "",
-      "image": ""
+      "image": "kids"
     },
     {
-      "title": "jQuery",
+      "title": "Nodeschool jointDeveloper",
       "author": "",
       "profile": {
-        "username": "baldor"
+        "username": "carolinaJimenez",
+        "username": "",
+        "username": ""
       },
       "Resume": "",
       "content": "",
-      "date": "",
-      "hour": "",
+      "date": "5 Nov 2016",
+      "hour": "08:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
       "room": "",
-      "image": ""
+      "image": "nodeschool"
     },
     {
-      "title": "jQuery",
+      "title": "CodeParty-EpicQueen",
       "author": "",
       "profile": {
         "username": "baldor"
       },
       "Resume": "",
       "content": "",
-      "date": "",
+      "date": "Nov 2015",
       "hour": "",
       "place": "Universidad Tecnológica de Pereira",
       "room": "",
-      "image": ""
+      "image": "codeparty"
     }
   ]
 }

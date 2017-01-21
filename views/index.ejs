@@ -210,18 +210,6 @@
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-
-<!--
-            <div id="box">
-
-              <div id="overlay">
-                <span id="plus">Hola</span><br />
-                <button>Botón</button>
-              </div>
-
-            </div> -->
-
-
             <% let k = 0; let ev = false  %>
             <% if(next[1].title !== ``) { %>
               <% k++; ev = true %>
@@ -239,9 +227,19 @@
               <% if (k % 2 === 1) { %>
                 <div class="row">
               <% } %>
-              <div class="col-lg-6 col-sm-12 event">
+              <div class="col-lg-6 col-sm-12 event"
+                <% if (events[event].image !== ``) { %>
+                  style="background-image: url(/img/event/<%= events[event].image %>/intro.jpg)"
+                <% } %>
+              >
                 <div class="overlay">
-                  <h2><%= events[event].title %></h2>
+                  <% if (events[event].image !== ``) { %>
+                    <img src="/img/event/<%= events[event].image %>/logo.png" />
+                  <% } %>
+                  <h3><%= events[event].title %></h3>
+                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= events[event].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= events[event].hour %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= events[event].place %></h4>
+                  <a class="btn">DETALLES</a>
                 </div>
               </div>
               <% if (k % 2 === 0) { %>

@@ -508,7 +508,7 @@ a:focus {
 }
 
 .overlay {
-    background:rgba(0,0,0,.75);
+    background:rgba(100,100,100,.7);
     text-align:center;
     padding: 10px;
     opacity:0;
