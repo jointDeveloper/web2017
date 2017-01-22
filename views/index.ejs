@@ -124,20 +124,43 @@
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Miembros</h1>
-            <% let i = 0; %>
-            <%  for (profile in profiles) { %>
-              <% if(i % 4 === 0) { %>
-                <div class="row">
+          <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <% let amount = 8, keys = Object.keys(profiles); %>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
+                <% if (i == 0) { %>
+                  <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
+                <% } else { %>
+                  <li data-target="#myCarousel" data-slide="<%= i %>"></li>
+                <% } %>
               <% } %>
-              <div class="col-lg-3 col-sm-6 col-xs-6">
-                <img src="<%= profiles[profile].img %>" class="profileImg" alt="" />
-                <h4><%= profiles[profile].name %></h4>
-              </div>
-              <% if(i % 4 === 3) { %>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <% for (let i = 0; i < keys.length; i++) { %>
+                <% let cls = (i === 0) ? "item active" : "item" %>
+                <% if (i % amount === 0) { %>
+                  <div class="<%= cls %>">
+                <% } %>
+                <% if (i % 4 === 0) { %>
+                  <div class="row">
+                <% } %>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6">
+                  <img src="<%= profiles[keys[i]].img %>" class="profileImg" alt="<%= profiles[keys[i]].name %>" />
+                  <h4><%= profiles[keys[i]].name %></h4>
                 </div>
+
+                <% if (i % 4 === 3 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
+                <% if (i % amount === amount - 1 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
               <% } %>
-            <% i++; %>
-            <% } %>
+            </div>
           </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
@@ -165,9 +188,9 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <% let j = 0; let event = false; %>
-            <% if(next[0].title !== ``) { %>
-              <% j++; event = true; %>
+            <% let j = 0, event = false; %>
+            <% if (next[0].title !== ``) { %>
+              <% j++, event = true; %>
               <div class="row">
                 <div class="col-lg-4 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[0].alert %></h2>
@@ -211,7 +234,7 @@
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
             <% let k = 0; let ev = false  %>
-            <% if(next[1].title !== ``) { %>
+            <% if (next[1].title !== ``) { %>
               <% k++; ev = true %>
               <div class="row">
                 <div class="col-lg-6 col-sm-12 event">
@@ -340,7 +363,5 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script src="js/height.js"></script>
-
   </body>
-
 </html>
