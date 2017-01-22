@@ -98,6 +98,20 @@
         "page": "./HTML/perfiles/daniela.html",
         "email": "daniela-zuluaga@utp.edu.co",
         "description": "Estudiante de Ingeniería de Sistemas y Computación."
+      },
+      "oriana": {
+        "name": "Oriana Cadavid",
+        "img": "/img/profile/daniela/profile.jpg",
+        "page": "./HTML/perfiles/daniela.html",
+        "email": "daniela-zuluaga@utp.edu.co",
+        "description": "Estudiante de Ingeniería de Sistemas y Computación."
+      },
+      "vega": {
+        "name": "Juan Sebastián Vega Patiño",
+        "img": "/img/profile/daniela/profile.jpg",
+        "page": "./HTML/perfiles/daniela.html",
+        "email": "daniela-zuluaga@utp.edu.co",
+        "description": "Estudiante de Ingeniería de Sistemas y Computación."
       }
     }
   ]

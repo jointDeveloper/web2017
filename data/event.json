@@ -10,7 +10,7 @@
       "Resume": "",
       "content": "",
       "date": "23 Jun 2017",
-      "hour": "00:00",
+      "hour": "00:00-00:00",
       "place": "Universidad Tecnológica de Pereira",
       "room": "R-003",
       "image": ""
@@ -33,6 +33,20 @@
   ],
   "charlas":[
     {
+      "title": "Materialize CSS",
+      "author": "",
+      "profile": {
+        "username": "carolinaGomez"
+      },
+      "Resume": "",
+      "content": "",
+      "date": "15 Oct 2016",
+      "hour": "14:00-17:00",
+      "place": "Universidad Tecnológica de Pereira",
+      "room": "",
+      "image": "materialize"
+    },
+    {
       "title": "HTML/CSS II",
       "author": "",
       "profile": {
@@ -47,7 +61,7 @@
       "image": "HTML-CSS-II"
     },
     {
-      "title": "Repetición HTML/CSS I",
+      "title": "Repetición: HTML/CSS",
       "author": "",
       "profile": {
         "username": "angelica"

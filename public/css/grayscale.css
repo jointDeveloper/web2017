@@ -277,7 +277,7 @@ a:focus {
     }
 }
 
-.about {
+.about, footer {
   background: #ec7ca2;
 }
 
@@ -285,7 +285,7 @@ a:focus {
   line-height: 1.3;
 }
 
-#about {
+#about, #contact {
   color: #FFF;
 }
 
@@ -451,8 +451,6 @@ a:focus {
 }
 
 .blog {
-  height: auto;
-  min-height: 100%;
   background: #eee;
 }
 
@@ -466,14 +464,14 @@ a:focus {
   padding: 0;
 }
 
-.event h2 {
+.event h3 {
   margin: 0 0 30px;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
 }
 
 .event p,
-.event h3,
+.event h2,
 .event h4,
 .event h5,
 .event h6 {
@@ -486,7 +484,7 @@ a:focus {
   margin: 0 0 10px;
 }
 
-.event .btn {
+.event .btn, #contact .btn {
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 0;
@@ -501,29 +499,58 @@ a:focus {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    /*width: inherit;*/
 }
 
-.event .btn:hover {
+.event .btn:hover, #contact .btn:hover {
     background-color: #fff;
     color: #ec7ca2;
 }
 
-
-
-
-
 .overlay {
-  background:rgba(0,0,0,.75);
-  text-align:center;
-  padding: 10px;
-  opacity:0;
-  -webkit-transition: opacity .5s ease;
-  -moz-transition: opacity .5s ease;
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    padding: 10px;
+    opacity:0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
 }
 
-.overlay img {
-  height: 60px;
+.overlay img { height: 60px; }
+
+.event:hover .overlay { opacity: 1; }
+
+input, textarea {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin: 4px;
+    width: 100%;
 }
 
-.event:hover .overlay {
-               opacity:1;}
+input:focus, textarea:focus {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #ec7ca2;
+}
+
+footer .follow {
+    background: rgba(0,0,0,.75);
+    font-size: 2em;
+}
+
+footer .follow .content-section {
+  padding: 3px 0 0 0;
+  color: #ec7ca2;
+}
+
+footer .follow .content-section a {
+  color: #ec7ca2;
+}

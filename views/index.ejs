@@ -59,7 +59,7 @@
               <a class="page-scroll" href="#comunity">Comunidad</a>
             </li>
             <li>
-              <a class="page-scroll" href="#blog">Blog</a>
+              <a class="page-scroll" href="#blog">Social</a>
             </li>
             <li>
               <a class="page-scroll" href="#contact">Contacto</a>
@@ -124,20 +124,43 @@
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Miembros</h1>
-            <% let i = 0; %>
-            <%  for (profile in profiles) { %>
-              <% if(i % 4 === 0) { %>
-                <div class="row">
+          <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <% let amount = 8, keys = Object.keys(profiles); %>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
+                <% if (i == 0) { %>
+                  <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
+                <% } else { %>
+                  <li data-target="#myCarousel" data-slide="<%= i %>"></li>
+                <% } %>
               <% } %>
-              <div class="col-lg-3 col-sm-6 col-xs-6">
-                <img src="<%= profiles[profile].img %>" class="profileImg" alt="" />
-                <h4><%= profiles[profile].name %></h4>
-              </div>
-              <% if(i % 4 === 3) { %>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <% for (let i = 0; i < keys.length; i++) { %>
+                <% let cls = (i === 0) ? "item active" : "item" %>
+                <% if (i % amount === 0) { %>
+                  <div class="<%= cls %>">
+                <% } %>
+                <% if (i % 4 === 0) { %>
+                  <div class="row">
+                <% } %>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6">
+                  <img src="<%= profiles[keys[i]].img %>" class="profileImg" alt="<%= profiles[keys[i]].name %>" />
+                  <h4><%= profiles[keys[i]].name %></h4>
                 </div>
+
+                <% if (i % 4 === 3 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
+                <% if (i % amount === amount - 1 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
               <% } %>
-            <% i++; %>
-            <% } %>
+            </div>
           </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
@@ -165,9 +188,9 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <% let j = 0; let event = false; %>
-            <% if(next[0].title !== ``) { %>
-              <% j++; event = true; %>
+            <% let j = 0, event = false; %>
+            <% if (next[0].title !== ``) { %>
+              <% j++, event = true; %>
               <div class="row">
                 <div class="col-lg-4 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[0].alert %></h2>
@@ -191,7 +214,7 @@
                   <% if (charlas[charla].image !== ``) { %>
                     <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
                   <% } %>
-                  <h2><%= charlas[charla].title %></h2>
+                  <h3><%= charlas[charla].title %></h3>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= charlas[charla].place %></h4>
                   <a class="btn">DETALLES</a>
@@ -223,7 +246,7 @@
 
 
             <% let k = 0; let ev = false  %>
-            <% if(next[1].title !== ``) { %>
+            <% if (next[1].title !== ``) { %>
               <% k++; ev = true %>
               <div class="row">
                 <div class="col-lg-6 col-sm-12 event">
@@ -267,50 +290,63 @@
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Comunidad</h1>
           <p>Si tienes dudas, preguntas o comentarios, por favor escribenos!
-          <div class="col-lg-6">
-            <br>Comunidad de aprendizaje del lenguaje JavaScript: PereiraJS<p>
-            <p>
-              <a href="http://pereirajs.org" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i>
- pereirajs.org</a>
-              <br><a href="mailto:info@pereirajs.org"><i class="fa fa-envelope" aria-hidden="true"></i>
- info@pereirajs.org</a>
-              <br><a href="https://facebook.com/javascriptpereira" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> /javascriptpereira</a>
-              <br><a href="https://twitter.com/pereirajs_" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> @PereiraJS_</a>
-              <br><a href="https://instagram.com/pereirajs_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> /pereirajs_</a>
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <br>Comunidad <div class="jointDeveloper" style="color: #fff; font-size: 25px;">jointDeveloper</div><p>
-            <p>
-              <a href="http://jointdeveloper.com" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Web jointDeveloper</a>
-              <br><a href="mailto:developerjoint@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
- developerjoint@gmail.com</a>
-              <br><a href="https://facebook.com/jointdeveloper" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>
- /jointDeveloper</a>
-              <br><a href="https://twitter.com/jointdev" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> @jointdev</a>
-              <br><a href="https://instagram.com/jointdeveloper" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> /jointdeveloper</a>
-            </p>
-          </div>
         </div>
       </div>
     </section>
-
-    <!-- Map Section -->
     <div class="blog">
       <section id="blog" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
-          <h1>Blog</h1>
+          <h1>Social</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <a class="twitter-timeline" data-width="100%" data-height="auto" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/jointdev">Tweets by jointdev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-lg-6">
+              <h2>Blog</h2>
+              hola
+            </div>
+          </div>
         </div>
       </section>
     </div>
-
     <!-- Footer -->
     <footer>
       <section id="contact" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Contacto</h1>
+          <div class="col-lg-6 col-sm-12" style="text-align: left;">
+            <p class="oswald">Enlaces de Interés</p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="name" placeholder="NOMBRE" value="" />
+              <input type="text" name="email" placeholder="EMAIL" value="" />
+              <textarea name="text" rows="4" placeholder="MENSAJE"></textarea>
+              <input type="submit" class="btn" name="" value="ENVIAR">
+            </form>
+          </div>
         </div>
       </section>
+      <div class="follow">
+        <section class="container content-section">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-2 col-xs-12 oswald">
+              SÍGUENOS
+            </div>
+            <div class="col-lg-10 col-xs-12">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-slack" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
@@ -329,7 +365,5 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script src="js/height.js"></script>
-
   </body>
-
 </html>

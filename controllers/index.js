@@ -9,9 +9,9 @@ exports.index = function(req, res) {
   // console.log(events);
 
   res.render('index', {
-                        profiles: profiles,
-                        next: next,
-                        charlas: charla,
-                        events: events
-                      });
+    profiles: profiles,
+    next: next,
+    charlas: charla,
+    events: events
+  });
 };
