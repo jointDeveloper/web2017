@@ -145,7 +145,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #FFDE16;
+        background-color: #e097b0;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -539,6 +539,7 @@ input:focus, textarea:focus {
     background-color: #fff;
     border: 2px solid #fff;
     color: #ec7ca2;
+    outline: none;
 }
 
 footer .follow {

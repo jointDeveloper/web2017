@@ -1,8 +1,46 @@
 {
   "sponsor": [
-
+    {
+      "utp": {
+        "name": "Universidad Tecnológica de Pereira",
+        "description": "",
+        "email": "",
+        "link": ""
+      },
+      "sirius": {
+        "name": "Grupo de Investigación Sirius",
+        "description": "",
+        "email": "",
+        "link": ""
+      },
+      "perJS": {
+        "name": "PereiraJS",
+        "description": "",
+        "email": "",
+        "link": ""
+      },
+      "pioneras": {
+        "name": "PionerasDev",
+        "description": "",
+        "email": "",
+        "link": ""
+      }
+    }
   ],
   "assistant": [
-
+    {
+      "pulpa": {
+        "name": "Pulpa",
+        "description": "",
+        "email": "",
+        "link": ""
+      },
+      "in-silico": {
+        "name": "in-Silico",
+        "description": "",
+        "email": "",
+        "link": ""
+      }
+    }
   ]
 }
