@@ -23,14 +23,6 @@
     <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
@@ -238,7 +230,7 @@
             <% if (next[1].title !== ``) { %>
               <% k++; ev = true %>
               <div class="row">
-                <div class="col-lg-6 col-sm-12 event">
+                <div class="col-lg-6 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[1].alert %></h2>
                   <p class="oswald"><%= next[1].title %></p>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
@@ -288,7 +280,11 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Comunidad</h1>
-          <p>Si tienes dudas, preguntas o comentarios, por favor escribenos!
+          <h3>Patrocinadores</h3>
+          <% for (sponsor in sponsors) { %>
+            <img src="/img/sponsor/<%= sponsor %>.png" />
+          <% } %>
+          <h3>Colaboradores</h3>
         </div>
       </div>
     </section>

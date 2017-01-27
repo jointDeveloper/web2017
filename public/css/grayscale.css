@@ -533,6 +533,7 @@ input, textarea {
     font-family: 'Oswald', sans-serif;
     margin: 4px;
     width: 100%;
+    resize: none;
 }
 
 input:focus, textarea:focus {
@@ -555,3 +556,8 @@ footer .follow .content-section {
 footer .follow .content-section a {
   color: #ec7ca2;
 }
+
+footer ::-webkit-input-placeholder { color: #fff; }
+footer :-moz-placeholder { color: #fff; }
+footer ::-moz-placeholder { color: #fff; }
+footer :-ms-input-placeholder { color: #fff; }
