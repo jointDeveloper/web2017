@@ -281,8 +281,24 @@
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Comunidad</h1>
           <h3>Patrocinadores</h3>
+          <% let u = 0; %>
           <% for (sponsor in sponsors) { %>
-            <img src="/img/sponsor/<%= sponsor %>.png" />
+            <% u++; %>
+            <% if (u % 4 === 1) { %>
+              <div class="row">
+            <% } %>
+            <div class="col-lg-3 col-sm-12">
+              <h1><%= u %></h1>
+              <img src="/img/sponsor/<%= sponsor %>.png" class="img-responsive" />
+              <br />
+              <h4><%= sponsors[sponsor].name %></h4>
+            </div>
+            <% if (u % 4 === 0) { %>
+              </div>
+            <% } %>
+          <% } %>
+          <% if (sponsors.length % 4 !== 0) { %>
+            </div>
           <% } %>
           <h3>Colaboradores</h3>
         </div>
