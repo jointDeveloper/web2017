@@ -183,10 +183,11 @@
             </p>
             <div class="carousel slide" id="myCarousel2" data-ride="carousel">
               <% let j = 0, event = false, amountCh = 3; %>
+              <% let offset = (next[0].title !== '') ? 1 : 0; %>
               <div>
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <% for (let i = 0; i < Math.ceil(charlas.length / amountCh); i++) { %>
+                  <% for (let i = 0; i < Math.ceil((charlas.length + offset) / amountCh); i++) { %>
                     <% if (i == 0) { %>
                       <li data-target="#myCarousel2" data-slide="<%= i %>" class="active"></li>
                     <% } else { %>
@@ -197,14 +198,38 @@
               </div>
 
                <!-- Wrapper for slides -->
+               <% let nextCh = false, flag = false, ctn = 1; %>
                <div class="carousel-inner" role="listbox">
-                <% for (let i = 0; i < charlas.length; i++) { %>
-                  <% let clsCh = (i === 0) ? "item active" : "item" %>
-                  <% if (i % amountCh === 0) { %>
-                    <div class="<%= clsCh %>">
-                  <% } %>
-                  <% if (i % 3 === 0) { %>
+                <% if (next[0].title !== '') { %>
+                  <% nextCh = true; %>
+                  <div class="item active">
                     <div class="row">
+                      <div class="col-lg-4 col-sm-12 event" style="padding: 15px;">
+                        <h2><%= next[0].alert %></h2>
+                        <p class="oswald"><%= next[0].title %></p>
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[0].place %></h4>
+                        <a class="btn">INSCRIPCIÓN</a>
+                      </div>
+                <% } %>
+                <% for (let i = 0; i < charlas.length; i++) { %>
+                  <% let clsCh = (i === 0 && !nextCh) ? "item active" : "item" %>
+                  <% if (nextCh) { %>
+                    <% if (flag) { %>
+                      <% if (ctn % amountCh === 0) { %>
+                        <div class="<%= clsCh %>">
+                      <% } %>
+                      <% if (ctn % 3 === 0) { %>
+                        <div class="row">
+                      <% } %>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % amountCh === 0) { %>
+                      <div class="<%= clsCh %>">
+                    <% } %>
+                    <% if (i % 3 === 0) { %>
+                      <div class="row">
+                    <% } %>
                   <% } %>
 
                   <div class="col-lg-4 col-sm-12 event"
@@ -223,12 +248,22 @@
                     </div>
                   </div>
 
-                  <% if (i % 3 === 2 || i === charlas.length - 1) { %>
-                    </div>
+                  <% if (nextCh) { %>
+                    <% if (ctn % 3 === 2 || ctn === charlas.length) { %>
+                      </div>
+                    <% } %>
+                    <% if (ctn % amountCh === amountCh - 1 || ctn === charlas.length) { %>
+                      </div>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % 3 === 2 || i === charlas.length - 1) { %>
+                      </div>
+                    <% } %>
+                    <% if (i % amountCh === amountCh - 1 || i === charlas.length - 1) { %>
+                      </div>
+                    <% } %>
                   <% } %>
-                  <% if (i % amountCh === amountCh - 1 || i === charlas.length - 1) { %>
-                    </div>
-                  <% } %>
+                  <% flag = true, ctn++; %>
                 <% } %>
                </div>
             </div>
@@ -237,10 +272,11 @@
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
             <div class="carousel slide" id="myCarousel3" data-ride="carousel">
               <% let k = 0, ev = false, amountEv = 2  %>
+              <% let offsetEv = (next[1].title !== '') ? 1 : 0; %>
               <div>
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <% for (let i = 0; i < Math.ceil(events.length / amountEv); i++) { %>
+                  <% for (let i = 0; i < Math.ceil((events.length + offsetEv) / amountEv); i++) { %>
                     <% if (i == 0) { %>
                       <li data-target="#myCarousel3" data-slide="<%= i %>" class="active"></li>
                     <% } else { %>
@@ -251,14 +287,38 @@
               </div>
 
               <!-- Wrapper for slides -->
+              <% let nextEv = false, flag2 = false, ctn2 = 1; %>
               <div class="carousel-inner" role="listbox">
-                <% for (let i = 0; i < events.length; i++) { %>
-                  <% let clsEv = (i === 0) ? "item active" : "item" %>
-                  <% if (i % amountEv === 0) { %>
-                    <div class="<%= clsEv %>">
-                  <% } %>
-                  <% if (i % 3 === 0) { %>
+                <% if (next[1].title !== '') { %>
+                  <% nextEv = true; %>
+                  <div class="item active">
                     <div class="row">
+                      <div class="col-lg-6 col-sm-12 event" style="padding: 10px;">
+                        <h2><%= next[1].alert %></h2>
+                        <p class="oswald"><%= next[1].title %></p>
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[1].place %></h4>
+                        <a class="btn">INSCRIPCIÓN</a>
+                      </div>
+                <% } %>
+                <% for (let i = 0; i < events.length; i++) { %>
+                  <% let clsEv = (i === 0 && !nextEv) ? "item active" : "item" %>
+                  <% if (nextEv) { %>
+                    <% if (flag2) { %>
+                      <% if (ctn2 % amountEv === 0) { %>
+                        <div class="<%= clsEv %>">
+                      <% } %>
+                      <% if (ctn2 % 3 === 0) { %>
+                        <div class="row">
+                      <% } %>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % amountEv === 0) { %>
+                      <div class="<%= clsEv %>">
+                    <% } %>
+                    <% if (i % 3 === 0) { %>
+                      <div class="row">
+                    <% } %>
                   <% } %>
 
                   <div class="col-lg-6 col-sm-12 event"
@@ -277,12 +337,22 @@
                     </div>
                   </div>
 
-                  <% if (i % 2 === 1 || i === events.length - 1) { %>
-                    </div>
+                  <% if (nextEv) { %>
+                    <% if (ctn2 % 2 === 1 || ctn2 === events.length) { %>
+                      </div>
+                    <% } %>
+                    <% if (ctn2 % amountEv === amountEv - 1 || ctn2 === events.length) { %>
+                      </div>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % 2 === 1 || i === events.length - 1) { %>
+                      </div>
+                    <% } %>
+                    <% if (i % amountEv === amountEv - 1 || i === events.length - 1) { %>
+                      </div>
+                    <% } %>
                   <% } %>
-                  <% if (i % amountEv === amountEv - 1 || i === events.length - 1) { %>
-                    </div>
-                  <% } %>
+                  <% flag2 = true, ctn2++; %>
                 <% } %>
               </div>
             </div>
