@@ -23,14 +23,6 @@
     <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
@@ -125,18 +117,19 @@
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Miembros</h1>
           <div class="carousel slide" id="myCarousel" data-ride="carousel">
-            <% let amount = 8, keys = Object.keys(profiles); %>
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
-                <% if (i == 0) { %>
-                  <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
-                <% } else { %>
-                  <li data-target="#myCarousel" data-slide="<%= i %>"></li>
+            <% let amount = 4, keys = Object.keys(profiles); %>
+            <div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
+                  <% if (i == 0) { %>
+                    <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
+                  <% } else { %>
+                    <li data-target="#myCarousel" data-slide="<%= i %>"></li>
+                  <% } %>
                 <% } %>
-              <% } %>
-            </ol>
-
+              </ol>
+            </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <% for (let i = 0; i < keys.length; i++) { %>
@@ -188,96 +181,181 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <% let j = 0, event = false; %>
-            <% if (next[0].title !== ``) { %>
-              <% j++, event = true; %>
-              <div class="row">
-                <div class="col-lg-4 col-sm-12 event" style="padding: 10px;">
-                  <h2><%= next[0].alert %></h2>
-                  <p class="oswald"><%= next[0].title %></p>
-                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[0].place %></h4>
-                  <a class="btn">INSCRIPCIÓN</a>
-                </div>
-            <% } %>
-            <% for (charla in charlas) { %>
-              <% j++; %>
-              <% if (j % 3 === 1) { %>
-                <div class="row">
-              <% } %>
-              <div class="col-lg-4 col-sm-12 event"
-                <% if (charlas[charla].image !== ``) { %>
-                  style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
-                <% } %>
-              >
-                <div class="overlay">
-                  <% if (charlas[charla].image !== ``) { %>
-                    <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
+            <div class="carousel slide" id="myCarousel2" data-ride="carousel">
+              <% let j = 0, event = false, amountCh = 3; %>
+              <% let offset = (next[0].title !== '') ? 1 : 0; %>
+              <div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <% for (let i = 0; i < Math.ceil((charlas.length + offset) / amountCh); i++) { %>
+                    <% if (i == 0) { %>
+                      <li data-target="#myCarousel2" data-slide="<%= i %>" class="active"></li>
+                    <% } else { %>
+                      <li data-target="#myCarousel2" data-slide="<%= i %>"></li>
+                    <% } %>
                   <% } %>
-                  <h3><%= charlas[charla].title %></h3>
-                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= charlas[charla].place %></h4>
-                  <a class="btn">DETALLES</a>
-                </div>
+                </ol>
               </div>
-              <% if (j % 3 === 0) { %>
-                </div>
-              <% } %>
-            <% } %>
-            <% if (event) { %>
-              <% if ((charlas.length + 1) % 3 !== 0) { %>
-                </div>
-              <% } %>
-            <% } else if (charlas.length % 3 !== 0) { %>
-              </div>
-              <% } %>
+
+               <!-- Wrapper for slides -->
+               <% let nextCh = false, flag = false, ctn = 1; %>
+               <div class="carousel-inner" role="listbox">
+                <% if (next[0].title !== '') { %>
+                  <% nextCh = true; %>
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-12 event" style="padding: 15px;">
+                        <h2><%= next[0].alert %></h2>
+                        <p class="oswald"><%= next[0].title %></p>
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[0].place %></h4>
+                        <a class="btn">INSCRIPCIÓN</a>
+                      </div>
+                <% } %>
+                <% for (let i = 0; i < charlas.length; i++) { %>
+                  <% let clsCh = (i === 0 && !nextCh) ? "item active" : "item" %>
+                  <% if (nextCh) { %>
+                    <% if (flag) { %>
+                      <% if (ctn % amountCh === 0) { %>
+                        <div class="<%= clsCh %>">
+                      <% } %>
+                      <% if (ctn % 3 === 0) { %>
+                        <div class="row">
+                      <% } %>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % amountCh === 0) { %>
+                      <div class="<%= clsCh %>">
+                    <% } %>
+                    <% if (i % 3 === 0) { %>
+                      <div class="row">
+                    <% } %>
+                  <% } %>
+
+                  <div class="col-lg-4 col-sm-12 event"
+                    <% if (charlas[i].image !== ``) { %>
+                      style="background-image: url(/img/charla/<%= charlas[i].image %>/intro.jpg)"
+                    <% } %>
+                  >
+                    <div class="overlay">
+                      <% if (charlas[i].image !== ``) { %>
+                        <img src="/img/charla/<%= charlas[i].image %>/logo.png" />
+                      <% } %>
+                      <h3><%= charlas[i].title %></h3>
+                      <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[i].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[i].hour %></h4>
+                      <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= charlas[i].place %></h4>
+                      <a class="btn">DETALLES</a>
+                    </div>
+                  </div>
+
+                  <% if (nextCh) { %>
+                    <% if (ctn % 3 === 2 || ctn === charlas.length) { %>
+                      </div>
+                    <% } %>
+                    <% if (ctn % amountCh === amountCh - 1 || ctn === charlas.length) { %>
+                      </div>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % 3 === 2 || i === charlas.length - 1) { %>
+                      </div>
+                    <% } %>
+                    <% if (i % amountCh === amountCh - 1 || i === charlas.length - 1) { %>
+                      </div>
+                    <% } %>
+                  <% } %>
+                  <% flag = true, ctn++; %>
+                <% } %>
+               </div>
+            </div>
             <br />
+
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-
-<!--
-            <div id="box">
-
-              <div id="overlay">
-                <span id="plus">Hola</span><br />
-                <button>Botón</button>
+            <div class="carousel slide" id="myCarousel3" data-ride="carousel">
+              <% let k = 0, ev = false, amountEv = 2  %>
+              <% let offsetEv = (next[1].title !== '') ? 1 : 0; %>
+              <div>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <% for (let i = 0; i < Math.ceil((events.length + offsetEv) / amountEv); i++) { %>
+                    <% if (i == 0) { %>
+                      <li data-target="#myCarousel3" data-slide="<%= i %>" class="active"></li>
+                    <% } else { %>
+                      <li data-target="#myCarousel3" data-slide="<%= i %>"></li>
+                    <% } %>
+                  <% } %>
+                </ol>
               </div>
 
-            </div> -->
+              <!-- Wrapper for slides -->
+              <% let nextEv = false, flag2 = false, ctn2 = 1; %>
+              <div class="carousel-inner" role="listbox">
+                <% if (next[1].title !== '') { %>
+                  <% nextEv = true; %>
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12 event" style="padding: 10px;">
+                        <h2><%= next[1].alert %></h2>
+                        <p class="oswald"><%= next[1].title %></p>
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[1].place %></h4>
+                        <a class="btn">INSCRIPCIÓN</a>
+                      </div>
+                <% } %>
+                <% for (let i = 0; i < events.length; i++) { %>
+                  <% let clsEv = (i === 0 && !nextEv) ? "item active" : "item" %>
+                  <% if (nextEv) { %>
+                    <% if (flag2) { %>
+                      <% if (ctn2 % amountEv === 0) { %>
+                        <div class="<%= clsEv %>">
+                      <% } %>
+                      <% if (ctn2 % 3 === 0) { %>
+                        <div class="row">
+                      <% } %>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % amountEv === 0) { %>
+                      <div class="<%= clsEv %>">
+                    <% } %>
+                    <% if (i % 3 === 0) { %>
+                      <div class="row">
+                    <% } %>
+                  <% } %>
 
+                  <div class="col-lg-6 col-sm-12 event"
+                    <% if (events[i].image !== ``) { %>
+                      style="background-image: url(/img/event/<%= events[i].image %>/intro.jpg)"
+                    <% } %>
+                  >
+                    <div class="overlay">
+                      <% if (events[i].image !== ``) { %>
+                        <img src="/img/event/<%= events[i].image %>/logo.png" />
+                      <% } %>
+                      <h3><%= events[i].title %></h3>
+                      <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= events[i].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= events[i].hour %></h4>
+                      <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= events[i].place %></h4>
+                      <a class="btn">DETALLES</a>
+                    </div>
+                  </div>
 
-            <% let k = 0; let ev = false  %>
-            <% if (next[1].title !== ``) { %>
-              <% k++; ev = true %>
-              <div class="row">
-                <div class="col-lg-6 col-sm-12 event">
-                  <h2><%= next[1].alert %></h2>
-                  <p class="oswald"><%= next[1].title %></p>
-                  <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[1].place %></h4>
-                  <a class="btn">INSCRIPCIÓN</a>
-                </div>
-            <% } %>
-            <% for (event in events) { %>
-              <% k++; %>
-              <% if (k % 2 === 1) { %>
-                <div class="row">
-              <% } %>
-              <div class="col-lg-6 col-sm-12 event">
-                <div class="overlay">
-                  <h2><%= events[event].title %></h2>
-                </div>
+                  <% if (nextEv) { %>
+                    <% if (ctn2 % 2 === 1 || ctn2 === events.length) { %>
+                      </div>
+                    <% } %>
+                    <% if (ctn2 % amountEv === amountEv - 1 || ctn2 === events.length) { %>
+                      </div>
+                    <% } %>
+                  <% } else { %>
+                    <% if (i % 2 === 1 || i === events.length - 1) { %>
+                      </div>
+                    <% } %>
+                    <% if (i % amountEv === amountEv - 1 || i === events.length - 1) { %>
+                      </div>
+                    <% } %>
+                  <% } %>
+                  <% flag2 = true, ctn2++; %>
+                <% } %>
               </div>
-              <% if (k % 2 === 0) { %>
-                </div>
-              <% } %>
-            <% } %>
-            <% if (ev) { %>
-              <% if ((events.length + 1) % 2 !== 0) { %>
-                </div>
-              <% } %>
-            <% } else if (events.length % 2 !== 0) { %>
-              </div>
-              <% } %>
+            </div>
             <br />
           </div>
         </div>
@@ -289,7 +367,27 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Comunidad</h1>
-          <p>Si tienes dudas, preguntas o comentarios, por favor escribenos!
+          <h3>Patrocinadores</h3>
+          <% let u = 0; %>
+          <% for (sponsor in sponsors) { %>
+            <% u++; %>
+            <% if (u % 4 === 1) { %>
+              <div class="row">
+            <% } %>
+            <div class="col-lg-3 col-sm-12">
+              <h1><%= u %></h1>
+              <img src="/img/sponsor/<%= sponsor %>.png" class="img-responsive" />
+              <br />
+              <h4><%= sponsors[sponsor].name %></h4>
+            </div>
+            <% if (u % 4 === 0) { %>
+              </div>
+            <% } %>
+          <% } %>
+          <% if (sponsors.length % 4 !== 0) { %>
+            </div>
+          <% } %>
+          <h3>Colaboradores</h3>
         </div>
       </div>
     </section>
@@ -310,60 +408,4 @@
       </section>
     </div>
     <!-- Footer -->
-    <footer>
-      <section id="contact" class="container content-section text-center">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1>Contacto</h1>
-          <div class="col-lg-6 col-sm-12" style="text-align: left;">
-            <p class="oswald">Enlaces de Interés</p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <form class="" action="index.html" method="post">
-              <input type="text" name="name" placeholder="NOMBRE" value="" />
-              <input type="text" name="email" placeholder="EMAIL" value="" />
-              <textarea name="text" rows="4" placeholder="MENSAJE"></textarea>
-              <input type="submit" class="btn" name="" value="ENVIAR">
-            </form>
-          </div>
-        </div>
-      </section>
-      <div class="follow">
-        <section class="container content-section">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="col-lg-2 col-xs-12 oswald">
-              SÍGUENOS
-            </div>
-            <div class="col-lg-10 col-xs-12">
-              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-slack" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </footer>
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA58q2BYIJqsv8FOT5Rhh_3pXWnrPgmoZs"></script>-->
-    <%# <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAwKTx32i9LUE1KGf3TY5cQ7DQuGfRGgeM "></script>%>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <script src="js/height.js"></script>
-  </body>
-</html>
+<% include footer %>

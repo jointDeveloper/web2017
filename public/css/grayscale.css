@@ -145,7 +145,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #FFDE16;
+        background-color: #e097b0;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -508,7 +508,7 @@ a:focus {
 }
 
 .overlay {
-    background:rgba(0,0,0,.75);
+    background:rgba(100,100,100,.7);
     text-align:center;
     padding: 10px;
     opacity:0;
@@ -533,12 +533,14 @@ input, textarea {
     font-family: 'Oswald', sans-serif;
     margin: 4px;
     width: 100%;
+    resize: none;
 }
 
 input:focus, textarea:focus {
     background-color: #fff;
     border: 2px solid #fff;
     color: #ec7ca2;
+    outline: none;
 }
 
 footer .follow {
@@ -554,3 +556,8 @@ footer .follow .content-section {
 footer .follow .content-section a {
   color: #ec7ca2;
 }
+
+footer ::-webkit-input-placeholder { color: #fff; }
+footer :-moz-placeholder { color: #fff; }
+footer ::-moz-placeholder { color: #fff; }
+footer :-ms-input-placeholder { color: #fff; }

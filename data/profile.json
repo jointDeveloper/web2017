@@ -108,7 +108,14 @@
       },
       "vega": {
         "name": "Juan Sebastián Vega Patiño",
-        "img": "/img/profile/daniela/profile.jpg",
+        "img": "/img/profile/vega/profile.jpg",
+        "page": "./HTML/perfiles/daniela.html",
+        "email": "daniela-zuluaga@utp.edu.co",
+        "description": "Estudiante de Ingeniería de Sistemas y Computación."
+      },
+      "manuel": {
+        "name": "Manuel Fernando Sabogal",
+        "img": "/img/profile/manuel/profile.jpg",
         "page": "./HTML/perfiles/daniela.html",
         "email": "daniela-zuluaga@utp.edu.co",
         "description": "Estudiante de Ingeniería de Sistemas y Computación."
