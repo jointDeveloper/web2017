@@ -1,0 +1,10 @@
+
+.floating-icons{
+  float:left;
+  top: 100px;
+  background-color:#D4CDFA;
+  width:40;height:60;
+  padding:6px;
+  position: fixed;
+  border-radius:8px;  
+}
