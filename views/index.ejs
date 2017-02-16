@@ -50,9 +50,9 @@
             <li>
               <a class="page-scroll" href="#comunity">Comunidad</a>
             </li>
-            <li>
+            <!-- <li>
               <a class="page-scroll" href="#blog">Social</a>
-            </li>
+            </li> -->
             <li>
               <a class="page-scroll" href="#contact">Contacto</a>
             </li>
@@ -166,7 +166,7 @@
           <h4>
             <b>Tú</b><br />
             También puedes ser parte de nuestra Comunidad<br />
-            <a href="#"><b>Más información</b></a>
+            <a href="#contact"><b>Más información</b></a>
           </h4>
           </div>
         </div>
@@ -375,7 +375,7 @@
               <div class="row">
             <% } %>
             <div class="col-lg-3 col-sm-12">
-              <h1><%= u %></h1>
+              <!-- <h1><%= u %></h1> -->
               <img src="/img/sponsor/<%= sponsor %>.png" class="img-responsive" />
               <br />
               <h4><%= sponsors[sponsor].name %></h4>
@@ -387,11 +387,11 @@
           <% if (sponsors.length % 4 !== 0) { %>
             </div>
           <% } %>
-          <h3>Colaboradores</h3>
+          <!-- <h3>Colaboradores</h3> -->
         </div>
       </div>
     </section>
-    <div class="blog">
+    <!-- <div class="blog">
       <section id="blog" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Social</h1>
@@ -406,6 +406,6 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
     <!-- Footer -->
 <% include footer %>

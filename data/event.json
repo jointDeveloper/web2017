@@ -2,7 +2,7 @@
   "next": [
     {
       "alert": "Próximo charla",
-      "title": "Introducción a algo",
+      "title": "",
       "author": "baldor",
       "profile": {
         "username": "baldor"
@@ -17,7 +17,7 @@
     },
     {
       "alert": "Próximo evento",
-      "title": "jointDeveloper Kids",
+      "title": "",
       "author": "baldor",
       "profile": {
         "username": "baldor"
