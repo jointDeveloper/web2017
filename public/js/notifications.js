@@ -10,7 +10,7 @@ function init() {
 
 function createNotification() {
   const notification = new window.Notification('Bienvenido', {
-    body: 'Disfruta de nuestras charlas y eventos :)',
-    icon: 'img/icon.png'}
-  );
+    body: 'jointDeveloper te da la Bienvenida',
+    icon: 'img/icon.png'
+  });
 }
