@@ -4,7 +4,12 @@ function init() {
   if (window.Notification.permission === 'granted') {
     createNotification();
   } else {
-    window.Notification.requestPermission();
+    window.Notification.requestPermission(permission => {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        createNotification();
+      }
+    });
   }
 }
 
