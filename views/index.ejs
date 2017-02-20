@@ -80,7 +80,7 @@
                       <div class="brand-heading oswald"><%= next[0].title %></div>
                       <h3><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h3>
                       <p class="oswald">
-                        <b>Más información</b>
+                        <a href="#event"><b>Más información</b></a>
                       </p>
                     </div>
                   <% } else if(next[1].title !== ``) { %>
@@ -185,11 +185,11 @@
             <% if(next[0].title !== ``) { %>
               <% j++; event = true; %>
               <div class="row">
-                <div class="col-lg-4 col-sm-12 event" style="padding: 10px;">
+                <div class="col-lg-4 col-md-4 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[0].alert %></h2>
                   <p class="oswald"><%= next[0].title %></p>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[0].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[0].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[0].place %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[0].placeLink %>" target="_blank"><%= next[0].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
             <% } %>
@@ -198,7 +198,7 @@
               <% if (j % 3 === 1) { %>
                 <div class="row">
               <% } %>
-              <div class="col-lg-4 col-sm-12 event"
+              <div class="col-lg-4 col-md-4 col-sm-12 event"
                 <% if (charlas[charla].image !== ``) { %>
                   style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
                 <% } %>
@@ -230,11 +230,11 @@
             <% if(next[1].title !== ``) { %>
               <% k++; ev = true %>
               <div class="row">
-                <div class="col-lg-6 col-sm-12 event" style="padding: 10px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 event" style="padding: 10px;">
                   <h2><%= next[1].alert %></h2>
                   <p class="oswald"><%= next[1].title %></p>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= next[1].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= next[1].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= next[1].place %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[1].placeLink %>"><%= next[1].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
             <% } %>

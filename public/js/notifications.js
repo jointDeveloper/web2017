@@ -15,7 +15,7 @@ function init() {
 
 function createNotification() {
   const notification = new window.Notification('Bienvenido', {
-    body: 'jointDeveloper te da la Bienvenida',
+    body: 'Próxima Charla: Info Scaleconf Colombia 2017',
     icon: 'img/icon.png'
   });
 }

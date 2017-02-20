@@ -1,22 +1,23 @@
 {
   "next": [
     {
-      "alert": "Próximo charla",
-      "title": "",
-      "author": "baldor",
+      "alert": "Próximo Charla",
+      "title": "Info: Scaleconf Colombia 2017",
+      "author": "",
       "profile": {
-        "username": "baldor"
+        "username": ""
       },
       "Resume": "",
       "content": "",
-      "date": "23 Jun 2017",
-      "hour": "00:00-00:00",
-      "place": "Universidad Tecnológica de Pereira",
-      "room": "R-003",
+      "date": "22 Feb 2017",
+      "hour": "20:00",
+      "place": "Canal Youtube",
+      "placeLink": "https://goo.gl/wwIukX",
+      "room": "",
       "image": ""
     },
     {
-      "alert": "Próximo evento",
+      "alert": "Próximo Evento",
       "title": "",
       "author": "baldor",
       "profile": {
@@ -27,6 +28,7 @@
       "date": "23 Jun 2017",
       "hour": "12:00 pm",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "R-003",
       "image": ""
     }
@@ -43,6 +45,7 @@
       "date": "15 Oct 2016",
       "hour": "14:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "materialize"
     },
@@ -57,6 +60,7 @@
       "date": "15 Oct 2016",
       "hour": "14:00-17:00",
       "place": "Edificio 3-Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "3-205(R-205)",
       "image": "HTML-CSS-II"
     },
@@ -71,6 +75,7 @@
       "date": "1 Oct 2016",
       "hour": "14:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "r_HTML-CSS-I"
     },
@@ -85,6 +90,7 @@
       "date": "20 Ago 2016",
       "hour": "14:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "HTML-CSS-I"
     },
@@ -100,6 +106,7 @@
       "date": "20 Ago 2016",
       "hour": "14:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "pensamiento_logico"
     },
@@ -114,6 +121,7 @@
       "date": "17 Sep 2016",
       "hour": "14:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "linux"
     },
@@ -128,6 +136,7 @@
       "date": "2 Jul 2016",
       "hour": "14:00-17:00",
       "place": "Edificio 3-Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "3-211(R-211)",
       "image": "jQuery"
     }
@@ -144,6 +153,7 @@
       "date": "7 Dic 2016",
       "hour": "14:00-18:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "kids"
     },
@@ -160,6 +170,7 @@
       "date": "5 Nov 2016",
       "hour": "08:00-17:00",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "nodeschool"
     },
@@ -174,6 +185,7 @@
       "date": "Nov 2015",
       "hour": "",
       "place": "Universidad Tecnológica de Pereira",
+      "placeLink": "",
       "room": "",
       "image": "codeparty"
     }
