@@ -15,6 +15,13 @@
         "email": "",
         "description": "Ingeniera de Sistemas y Computación"
       },
+      "vane": {
+        "name": "Vanessa Velasquez",
+        "img": "/img/profile/vane/profile.jpg",
+        "page": "./HTML/perfiles/vane.html",
+        "email": "",
+        "description": ""
+      },
       "john": {
         "name": "John H. Osorio Ríos",
         "img": "/img/profile/john/profile.jpg",
