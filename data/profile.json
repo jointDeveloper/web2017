@@ -15,6 +15,13 @@
         "email": "",
         "description": "Ingeniera de Sistemas y Computación"
       },
+      "vane": {
+        "name": "Vanessa Velasquez",
+        "img": "/img/profile/vane/profile.jpg",
+        "page": "./HTML/perfiles/vane.html",
+        "email": "",
+        "description": ""
+      },
       "john": {
         "name": "John H. Osorio Ríos",
         "img": "/img/profile/john/profile.jpg",
@@ -101,10 +108,10 @@
       },
       "oriana": {
         "name": "Oriana Cadavid",
-        "img": "/img/profile/daniela/profile.jpg",
+        "img": "/img/profile/oriana/profile.jpg",
         "page": "./HTML/perfiles/daniela.html",
-        "email": "daniela-zuluaga@utp.edu.co",
-        "description": "Estudiante de Ingeniería de Sistemas y Computación."
+        "email": "cadavidoriana@gmail.com",
+        "description": "Estudiante de Ingeniería Física."
       },
       "vega": {
         "name": "Juan Sebastián Vega Patiño",
