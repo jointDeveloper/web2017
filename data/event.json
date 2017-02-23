@@ -38,7 +38,7 @@
       "title": "Info: Scaleconf Colombia 2017",
       "author": "",
       "profile": {
-        "username": ""
+        "username": "yen"
       },
       "Resume": "",
       "content": "",
@@ -48,6 +48,21 @@
       "placeLink": "https://goo.gl/wwIukX",
       "room": "",
       "image": "scaleconf"
+    },
+    {
+      "title": "Info: GHC 2017",
+      "author": "",
+      "profile": {
+        "username": ""
+      },
+      "Resume": "",
+      "content": "carolinaGomez",
+      "date": "22 Feb 2017",
+      "hour": "20:00",
+      "place": "Canal Youtube",
+      "placeLink": "https://www.youtube.com/watch?v=UO0V9ws18sI",
+      "room": "",
+      "image": "ghc"
     },
     {
       "title": "Materialize CSS",
