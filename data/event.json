@@ -2,7 +2,7 @@
   "next": [
     {
       "alert": "Próximo Charla",
-      "title": "Info: Scaleconf Colombia 2017",
+      "title": "",
       "author": "",
       "profile": {
         "username": ""
@@ -34,6 +34,21 @@
     }
   ],
   "charlas":[
+    {
+      "title": "Info: Scaleconf Colombia 2017",
+      "author": "",
+      "profile": {
+        "username": ""
+      },
+      "Resume": "",
+      "content": "",
+      "date": "22 Feb 2017",
+      "hour": "20:00",
+      "place": "Canal Youtube",
+      "placeLink": "https://goo.gl/wwIukX",
+      "room": "",
+      "image": "scaleconf"
+    },
     {
       "title": "Materialize CSS",
       "author": "",

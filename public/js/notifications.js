@@ -6,7 +6,7 @@ function init() {
   } else {
     window.Notification.requestPermission(permission => {
       // If the user accepts, let's create a notification
-      if (permission === "granted") {
+      if (permission === 'granted') {
         createNotification();
       }
     });
@@ -15,7 +15,7 @@ function init() {
 
 function createNotification() {
   const notification = new window.Notification('Bienvenido', {
-    body: 'Próxima Charla: Info Scaleconf Colombia 2017',
+    body: '',
     icon: 'img/icon.png'
   });
 }

@@ -233,7 +233,7 @@
                   <% } %>
                   <h3><%= charlas[charla].title %></h3>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= charlas[charla].place %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= charlas[charla].placeLink %>" target="_blank"><%= charlas[charla].place %></a></h4>
                   <!-- <a class="btn">DETALLES</a> -->
                 </div>
               </div>
@@ -278,7 +278,7 @@
                   <% } %>
                   <h3><%= events[event].title %></h3>
                   <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= events[event].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= events[event].hour %></h4>
-                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <%= events[event].place %></h4>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= events[event].placeLink %>" target="_blank"><%= events[event].place %></a> %></h4>
                   <!-- <a class="btn">DETALLES</a> -->
                 </div>
               </div>
