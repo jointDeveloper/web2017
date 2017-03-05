@@ -1,42 +1,13 @@
 
-.floating-sn-icons{
+.floating-sn-icons {
   float: left;
-  top: 40%;
+  top: 27%;
   padding-left: 25px;
   position: fixed;
 }
 
-.fb-icon {
-  color: #3b5998;
-}
-
-.fb-icon:hover {
-  color: #7692ce;
-}
-
-.tw-icon {
-  color: #32cdfd;
-}
-
-.tw-icon:hover {
-  color: #82cbe2;
-}
-
-.inst-icon {
-  color: #25638a;
-}
-
-.inst-icon:hover {
-  color: #529bca;
-}
-
-.goopl-icon {
-  color: #dc4a38;
-}
-
-.goopl-icon:hover {
-  color: #d25e50;
-}
+.floating-sn-icons a { color: #bfbfbf; }
+.floating-sn-icons a:hover { color: #6C7A89; }
 
 @media (max-width: 823px) {
   .floating-sn-icons {
