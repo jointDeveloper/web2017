@@ -22,7 +22,6 @@ exports.index = (req, res) => {
 };
 
 exports.emailContact = (req, res) => {
-  // console.log(auth);
   const transporter = nodemailer.createTransport(
     'smtps://' + auth.user + ':' + auth.pass + '@smtp.gmail.com'
   );
@@ -31,7 +30,9 @@ exports.emailContact = (req, res) => {
     from: req.body.name + ' <' + req.body.email + '>',
     to: 'developerjoint@gmail.com',
     subject: 'Contacto Web jointDeveloper.com',
-    text: req.body.text
+    html: `<b>Nombre: </b>${req.body.name}<br />
+          <b>Correo Electrónico: </b>${req.body.email}<br />
+          <p>${req.body.text}</p>`
   };
 
   transporter.sendMail(mailOptions, (err, res) => {
