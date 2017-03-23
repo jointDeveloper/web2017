@@ -1,8 +1,8 @@
-const profile = require('../data/profile.json'),
-  event = require('../data/event.json'),
-  sponsor = require('../data/sponsor.json'),
-  { auth } = require('../config/index.js'),
-  nodemailer = require('nodemailer');
+const profile = require('../data/profile.json');
+const event = require('../data/event.json');
+const sponsor = require('../data/sponsor.json');
+const auth = require('../config/auth');
+const nodemailer = require('nodemailer');
 
 exports.index = (req, res) => {
   const profiles = profile.profiles[0],
@@ -10,7 +10,6 @@ exports.index = (req, res) => {
     charla = event.charlas,
     { events } = event,
     sponsors = sponsor.sponsor[0];
-  // console.log(sponsors);
 
   res.render('index', {
     profiles: profiles,
@@ -23,7 +22,7 @@ exports.index = (req, res) => {
 
 exports.emailContact = (req, res) => {
   const transporter = nodemailer.createTransport(
-    'smtps://' + auth.user + ':' + auth.pass + '@smtp.gmail.com'
+    `smtps://${auth.gmail.user}:${auth.gmail.pass}@smtp.gmail.com`
   );
 
   const mailOptions = {
@@ -40,5 +39,14 @@ exports.emailContact = (req, res) => {
     else console.log(res);
   });
 
+  res.redirect('/');
+};
+
+exports.profile = (req, res) => {
+  res.render('profile');
+};
+
+exports.logout = (req, res) => {
+  req.logout();
   res.redirect('/');
 };
