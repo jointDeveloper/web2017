@@ -3,7 +3,14 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "start": "supervisor -e 'js|node|coffee|ejs|json' ./bin/www"
+    "start": "supervisor -e 'js|node|coffee|ejs|json' ./bin/www",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -19,7 +26,8 @@
     "supervisor": "^0.12.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.1",
-    "eslint-config-google": "^0.7.1"
+    "husky": "^0.13.2",
+    "lint-staged": "^3.4.0",
+    "prettier": "^0.22.0"
   }
 }
