@@ -1,6 +1,7 @@
 const profile = require('../data/profile.json'),
   event = require('../data/event.json'),
   sponsor = require('../data/sponsor.json'),
+  groups = require('../data/groups.json'),
   { auth } = require('../config/index.js'),
   nodemailer = require('nodemailer');
 
@@ -10,14 +11,14 @@ exports.index = (req, res) => {
     charla = event.charlas,
     { events } = event,
     sponsors = sponsor.sponsor[0];
-  // console.log(sponsors);
 
   res.render('index', {
     profiles: profiles,
     next: next,
     charlas: charla,
     events: events,
-    sponsors: sponsors
+    sponsors: sponsors,
+    groups: groups
   });
 };
 
