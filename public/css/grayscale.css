@@ -162,7 +162,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background-image: url(/img/intro/intro.jpg);
-    background-color: #e097b0;
+    background-color: #777;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -457,7 +457,7 @@ a:focus {
 
 .event {
   /*background-image:url('/img/charla/jQuery/intro.jpg');*/
-  background-color: #ec7ca2;
+  background-color: #777;
   background-position: center;
   background-blend-mode: multiply;
   background-size: cover;

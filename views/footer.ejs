@@ -19,6 +19,30 @@
             </form>
           </div>
         </div>
+        <div class="col-lg-8 col-lg-offset-2">
+          <hr />
+          <h4>Enlaces de Interés</h4>
+            <% for (group in groups) { %>
+            <% if (group % 6 === 0) { %>
+            <div class="row">
+            <% } %>
+            <div class="col-lg-2 col-sm-2 col-xs-4">
+              <% if (groups[group].link !== "") { %>
+              <a href="//<%= groups[group].link %>" target="_blank">
+              <% } %>
+                <img src="img/groups/<%= groups[group].name %>.svg" alt="">
+              <% if (groups[group].link !== "") { %>
+              </a>
+              <% } %>
+            </div>
+            <% if (group % 6 === 5) { %>
+            </div>
+            <% } %>
+            <% } %>
+          <% if (groups.length % 6 !== 0) { %>
+          </div>
+          <% } %>
+        </div>
       </section>
       <div class="follow">
         <section class="container content-section">
@@ -27,15 +51,18 @@
               SÍGUENOS
             </div>
             <div class="col-lg-10 col-xs-12">
-              <a href="http://facebook.com/jointDeveloper" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="http://twitter.com/jointdev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://www.youtube.com/channel/UC1hMrYBNsvKnufvG8t6q7ZQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-              <a href="http://instagram.com/jointdeveloper" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="http://snapchat.com/add/jointDev" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
-              <a href="http://github.com/jointDeveloper" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href="https://plus.google.com/u/1/113539795181089700851" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              <a href="//facebook.com/jointDeveloper" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="//twitter.com/jointdev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="//www.youtube.com/channel/UC1hMrYBNsvKnufvG8t6q7ZQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              <a href="//instagram.com/jointdeveloper" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="//snapchat.com/add/jointDev" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+              <a href="//github.com/jointDeveloper" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="//plus.google.com/u/1/113539795181089700851" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              <a href="//www.linkedin.com/company/16226960" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="//jointdeveloper.com/slack" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+              <a href="//medium.com/@jointdeveloper" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+              <a href="//www.meetup.com/es/jointDeveloper/" target="_blank"><i class="fa fa-meetup" aria-hidden="true"></i></a>
               <a href="mailto:developerjoint@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-              <!-- <a href=""><i class="fa fa-slack" aria-hidden="true"></i></a> -->
             </div>
           </div>
         </section>
@@ -57,7 +84,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script src="js/height.js"></script>
-    <script src="js/notifications.js"></script>
+    <!-- <script src="js/notifications.js"></script> -->
     <script src="js/analytics.js"></script>
   </body>
 </html>
