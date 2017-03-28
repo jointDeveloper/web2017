@@ -22,9 +22,11 @@
         <div class="col-lg-8 col-lg-offset-2">
           <hr />
           <h4>Enlaces de Interés</h4>
-          <div class="row">
             <% for (group in groups) { %>
-            <div class="col-lg-2">
+            <% if (group % 6 === 0) { %>
+            <div class="row">
+            <% } %>
+            <div class="col-lg-2 col-sm-2 col-xs-4">
               <% if (groups[group].link !== "") { %>
               <a href="//<%= groups[group].link %>" target="_blank">
               <% } %>
@@ -33,8 +35,13 @@
               </a>
               <% } %>
             </div>
+            <% if (group % 6 === 5) { %>
+            </div>
             <% } %>
+            <% } %>
+          <% if (groups.length % 6 !== 0) { %>
           </div>
+          <% } %>
         </div>
       </section>
       <div class="follow">
