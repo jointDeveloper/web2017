@@ -1,15 +1,17 @@
 const passport = require('passport');
 
-exports.isLoggedIn = (req, res, next) => {
+function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
   res.redirect('/');
-};
+}
 
-exports.facebook = passport.authenticate('facebook', { scope: ['email'] });
+const facebook = passport.authenticate('facebook');
 
-exports.facebookCallback = passport.authenticate('facebook', {
+const facebookCallback = passport.authenticate('facebook', {
   successRedirect: '/profile',
   failureRedirect: '/'
 });
+
+module.exports = { isLoggedIn, facebook, facebookCallback };

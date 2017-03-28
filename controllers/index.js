@@ -43,7 +43,9 @@ exports.emailContact = (req, res) => {
 };
 
 exports.profile = (req, res) => {
-  res.render('profile');
+  res.render('profile', {
+    user: req.user.facebook
+  });
 };
 
 exports.logout = (req, res) => {
