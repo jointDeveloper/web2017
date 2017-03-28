@@ -1,16 +1,107 @@
 
+a {
+ text-decoration: none;
+}
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#sticky-social {
+ left: 0;
+ position: fixed;
+ top: 20%;
+}
+#sticky-social a {
+ background: #333;
+ color: #fff;
+ display: block;
+ height: 35px;
+ font: 16px "Roboto", sans-serif;
+ line-height: 35px;
+ position: relative;
+ text-align: center;
+ width: 35px;
+}
+#sticky-social a span {
+ line-height: 35px;
+ left: -120px;
+ position: absolute;
+ text-align:center;
+ width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="meetup"],
+#sticky-social a[class*="meetup"]:hover,
+#sticky-social a[class*="meetup"] span { background: #dd4b39; }
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }
+
+#sticky-social a[class*="instagram"],
+#sticky-social a[class*="instagram"]:hover,
+#sticky-social a[class*="instagram"] span { background: #517fa4; }
+
+#sticky-social a[class*="youtube-play"],
+#sticky-social a[class*="youtube-play"]:hover,
+#sticky-social a[class*="youtube-play"] span { background: #c0392b; }
+
+#sticky-social a[class*="snapchat-ghost"],
+#sticky-social a[class*="snapchat-ghost"]:hover,
+#sticky-social a[class*="snapchat-ghost"] span { background: #f1c40f; }
+
+#sticky-social a[class*="github-alt"],
+#sticky-social a[class*="github-alt"]:hover,
+#sticky-social a[class*="github-alt"] span { background: #333; }
+
+#sticky-social a[class*="medium"],
+#sticky-social a[class*="medium"]:hover,
+#sticky-social a[class*="medium"] span { background: #2ecc71; }
+
+#sticky-social a[class*="slack"],
+#sticky-social a[class*="slack"]:hover,
+#sticky-social a[class*="slack"] span { background: #8e44ad; }
+
+#sticky-social a[class*="envelope"],
+#sticky-social a[class*="envelope"]:hover,
+#sticky-social a[class*="envelope"] span { background: #3498db; }
+
+
+
+
+
+
+
+
 .floating-sn-icons {
   float: left;
   top: 25%;
-  padding-left: 25px;
+  padding-left: 15px;
   position: fixed;
+  margin: 0;
 }
 
-.floating-sn-icons a { color: #bfbfbf; }
+.floating-sn-icons a {
+  color: #bfbfbf;
+  background: #fff;
+  margin: 0;
+}
 .floating-sn-icons a:hover { color: #6C7A89; }
 
 @media (max-width: 823px) {
-  .floating-sn-icons {
+  .floating-sn-icons, #sticky-social {
     display: none;
   }
 }
@@ -40,7 +131,7 @@
     display: none;
   }
 
-  .floating-reg-icons:hover .sn-register {
+  .floating-reg-icons:hover .sn-register{
     display: block;
   }
 }
