@@ -1,6 +1,30 @@
     <footer>
       <section id="contact" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
+          <h4>Enlaces de Interés</h4>
+            <% for (group in groups) { %>
+            <% if (group % 6 === 0) { %>
+            <div class="row">
+            <% } %>
+            <div class="col-lg-2 col-sm-2 col-xs-4">
+              <% if (groups[group].link !== "") { %>
+              <a href="<%= groups[group].link %>" target="_blank">
+              <% } %>
+                <img src="img/groups/<%= groups[group].name %>.svg" alt="">
+              <% if (groups[group].link !== "") { %>
+              </a>
+              <% } %>
+            </div>
+            <% if (group % 6 === 5) { %>
+            </div>
+            <% } %>
+            <% } %>
+          <% if (groups.length % 6 !== 0) { %>
+          </div>
+          <% } %>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2">
+          <hr />
           <h1>Contacto</h1>
           <!-- <div class="col-lg-6 col-sm-12" style="text-align: left;">
             <p class="oswald">Enlaces de Interés</p>
@@ -19,30 +43,7 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-2">
-          <hr />
-          <h4>Enlaces de Interés</h4>
-            <% for (group in groups) { %>
-            <% if (group % 6 === 0) { %>
-            <div class="row">
-            <% } %>
-            <div class="col-lg-2 col-sm-2 col-xs-4">
-              <% if (groups[group].link !== "") { %>
-              <a href="//<%= groups[group].link %>" target="_blank">
-              <% } %>
-                <img src="img/groups/<%= groups[group].name %>.svg" alt="">
-              <% if (groups[group].link !== "") { %>
-              </a>
-              <% } %>
-            </div>
-            <% if (group % 6 === 5) { %>
-            </div>
-            <% } %>
-            <% } %>
-          <% if (groups.length % 6 !== 0) { %>
-          </div>
-          <% } %>
-        </div>
+
       </section>
       <div class="follow">
         <section class="container content-section">
@@ -68,23 +69,3 @@
         </section>
       </div>
     </footer>
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <script src="js/scroll.js"></script>
-    <!-- iziModal Version 1.4.2 -->
-    <script src="js/iziModal.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <script src="js/height.js"></script>
-    <!-- <script src="js/notifications.js"></script> -->
-    <script src="js/analytics.js"></script>
-  </body>
-</html>

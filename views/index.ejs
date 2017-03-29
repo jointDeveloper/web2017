@@ -356,11 +356,11 @@
             <% if (u % 4 === 1) { %>
               <div class="row">
             <% } %>
-            <div class="col-lg-3 col-sm-12">
+            <div class="col-lg-2 col-sm-12">
               <!-- <h1><%= u %></h1> -->
               <img src="/img/sponsor/<%= sponsor %>.png" class="img-responsive" />
               <br />
-              <h4><%= sponsors[sponsor].name %></h4>
+              <!-- <h4><%= sponsors[sponsor].name %></h4> -->
             </div>
             <% if (u % 4 === 0) { %>
               </div>
@@ -390,4 +390,20 @@
       </section>
     </div> -->
     <!-- Footer -->
-<% include footer %>
+    <% include footer %>
+<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- iziModal Version 1.4.2 -->
+    <script src="js/iziModal.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/height.js"></script>
+    <!-- <script src="js/notifications.js"></script> -->
+    <script src="js/analytics.js"></script>
+  </body>
+</html>
