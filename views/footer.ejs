@@ -1,27 +1,49 @@
-    <footer>
+<footer>
       <section id="contact" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
           <h4>Enlaces de Interés</h4>
-            <% for (group in groups) { %>
-            <% if (group % 6 === 0) { %>
-            <div class="row">
-            <% } %>
-            <div class="col-lg-2 col-sm-2 col-xs-4">
-              <% if (groups[group].link !== "") { %>
-              <a href="<%= groups[group].link %>" target="_blank">
-              <% } %>
-                <img src="img/groups/<%= groups[group].name %>.svg" alt="">
-              <% if (groups[group].link !== "") { %>
-              </a>
-              <% } %>
+            <div class="carousel slide" id="enlaces" data-ride="carousel">
+              <div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators enlaces-interes">
+                <% for (let enl = 0; enl < Math.ceil(groups.length / 6); enl++) { %>
+                  <% if (enl == 0) { %>
+                    <li data-target="#enlaces" data-slide="<%= enl %>" class="active"></li>
+                  <% } else { %>
+                    <li data-target="#enlaces" data-slide="<%= enl %>"></li>
+                  <% } %>
+                <% } %>
+              </ol>
             </div>
-            <% if (group % 6 === 5) { %>
+            <div class="carousel-inner" role="listbox">
+              <% let l=0;%>
+              <% for (group in groups) { %>
+                <% let link = (l === 0) ? "item active" : "item" %>
+                <% if (l % 6 === 0) { %>
+                <div class="<%= link %>">
+                  <% } %>
+                  <% if (l % 6 === 0) { %>
+                  <div class="row">
+                    <% } %>
+                    <div class="col-lg-2 col-sm-3 col-xs-4">
+                      <% if (groups[group].link !== "") { %>
+                        <a href="<%= groups[group].link %>" target="_blank">
+                      <% } %>
+                      <img src="img/groups/<%= groups[group].name %>.svg" alt="">
+                      <% if (groups[group].link !== "") { %>
+                        </a>
+                      <% } %>
+                    </div>
+                    <% if (l % 6 === 5) { %>
+                  </div>
+                    <% } %>
+                  <% if (l % 6 === 6 - 1) { %>
+                </div>
+                <% } %>
+                <% l++; %>
+                <% } %>
+            </div>  
             </div>
-            <% } %>
-            <% } %>
-          <% if (groups.length % 6 !== 0) { %>
-          </div>
-          <% } %>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <hr />
