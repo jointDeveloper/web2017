@@ -250,7 +250,7 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <div class="carousel slide" id="myCarousel" data-ride="carousel">              
+            <div class="carousel slide" id="charlas" data-ride="carousel">              
               <% let j = 0; let event = false; %>
               <% if(next[0].title !== ``) { %>
               <% j++; event = true; %>
@@ -266,11 +266,11 @@
                 <div>
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 4); ind++) { %>                    
+                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>                    
                     <% if (ind == 0) { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= ind %>" class="active"></li>
+                    <li data-target="#charlas" data-slide-to="<%= ind %>" class="active"></li>
                     <% } else { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= ind %>"></li>
+                    <li data-target="#charlas" data-slide-to="<%= ind %>"></li>
                     <% } %>
                     <% } %>
                   </ol>
@@ -278,26 +278,36 @@
                 <div class="carousel-inner" role="listbox">
                   <% for (charla in charlas) { %>                       
                   <% let act = (j === 0) ? "item active" : "item" %>
-                  <div class="<%= act %>">           
-                    <div class="col-lg-4 col-md-4 col-sm-12 event"
-                    <% if (charlas[charla].image !== ``) { %>
-                    style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
-                    <% } %>
-                    >
-                    <div class="overlay">
+                  <% if (j % 3 === 0) { %>
+                  <div class="<%= act %>">
+                    <% } %>  
+                    <% if (j % 3 === 0) { %>
+                    <div class="row">
+                      <% } %>         
+                      <div class="col-lg-4 col-md-4 col-sm-12 event"
                       <% if (charlas[charla].image !== ``) { %>
-                      <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
+                      style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
                       <% } %>
-                      <h3><%= charlas[charla].title %></h3>
-                      <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
-                      <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= charlas[charla].placeLink %>" target="_blank"><%= charlas[charla].place %></a></h4>
-                      <!-- <a class="btn">DETALLES</a> -->
+                      >
+                      <div class="overlay">
+                        <% if (charlas[charla].image !== ``) { %>
+                        <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
+                        <% } %>
+                        <h3><%= charlas[charla].title %></h3>
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
+                        <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= charlas[charla].placeLink %>" target="_blank"><%= charlas[charla].place %></a></h4>
+                        <!-- <a class="btn">DETALLES</a> -->
+                      </div>
                     </div>
+                    <% if (j % 3 === 2) { %>
                   </div>
+                  <% } %>
+                  <% if (j % 3 === 3 - 1) { %>
+                </div>
+                <% } %>
+                <% j++; %> 
+                <% } %>
               </div>
-              <% j++; %> 
-              <% } %>
-            </div>
                 </div>
               <% if (event) { %>
               <% if ((charlas.length + 1) % 3 !== 0) { %>
@@ -310,7 +320,7 @@
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-            <div class="carousel slide" id="myCarousel" data-ride="carousel">              
+            <div class="carousel slide" id="eventos" data-ride="carousel">              
               <% let k = 0; let ev = false  %>
               <% if(next[1].title !== ``) { %>
               <% k++; ev = true %>
@@ -328,19 +338,24 @@
                 <div>
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let indi = 0; indi < Math.ceil(events.length / 4); indi++) { %>                    
+                    <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>                    
                     <% if (indi == 0) { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= indi %>" class="active"></li>
+                    <li data-target="#eventos" data-slide-to="<%= indi %>" class="active"></li>
                     <% } else { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= indi %>"></li>
+                    <li data-target="#eventos" data-slide-to="<%= indi %>"></li>
                     <% } %>
                     <% } %>
                   </ol>
                 </div>                             
                 <div class="carousel-inner" role="listbox">
-                  <% for (event in events) { %>                       
-                  <% let act = (k === 0) ? "item active" : "item" %>
-                  <div class="<%= act %>">           
+                 <% for (event in events) { %>                       
+                 <% let even = (k === 0) ? "item active" : "item" %>
+                 <% if (k % 2 === 0) { %>
+                 <div class="<%= even %>">
+                  <% } %>  
+                  <% if (k % 2 === 0) { %>
+                  <div class="row">
+                    <% } %>         
                     <div class="col-lg-6 col-sm-12 event"
                     <% if (events[event].image !== ``) { %>
                     style="background-image: url(/img/event/<%= events[event].image %>/intro.jpg)"
@@ -356,7 +371,12 @@
                       <!-- <a class="btn">DETALLES</a> -->
                     </div>
                   </div>
+                  <% if (k % 2 === 1) { %>
                 </div>
+                <% } %>
+                <% if (k % 2 === 2 - 1) { %>
+              </div>
+              <% } %>
               <% k++; %> 
               <% } %>
             </div>
