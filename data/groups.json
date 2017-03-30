@@ -1,38 +1,50 @@
 [
   {
     "name": "sirius",
-    "link": "sirius.utp.edu.co"
+    "link": "http://sirius.utp.edu.co"
   },
   {
     "name": "utp",
-    "link": "utp.edu.co"
+    "link": "http://utp.edu.co"
   },
   {
     "name": "pionerasdev",
-    "link": "pionerasdev.co"
+    "link": "http://pionerasdev.co"
   },
   {
     "name": "codies",
-    "link": "codies.org"
+    "link": "http://codies.org"
   },
   {
     "name": "EpicQueen",
-    "link": "epicqueen.com"
+    "link": "http://epicqueen.com"
   },
   {
     "name": "GeekGirls",
-    "link": "geekgirlslatam.org"
+    "link": "http://geekgirlslatam.org"
   },
   {
     "name": "djangoGirls",
-    "link": "djangogirls.org"
+    "link": "http://djangogirls.org"
   },
   {
     "name": "railsgirls",
-    "link": "railsgirls.com"
+    "link": "http://railsgirls.com"
   },
   {
     "name": "girls_in_tech",
-    "link": "girlsintech.org"
+    "link": "http://girlsintech.org"
+  },
+  {
+    "name": "pyladies",
+    "link": "http://pyladies.com"
+  },
+  {
+    "name": "laboratoria",
+    "link": "http://laboratoria.la"
+  },
+  {
+    "name": "colombia_dev",
+    "link": "http://colombia-dev.org"
   }
 ]

@@ -192,9 +192,9 @@
               <ol class="carousel-indicators profiles">
                 <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
                   <% if (i == 0) { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= i %>" class="active"></li>
+                    <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
                   <% } else { %>
-                    <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
+                    <li data-target="#myCarousel" data-slide="<%= i %>"></li>
                   <% } %>
                 <% } %>
               </ol>
@@ -243,7 +243,7 @@
     </section>
     </div>
     <!-- Register Section -->
-      <div class="events">
+    <div class="events">
       <section id="event" class="content-section text-center">
         <div class="container">
           <div class="col-lg-8 col-lg-offset-2">
@@ -315,8 +315,6 @@
             <% } %>
             <% } else if (charlas.length % 3 !== 0) { %>
           </div>
-        </div>
-              <!-- cierra -->
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
@@ -380,49 +378,20 @@
               <% k++; %> 
               <% } %>
             </div>
-                </div>
+          </div>
               <% if (ev) { %>
               <% if ((events.length + 1) % 2 !== 0) { %>
             </div>              
-              <% } %>
+            <% } %>
             <% } else if (events.length % 2 !== 0) { %>
               </div>
               <% } %>
             <br />
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
     <!-- Contact Section -->
-    <section id="comunity" class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1>Comunidad</h1>
-          <h3>Patrocinadores</h3>
-          <% let u = 0; %>
-          <% for (sponsor in sponsors) { %>
-            <% u++; %>
-            <% if (u % 4 === 1) { %>
-              <div class="row">
-            <% } %>
-            <div class="col-lg-3 col-sm-12">
-              <!-- <h1><%= u %></h1> -->
-              <img src="/img/sponsor/<%= sponsor %>.png" class="img-responsive" />
-              <br />
-              <h4><%= sponsors[sponsor].name %></h4>
-            </div>
-            <% if (u % 4 === 0) { %>
-              </div>
-            <% } %>
-          <% } %>
-          <% if (sponsors.length % 4 !== 0) { %>
-            </div>
-          <% } %>
-          <!-- <h3>Colaboradores</h3> -->
-        </div>
-      </div>
-    </section>
+    
     <!-- <div class="blog">
       <section id="blog" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
@@ -440,4 +409,20 @@
       </section>
     </div> -->
     <!-- Footer -->
-<% include footer %>
+    <% include footer %>
+<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- iziModal Version 1.4.2 -->
+    <script src="js/iziModal.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/height.js"></script>
+    <!-- <script src="js/notifications.js"></script> -->
+    <script src="js/analytics.js"></script>
+  </body>
+</html>

@@ -1,63 +1,72 @@
 <footer>
-  <section id="contact" class="container content-section text-center">    
-    <div class="col-lg-8 col-lg-offset-2">        
-      <h1>Contacto</h1>
-      <div class="col-lg-12 col-sm-12">
+      <section id="contact" class="container content-section text-center">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Enlaces de Interés</h4>
+            <div class="carousel slide" id="enlaces" data-ride="carousel">
+              <div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators enlaces-interes">
+                <% for (let enl = 0; enl < Math.ceil(groups.length / 6); enl++) { %>
+                  <% if (enl == 0) { %>
+                    <li data-target="#enlaces" data-slide="<%= enl %>" class="active"></li>
+                  <% } else { %>
+                    <li data-target="#enlaces" data-slide="<%= enl %>"></li>
+                  <% } %>
+                <% } %>
+              </ol>
+            </div>
+            <div class="carousel-inner" role="listbox">
+              <% let l=0;%>
+              <% for (group in groups) { %>
+                <% let link = (l === 0) ? "item active" : "item" %>
+                <% if (l % 6 === 0) { %>
+                <div class="<%= link %>">
+                  <% } %>
+                  <% if (l % 6 === 0) { %>
+                  <div class="row">
+                    <% } %>
+                    <div class="col-lg-2 col-sm-3 col-xs-4">
+                      <% if (groups[group].link !== "") { %>
+                        <a href="<%= groups[group].link %>" target="_blank">
+                      <% } %>
+                      <img src="img/groups/<%= groups[group].name %>.svg" alt="">
+                      <% if (groups[group].link !== "") { %>
+                        </a>
+                      <% } %>
+                    </div>
+                    <% if (l % 6 === 5) { %>
+                  </div>
+                    <% } %>
+                  <% if (l % 6 === 6 - 1) { %>
+                </div>
+                <% } %>
+                <% l++; %>
+                <% } %>
+            </div>  
+            </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2">
+          <hr />
+          <h1>Contacto</h1>
+          <!-- <div class="col-lg-6 col-sm-12" style="text-align: left;">
+            <p class="oswald">Enlaces de Interés</p>
+            <ul>
+              <li><a href="#">Universidad Tecnológica de Pereira</a></li>
+              <li><a href="#">Grupo de Investigación Sirius</a></li>
+            </ul>
+          </div> -->
+          <!-- <div class="col-lg-6 col-sm-12"> -->
+          <div class="col-lg-12 col-sm-12">
             <form class="" action="/contact" method="post" onsubmit="return confirm('¿Está seguro de enviar el mensaje?')">
               <input type="text" name="name" placeholder="NOMBRE" value="" autocomplete="off" required="" />
               <input type="email" name="email" placeholder="EMAIL" value="" autocomplete="off" required="" />
               <textarea name="text" rows="4" placeholder="MENSAJE" required=""></textarea>
               <input type="submit" class="btn" name="" value="ENVIAR" style="width: inherit">
             </form>
-      </div>
-    </div> 
-    <div class="col-lg-8 col-lg-offset-2"> 
-    <hr /> 
-      <h4>Enlaces de Interés</h4>
-      <div class="carousel slide" id="enlaces" data-ride="carousel"> 
-        <div>
-          <!-- Indicators -->
-          <ol class="carousel-indicators enlaces-interes">
-            <% for (let g = 0; g < Math.ceil(groups.length / 6); g++) { %>                    
-            <% if (g == 0) { %>
-              <li data-target="#enlaces" data-slide-to="<%= g %>" class="active"></li>
-              <% } else { %>
-              <li data-target="#enlaces" data-slide-to="<%= g %>"></li>
-              <% } %>
-              <% } %>
-          </ol>
-        </div>        
-        <div class="carousel-inner" role="listbox">
-          <% let l=0;%>
-          <% for (group in groups) { %>
-          <% let link = (l === 0) ? "item active" : "item" %>
-          <% if (l % 6 === 0) { %>
-            <div class="<%= link %>">
-          <% } %>
-          <% if (l % 6 === 0) { %>
-            <div class="row">
-          <% } %>
-          <div class="col-lg-2 col-sm-3 col-xs-4">
-            <% if (groups[group].link !== "") { %>
-              <a href="<%= groups[group].link %>" target="_blank">
-            <% } %>
-            <img src="img/groups/<%= groups[group].name %>.svg" alt="">
-            <% if (groups[group].link !== "") { %>
-              </a>
-            <% } %>
           </div>
-          <% if (l % 6 === 5) { %>
-            </div>
-          <% } %>
-          <% if (l % 6 === 6 - 1) { %>
-            </div>
-          <% } %>
-          <% l++; %>
-          <% } %>
-        </div>        
         </div>
-      </div>        
-  </section>   
+
+      </section>
       <div class="follow">
         <section class="container content-section">
           <div class="col-lg-8 col-lg-offset-2">
@@ -82,23 +91,3 @@
         </section>
       </div>
     </footer>
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <script src="js/scroll.js"></script>
-    <!-- iziModal Version 1.4.2 -->
-    <script src="js/iziModal.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <script src="js/height.js"></script>
-    <!-- <script src="js/notifications.js"></script> -->
-    <script src="js/analytics.js"></script>
-  </body>
-</html>
