@@ -8,9 +8,9 @@
               <ol class="carousel-indicators enlaces-interes">
                 <% for (let enl = 0; enl < Math.ceil(groups.length / 6); enl++) { %>
                   <% if (enl == 0) { %>
-                    <li data-target="#enlaces" data-slide="<%= enl %>" class="active"></li>
+                    <li data-target="#enlaces" data-slide-to="<%= enl %>" class="active"></li>
                   <% } else { %>
-                    <li data-target="#enlaces" data-slide="<%= enl %>"></li>
+                    <li data-target="#enlaces" data-slide-to="<%= enl %>"></li>
                   <% } %>
                 <% } %>
               </ol>
@@ -42,7 +42,7 @@
                 <% } %>
                 <% l++; %>
                 <% } %>
-            </div>  
+            </div> 
             </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">

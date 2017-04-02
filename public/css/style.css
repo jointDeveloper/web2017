@@ -147,3 +147,22 @@ ul {
 #enlaces .carousel{
   margin-bottom: 10px;
 }
+
+#enlaces > .carousel-inner{
+  height: 140px;
+}
+
+.eventos > .carousel-indicators .active,
+.charlas > .carousel-indicators .active{
+  background-color: #e097b0;
+  border: 1px solid #e097b0;
+}
+
+.eventos > .carousel-indicators li,
+.charlas > .carousel-indicators li{  
+  border: 1px solid #e097b0;
+}
+
+.charlas > .carousel-indicators{
+  bottom: -3px;
+}

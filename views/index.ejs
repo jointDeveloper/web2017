@@ -192,9 +192,9 @@
               <ol class="carousel-indicators profiles">
                 <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
                   <% if (i == 0) { %>
-                    <li data-target="#myCarousel" data-slide="<%= i %>" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="<%= i %>" class="active"></li>
                   <% } else { %>
-                    <li data-target="#myCarousel" data-slide="<%= i %>"></li>
+                    <li data-target="#myCarousel" data-slide-to="<%= i %>"></li>
                   <% } %>
                 <% } %>
               </ol>
@@ -263,7 +263,7 @@
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
                 <% } %>        
-                <div>
+                <div class="charlas">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
                     <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>                    
@@ -333,7 +333,7 @@
                 </div>
                 <% } %>    
 
-                <div>
+                <div class="eventos">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
                     <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>                    
@@ -377,7 +377,7 @@
               <% } %>
               <% k++; %> 
               <% } %>
-            </div>
+            </div>                      
           </div>
               <% if (ev) { %>
               <% if ((events.length + 1) % 2 !== 0) { %>
@@ -398,7 +398,7 @@
             <% let u = 0; %>
             <% for (sponsor in sponsors) { %>
             <% u++; %>
-            <% if (u % 4 === 1) { %>
+            <% if (u % 5 === 1) { %>
             <div class="row">
               <% } %>
               <div class="col-lg-2 col-sm-12">
@@ -407,11 +407,11 @@
                 <br />
                 <!-- <h4><%= sponsors[sponsor].name %></h4> -->
               </div>
-              <% if (u % 4 === 0) { %>
+              <% if (u % 5 === 0) { %>
             </div>
             <% } %>
             <% } %>
-            <% if (sponsors.length % 4 !== 0) { %>
+            <% if (sponsors.length % 5 !== 0) { %>
           </div>
           <% } %>
           <!-- <h3>Colaboradores</h3> -->
