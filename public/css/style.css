@@ -137,7 +137,7 @@ ul {
 }
 
 .profiles{
-  bottom: -5px;
+  /*bottom: -5px;*/
 }
 
 .enlaces-interes{
@@ -159,10 +159,29 @@ ul {
 }
 
 .eventos > .carousel-indicators li,
-.charlas > .carousel-indicators li{  
+.charlas > .carousel-indicators li{
   border: 1px solid #e097b0;
 }
 
 .charlas > .carousel-indicators{
   bottom: -3px;
+}
+
+.ui.modal {
+  min-height: 10% !important;
+  max-height: 60% !important;
+  overflow-y: scroll;
+}
+
+.ui.modal .header {
+  position: sticky;
+}
+.ui.modal .content {
+  display: block;
+  position: absolute;
+  overflow: auto;
+}
+
+.modal-profile {
+  cursor: zoom-in;
 }

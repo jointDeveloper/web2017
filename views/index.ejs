@@ -10,8 +10,10 @@
     <title>jointDeveloper</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="semantic-ui/semantic.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
@@ -210,9 +212,28 @@
                   <div class="row">
                 <% } %>
 
-                <div class="col-lg-3 col-sm-6 col-xs-6">
-                  <img src="<%= profiles[keys[i]].img %>" class="profileImg" alt="<%= profiles[keys[i]].name %>" />
-                  <h4><%= profiles[keys[i]].name %></h4>
+                <div class="col-lg-3 col-sm-6 col-xs-6 person">
+                  <img src="<%= profiles[keys[i]].img %>" class="profileImg modal-profile" alt="<%= profiles[keys[i]].name %>" id="<%= keys[i] %>" />
+                  <h4 class="modal-profile" id="<%= keys[i] %>"><%= profiles[keys[i]].name %></h4>
+
+                  <div class="ui modal profile-<%= keys[i] %>">
+                    <i class="close icon"></i>
+                    <div class="header">
+                      <%= profiles[keys[i]].name %>
+                    </div>
+                    <div class="image content">
+                      <div class="ui medium image">
+                        <img src="<%= profiles[keys[i]].img %>">
+                      </div>
+                      <div class="description">
+                        <div class="ui header"><%= profiles[keys[i]].email %></div>
+                        <p><%= profiles[keys[i]].description %></p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
                 </div>
 
                 <% if (i % 4 === 3 || i === keys.length - 1) { %>
@@ -250,7 +271,7 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <div class="carousel slide" id="charlas" data-ride="carousel">              
+            <div class="carousel slide" id="charlas" data-ride="carousel">
               <% let j = 0; let event = false; %>
               <% if(next[0].title !== ``) { %>
               <% j++; event = true; %>
@@ -262,11 +283,11 @@
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[0].placeLink %>" target="_blank"><%= next[0].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
-                <% } %>        
+                <% } %>
                 <div class="charlas">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>                    
+                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>
                     <% if (ind == 0) { %>
                     <li data-target="#charlas" data-slide-to="<%= ind %>" class="active"></li>
                     <% } else { %>
@@ -274,16 +295,16 @@
                     <% } %>
                     <% } %>
                   </ol>
-                </div>                             
+                </div>
                 <div class="carousel-inner" role="listbox">
-                  <% for (charla in charlas) { %>                       
+                  <% for (charla in charlas) { %>
                   <% let act = (j === 0) ? "item active" : "item" %>
                   <% if (j % 3 === 0) { %>
                   <div class="<%= act %>">
-                    <% } %>  
+                    <% } %>
                     <% if (j % 3 === 0) { %>
                     <div class="row">
-                      <% } %>         
+                      <% } %>
                       <div class="col-lg-4 col-md-4 col-sm-12 event"
                       <% if (charlas[charla].image !== ``) { %>
                       style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
@@ -305,7 +326,7 @@
                   <% if (j % 3 === 3 - 1) { %>
                 </div>
                 <% } %>
-                <% j++; %> 
+                <% j++; %>
                 <% } %>
               </div>
                 </div>
@@ -318,7 +339,7 @@
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-            <div class="carousel slide" id="eventos" data-ride="carousel">              
+            <div class="carousel slide" id="eventos" data-ride="carousel">
               <% let k = 0; let ev = false  %>
               <% if(next[1].title !== ``) { %>
               <% k++; ev = true %>
@@ -331,12 +352,12 @@
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[1].placeLink %>"><%= next[1].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
-                <% } %>    
+                <% } %>
 
                 <div class="eventos">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>                    
+                    <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>
                     <% if (indi == 0) { %>
                     <li data-target="#eventos" data-slide-to="<%= indi %>" class="active"></li>
                     <% } else { %>
@@ -344,16 +365,16 @@
                     <% } %>
                     <% } %>
                   </ol>
-                </div>                             
+                </div>
                 <div class="carousel-inner" role="listbox">
-                 <% for (event in events) { %>                       
+                 <% for (event in events) { %>
                  <% let even = (k === 0) ? "item active" : "item" %>
                  <% if (k % 2 === 0) { %>
                  <div class="<%= even %>">
-                  <% } %>  
+                  <% } %>
                   <% if (k % 2 === 0) { %>
                   <div class="row">
-                    <% } %>         
+                    <% } %>
                     <div class="col-lg-6 col-sm-12 event"
                     <% if (events[event].image !== ``) { %>
                     style="background-image: url(/img/event/<%= events[event].image %>/intro.jpg)"
@@ -375,13 +396,13 @@
                 <% if (k % 2 === 2 - 1) { %>
               </div>
               <% } %>
-              <% k++; %> 
+              <% k++; %>
               <% } %>
-            </div>                      
+            </div>
           </div>
               <% if (ev) { %>
               <% if ((events.length + 1) % 2 !== 0) { %>
-            </div>              
+            </div>
             <% } %>
             <% } else if (events.length % 2 !== 0) { %>
               </div>
@@ -401,9 +422,9 @@
             <% if (u % 5 === 1) { %>
             <div class="row">
               <% } %>
-              <div class="col-lg-2 col-sm-12">
+              <div class="col-lg-2 col-xs-3">
                 <!-- <h1><%= u %></h1> -->
-                <img src="/img/sponsor/<%= sponsor %>.svg" class="img-responsive" />
+                <img src="/img/sponsor/<%= sponsor %>.svg" class="img-responsive"/>
                 <br />
                 <!-- <h4><%= sponsors[sponsor].name %></h4> -->
               </div>
@@ -420,7 +441,7 @@
     </section>
 
     <!-- Contact Section -->
-    
+
     <!-- <div class="blog">
       <section id="blog" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">
@@ -453,5 +474,13 @@
     <script src="js/height.js"></script>
     <!-- <script src="js/notifications.js"></script> -->
     <script src="js/analytics.js"></script>
+    <script src="semantic-ui/semantic.min.js"></script>
+    <script type="text/javascript">
+    $('.modal-profile').click(function() {
+  console.log(this.id);
+  let profile = this.id;
+  $('.ui.modal.profile-' + profile).modal('show');
+});
+</script>
   </body>
 </html>
