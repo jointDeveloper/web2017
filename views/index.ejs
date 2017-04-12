@@ -66,49 +66,6 @@
       <!-- /.container -->
     </nav>
     <!--Social Networks -->
-    <!-- <div class="floating-sn-icons">
-      <div class="row">
-        <a href="https://www.facebook.com/jointDeveloper" target="_blank">
-          <i class="fa fa-facebook-square fa-3x fb-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="https://twitter.com/jointdev" target="_blank">
-          <i class="fa fa-twitter-square fa-3x tw-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="https://www.instagram.com/jointdeveloper/" target="_blank">
-          <i class="fa fa-instagram fa-3x inst-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="https://plus.google.com/u/1/113539795181089700851" target="_blank">
-          <i class="fa fa-google-plus-square fa-3x goopl-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="https://github.com/jointDeveloper/" target="_blank">
-          <i class="fa fa-github-square fa-3x github-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="//www.youtube.com/channel/UC1hMrYBNsvKnufvG8t6q7ZQ" target="_blank">
-          <i class="fa fa-youtube-square fa-3x youtube-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="//snapchat.com/add/jointDev" target="_blank">
-          <i class="fa fa-snapchat-square fa-3x snapchat-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="row">
-        <a href="//www.linkedin.com/company/16226960" target="_blank">
-          <i class="fa fa-linkedin-square fa-3x snapchat-icon" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div> -->
-
     <aside id="sticky-social">
       <ul>
         <li><a href="//facebook.com/jointDeveloper" class="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true" ></i><span>Facebook</span></a></li>
@@ -211,7 +168,7 @@
                   <div class="row">
                 <% } %>
 
-                <div class="col-lg-3 col-sm-6 col-xs-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6 person">
                   <img src="<%= profiles[keys[i]].img %>" class="profileImg" alt="<%= profiles[keys[i]].name %>" />
                   <h4><%= profiles[keys[i]].name %></h4>
                 </div>
@@ -251,7 +208,7 @@
                   <div class="row">
                 <% } %>
 
-                <div class="col-lg-3 col-sm-6 col-xs-6">
+                <div class="col-lg-3 col-sm-6 col-xs-6 person">
                   <img src="<%= other_profiles[keys[i]].img %>" class="profileImg" alt="<%= other_profiles[keys[i]].name %>" />
                   <h4><%= other_profiles[keys[i]].name %></h4>
                 </div>
@@ -439,20 +396,20 @@
             <% let u = 0; %>
             <% for (sponsor in sponsors) { %>
             <% u++; %>
-            <% if (u % 5 === 1) { %>
+            <% if (u % 6 === 1) { %>
             <div class="row">
               <% } %>
               <div class="col-lg-2 col-sm-12">
                 <!-- <h1><%= u %></h1> -->
-                <img src="/img/sponsor/<%= sponsor %>.svg" class="img-responsive" />
-                <br />
-                <!-- <h4><%= sponsors[sponsor].name %></h4> -->
+                <a href="<%= sponsors[sponsor].link %>" target="_blank">
+                  <img src="/img/sponsor/<%= sponsor %>.svg" class="img-responsive sponsors" />
+                </a>
               </div>
-              <% if (u % 5 === 0) { %>
+              <% if (u % 6 === 0) { %>
             </div>
             <% } %>
             <% } %>
-            <% if (sponsors.length % 5 !== 0) { %>
+            <% if (sponsors.length % 6 !== 0) { %>
           </div>
           <% } %>
           <!-- <h3>Colaboradores</h3> -->

@@ -5,31 +5,49 @@
         "name": "Universidad Tecnológica de Pereira",
         "description": "",
         "email": "",
-        "link": "utp.edu.co"
+        "link": "http://www.utp.edu.co/"
       },
       "sirius": {
         "name": "Grupo de Investigación Sirius",
         "description": "",
         "email": "",
-        "link": "sirius.utp.edu.co"
+        "link": "http://sirius.utp.edu.co"
       },
       "perJS": {
         "name": "PereiraJS",
         "description": "",
         "email": "",
-        "link": ""
+        "link": "http://pereirajs.org/"
       },
       "pioneras": {
         "name": "PionerasDev",
         "description": "",
         "email": "",
-        "link": ""
+        "link": "http://pionerasdev.co/"
       },
       "cientificas": {
         "name": "Cientificas de datos",
         "description": "",
         "email": "",
         "link": "http://www.cientificasdedatos.com/"
+      },
+      "barista": {
+        "name": "Barista Ventures",
+        "description": "A software and venture partner for entrepreneurs and enterprise.",
+        "email": "",
+        "link": "http://www.barista-v.com/"
+      },
+      "cerezo": {
+        "name": "Cerezo studio",
+        "description": "",
+        "email": "",
+        "link": "http://cerezostudio.com/"
+      },
+      "ehm": {
+        "name": "EHM Software",
+        "description": "Software de gestión de procesos judiciales en la nube",
+        "email": "",
+        "link": "http://www.ehmsoft.com/"
       }
     }
   ],

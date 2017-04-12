@@ -136,9 +136,9 @@ ul {
   }
 }
 
-.profiles{
+/*.profiles{
   bottom: -5px;
-}
+}*/
 
 .enlaces-interes{
   bottom: -5px;
@@ -159,7 +159,7 @@ ul {
 }
 
 .eventos > .carousel-indicators li,
-.charlas > .carousel-indicators li{  
+.charlas > .carousel-indicators li{
   border: 1px solid #e097b0;
 }
 
