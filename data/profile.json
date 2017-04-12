@@ -142,6 +142,13 @@
         "page": "",
         "email": "",
         "description": ""
+      },
+      "catalina": {
+        "name": "Catalina Castro",
+        "img": "/img/profile/catalina/profile.jpg",
+        "page": "",
+        "email": "",
+        "description": ""
       }
     }
   ]
