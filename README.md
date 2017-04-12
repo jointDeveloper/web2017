@@ -1,6 +1,10 @@
-![jointDeveloper](https://raw.githubusercontent.com/jointDeveloper/Aprendizaje-Web/gh-pages/IMG/robot-logo.png)
+![jointDeveloper](readme.png)
 
 # Comunidad jointDeveloper
+
+## Acerca de
+
+Somos una comunidad que busca despertar el interés de las mujeres y niñas en la tecnología, generando espacios que promueven su participación en este campo mediante el aprendizaje colectivo, compartiendo conocimientos y recursos técnicos con otras comunidades.
 
 ## Web
 [![Build Status](https://travis-ci.org/jointDeveloper/web.svg?branch=master)](https://travis-ci.org/jointDeveloper/web)
@@ -9,28 +13,8 @@
 
 * http://jointdeveloper.com
 
-### Integrantes:
+### Flujo de trabajo:
 
-* Alejandro E. Rendon `alejorendon@utp.edu.co`
-* Angélica Aguirre `anaguirre@utp.edu.co`
-* Angie Melissa Delgado León
-* Carolina Gómez Trejos  `carolina9511@gmail.com`
-* Carolina Jimenez Gómez `krito_j_g@utp.edu.co`
-* Giseth Grimaldo
-* Juliana Hernández `julianahdiaz@analyticboard.com`
-* Leiver Andres Campeon
-* Maria Paz Muñoz
-* Maria Victoria Gasca
-* Sebastian Duque Restrepo `sebas.duque@utp.edu.co`
-* Yensy Gómez Villegas `yensy@sirius.utp.edu.co`
-
-___
-#### _Más Información_
-
-<a href="https://github.com/jointDeveloper/"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/github.png" alt="Github-jointDeveloper" /></a>
-<a href="https://facebook.com/jointDeveloper/"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/facebook.png" alt="Facebook-jointDeveloper" /></a>
-<a href="https://twitter.com/jointdev"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/twitter.png" alt="Twitter-jointDeveloper" /></a>
-<a href="https://instagram.com/jointdeveloper/"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/instagram.png" alt="Instagram-jointDeveloper" /></a>
-<a href="mailto:developerjoint@gmail.com"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/email.png" alt="E-mail-jointDeveloper" /></a>
-<a href="https://jointdeveloper.github.io/Aprendizaje-Web/"><img src="https://raw.githubusercontent.com/jointDeveloper/media/master/social-icon/internet.png" alt="Web-jointDeveloper" /></a>
-___
+* `release` rama principal. Cambios para el Servidor de Producción.
+* `dev` rama desarrollo. Cambios y pruebas. Cuando se tiene una versión considerada como estable se dispone fusionar con `release`
+* *Nota: La rama `dev` es una convención. Opcional se puede crear un branch con nombre referente a os cambios y fusionar con la rama `release` *
