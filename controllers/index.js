@@ -7,6 +7,7 @@ const profile = require('../data/profile.json'),
 
 exports.index = (req, res) => {
   const profiles = profile.profiles[0],
+    other_profiles = profile.profiles[1],
     next = event.next,
     charla = event.charlas,
     { events } = event,
@@ -14,6 +15,7 @@ exports.index = (req, res) => {
 
   res.render('index', {
     profiles: profiles,
+    other_profiles: other_profiles,
     next: next,
     charlas: charla,
     events: events,

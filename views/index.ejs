@@ -182,6 +182,7 @@
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Acerca de</h1>
           <p>Somos una comunidad que busca despertar el interés de las mujeres y niñas en la tecnología, generando espacios que promueven su participación en este campo mediante el aprendizaje colectivo, compartiendo conocimientos y recursos técnicos con otras comunidades.</p>
+          <hr />
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <h1>Miembros</h1>
@@ -224,6 +225,46 @@
               <% } %>
             </div>
           </div>
+          <h2>Colaboradores</h2>
+          <div class="carousel slide" id="myCarousel2" data-ride="carousel">
+            <% amount = 4, keys = Object.keys(other_profiles); %>
+            <div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators other_profiles">
+                <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
+                  <% if (i == 0) { %>
+                    <li data-target="#myCarousel2" data-slide-to="<%= i %>" class="active"></li>
+                  <% } else { %>
+                    <li data-target="#myCarousel2" data-slide-to="<%= i %>"></li>
+                  <% } %>
+                <% } %>
+              </ol>
+            </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <% for (let i = 0; i < keys.length; i++) { %>
+                <% let cls = (i === 0) ? "item active" : "item" %>
+                <% if (i % amount === 0) { %>
+                  <div class="<%= cls %>">
+                <% } %>
+                <% if (i % 4 === 0) { %>
+                  <div class="row">
+                <% } %>
+
+                <div class="col-lg-3 col-sm-6 col-xs-6">
+                  <img src="<%= other_profiles[keys[i]].img %>" class="profileImg" alt="<%= other_profiles[keys[i]].name %>" />
+                  <h4><%= other_profiles[keys[i]].name %></h4>
+                </div>
+
+                <% if (i % 4 === 3 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
+                <% if (i % amount === amount - 1 || i === keys.length - 1) { %>
+                  </div>
+                <% } %>
+              <% } %>
+            </div>
+          </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <div class="col-lg-4 col-sm-6 col-xs-6 col-lg-offset-4 col-sm-offset-3 col-xs-offset-3">
@@ -250,7 +291,7 @@
             <h1>Eventos</h1>
             <p>Realizamos charlas mensuales sobre diferentes temas para incentivar y animar a más personas a que hagan parte de esta comunidad.
             </p>
-            <div class="carousel slide" id="charlas" data-ride="carousel">              
+            <div class="carousel slide" id="charlas" data-ride="carousel">
               <% let j = 0; let event = false; %>
               <% if(next[0].title !== ``) { %>
               <% j++; event = true; %>
@@ -262,11 +303,11 @@
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[0].placeLink %>" target="_blank"><%= next[0].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
-                <% } %>        
+                <% } %>
                 <div class="charlas">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>                    
+                    <% for (let ind = 0; ind < Math.ceil(charlas.length / 3); ind++) { %>
                     <% if (ind == 0) { %>
                     <li data-target="#charlas" data-slide-to="<%= ind %>" class="active"></li>
                     <% } else { %>
@@ -274,16 +315,16 @@
                     <% } %>
                     <% } %>
                   </ol>
-                </div>                             
+                </div>
                 <div class="carousel-inner" role="listbox">
-                  <% for (charla in charlas) { %>                       
+                  <% for (charla in charlas) { %>
                   <% let act = (j === 0) ? "item active" : "item" %>
                   <% if (j % 3 === 0) { %>
                   <div class="<%= act %>">
-                    <% } %>  
+                    <% } %>
                     <% if (j % 3 === 0) { %>
                     <div class="row">
-                      <% } %>         
+                      <% } %>
                       <div class="col-lg-4 col-md-4 col-sm-12 event"
                       <% if (charlas[charla].image !== ``) { %>
                       style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
@@ -305,7 +346,7 @@
                   <% if (j % 3 === 3 - 1) { %>
                 </div>
                 <% } %>
-                <% j++; %> 
+                <% j++; %>
                 <% } %>
               </div>
                 </div>
@@ -318,7 +359,7 @@
               <% } %>
             <br />
             <p>Descubre los eventos que hemos realizado y anímate a ser parte de ellos.</p>
-            <div class="carousel slide" id="eventos" data-ride="carousel">              
+            <div class="carousel slide" id="eventos" data-ride="carousel">
               <% let k = 0; let ev = false  %>
               <% if(next[1].title !== ``) { %>
               <% k++; ev = true %>
@@ -331,12 +372,12 @@
                   <h4><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="<%= next[1].placeLink %>"><%= next[1].place %></a></h4>
                   <!-- <a class="btn">INSCRIPCIÓN</a> -->
                 </div>
-                <% } %>    
+                <% } %>
 
                 <div class="eventos">
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
-                    <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>                    
+                    <% for (let indi = 0; indi < Math.ceil(events.length / 2); indi++) { %>
                     <% if (indi == 0) { %>
                     <li data-target="#eventos" data-slide-to="<%= indi %>" class="active"></li>
                     <% } else { %>
@@ -344,16 +385,16 @@
                     <% } %>
                     <% } %>
                   </ol>
-                </div>                             
+                </div>
                 <div class="carousel-inner" role="listbox">
-                 <% for (event in events) { %>                       
+                 <% for (event in events) { %>
                  <% let even = (k === 0) ? "item active" : "item" %>
                  <% if (k % 2 === 0) { %>
                  <div class="<%= even %>">
-                  <% } %>  
+                  <% } %>
                   <% if (k % 2 === 0) { %>
                   <div class="row">
-                    <% } %>         
+                    <% } %>
                     <div class="col-lg-6 col-sm-12 event"
                     <% if (events[event].image !== ``) { %>
                     style="background-image: url(/img/event/<%= events[event].image %>/intro.jpg)"
@@ -375,13 +416,13 @@
                 <% if (k % 2 === 2 - 1) { %>
               </div>
               <% } %>
-              <% k++; %> 
+              <% k++; %>
               <% } %>
-            </div>                      
+            </div>
           </div>
               <% if (ev) { %>
               <% if ((events.length + 1) % 2 !== 0) { %>
-            </div>              
+            </div>
             <% } %>
             <% } else if (events.length % 2 !== 0) { %>
               </div>
@@ -420,7 +461,7 @@
     </section>
 
     <!-- Contact Section -->
-    
+
     <!-- <div class="blog">
       <section id="blog" class="container content-section text-center">
         <div class="col-lg-8 col-lg-offset-2">

@@ -127,6 +127,22 @@
         "email": "daniela-zuluaga@utp.edu.co",
         "description": "Estudiante de Ingeniería de Sistemas y Computación."
       }
+    },
+    {
+      "lorena": {
+        "name": "Angie Lorena Campeón Díaz",
+        "img": "/img/profile/lorena/profile.jpg",
+        "page": "",
+        "email": "",
+        "description": ""
+      },
+      "marisol": {
+        "name": "Marisol Tapasco Salazar",
+        "img": "/img/profile/marisol/profile.jpg",
+        "page": "",
+        "email": "",
+        "description": ""
+      }
     }
   ]
 }
