@@ -17,7 +17,7 @@
 
     <!-- style -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="shortcut icon" href="/img/favicon.ico"> -->
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -225,7 +225,7 @@
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <div class="col-lg-4 col-sm-6 col-xs-6 col-lg-offset-4 col-sm-offset-3 col-xs-offset-3">
-            <img src="/img/profile/profile.svg" class="profileImg" alt="" />
+            <img src="img/profile/profile.svg" class="profileImg" alt="" />
           </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
@@ -284,12 +284,12 @@
                       <% } %>
                       <div class="col-lg-4 col-md-4 col-sm-12 event"
                       <% if (charlas[charla].image !== ``) { %>
-                      style="background-image: url(/img/charla/<%= charlas[charla].image %>/intro.jpg)"
+                      style="background-image: url(img/charla/<%= charlas[charla].image %>/intro.jpg)"
                       <% } %>
                       >
                       <div class="overlay">
                         <% if (charlas[charla].image !== ``) { %>
-                        <img src="/img/charla/<%= charlas[charla].image %>/logo.png" />
+                        <img src="img/charla/<%= charlas[charla].image %>/logo.png" />
                         <% } %>
                         <h3><%= charlas[charla].title %></h3>
                         <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= charlas[charla].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= charlas[charla].hour %></h4>
@@ -354,12 +354,12 @@
                     <% } %>
                     <div class="col-lg-6 col-sm-12 event"
                     <% if (events[event].image !== ``) { %>
-                    style="background-image: url(/img/event/<%= events[event].image %>/intro.jpg)"
+                    style="background-image: url(img/event/<%= events[event].image %>/intro.jpg)"
                     <% } %>
                     >
                     <div class="overlay">
                       <% if (events[event].image !== ``) { %>
-                      <img src="/img/event/<%= events[event].image %>/logo.png" />
+                      <img src="img/event/<%= events[event].image %>/logo.png" />
                       <% } %>
                       <h3><%= events[event].title %></h3>
                       <h4><i class="fa fa-calendar" aria-hidden="true"></i> <%= events[event].date %> <i class="fa fa-clock-o" aria-hidden="true"></i> <%= events[event].hour %></h4>
@@ -402,7 +402,7 @@
               <div class="col-lg-2 col-sm-12">
                 <!-- <h1><%= u %></h1> -->
                 <a href="<%= sponsors[sponsor].link %>" target="_blank">
-                  <img src="/img/sponsor/<%= sponsor %>.svg" class="img-responsive sponsors" />
+                  <img src="img/sponsor/<%= sponsor %>.svg" class="img-responsive sponsors" />
                 </a>
               </div>
               <% if (u % 6 === 0) { %>

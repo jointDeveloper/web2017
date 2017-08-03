@@ -43,5 +43,5 @@ exports.emailContact = (req, res) => {
     else console.log(res);
   });
 
-  res.redirect('/');
+  res.redirect('/jointdeveloper');
 };

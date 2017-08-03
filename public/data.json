@@ -2,90 +2,90 @@
   "perfiles": [
     {
       "name": "Yensy Helena Gómez Villegas",
-      "img": "/IMG/yhgv/yenGomez.jpg",
+      "img": "IMG/yhgv/yenGomez.jpg",
       "page": "/perfiles/yhgv",
       "description": "Fundadora - jointDeveloper<br />Ingeniera de Sistemas y Computación"
     },
     {
       "name": "Giseth Johana Grimaldo B.",
-      "img": "/IMG/imagenPerfilGjg.jpg",
+      "img": "IMG/imagenPerfilGjg.jpg",
       "page": "/perfiles/giseth",
       "description": "Ingeniera de Sistemas y Computación"    },
     {
       "name": "Juliana Hernández",
-      "img": "/IMG/julianah.png",
+      "img": "IMG/julianah.png",
       "page": "/perfiles/julianah",
       "description": "Diseñadora Estrategica<br /> Antropóloga"
     },
     {
       "name": "Angelica Aguirre Castro",
-      "img": "/IMG/angelicaaguirre/angelica_aguirre.jpg",
+      "img": "IMG/angelicaaguirre/angelica_aguirre.jpg",
       "page": "/perfiles/angelicaaguirre",
       "description": "Ingeniera de Sistemas y Computación"
     },
     {
       "name": "Carolina Gómez Trejos",
-      "img": "/IMG/carogt/carogt.jpg",
+      "img": "IMG/carogt/carogt.jpg",
       "page": "/perfiles/carogt",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Carolina Jiménez Gómez",
-      "img": "/IMG/cjg/cjg.jpg",
+      "img": "IMG/cjg/cjg.jpg",
       "page": "/perfiles/cjg",
       "description": "Estudiante Ingenieria de Sistemas y Computación."
     },
     {
       "name": "María Victoria Gasca",
-      "img": "/IMG/vicky/perfil.jpg",
+      "img": "IMG/vicky/perfil.jpg",
       "page": "/perfiles/vicky",
       "description": "Ingeniera Electricista."
     },
     {
       "name": "Alejandro E. Rendón",
-      "img": "/IMG/arendon/arendon.jpg",
+      "img": "IMG/arendon/arendon.jpg",
       "page": "/perfiles/arendon",
       "description": "Estudiante de Ingeniería de Sistemas y Computación.<br /> Grupo de Investigación Sirius."
     },
     {
       "name": "Sebastian Duque",
-      "img": "/IMG/sduque/sduque.jpg",
+      "img": "IMG/sduque/sduque.jpg",
       "page": "/perfiles/sduque",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "Leiver Campeón",
-      "img": "/IMG/leiver.jpg",
+      "img": "IMG/leiver.jpg",
       "page": "/perfiles/leiver",
       "description": "Estudiante Ingenieria de Sistemas y Computación"
     },
     {
       "name": "John H. Osorio Ríos",
-      "img": "/IMG/josorio.jpg",
+      "img": "IMG/josorio.jpg",
       "page": "/perfiles/josorio",
       "description": "Ingeniero de Sistemas y Computación<br />Especialista en Electrónica Digital<br />Investigador Principal Centro de Educación GPU nVidia<br />Director de Investigación Grupo Sirius HPC"
     },
     {
       "name": "Angie Melissa Delgado",
-      "img": "/IMG/melidelgado/meli.jpg",
+      "img": "IMG/melidelgado/meli.jpg",
       "page": "/perfiles/melidelgado",
       "description": "Estudiante de Ingeniería de Sistemas"
     },
     {
       "name": "Daniel Fernando Largo Guerrero",
-      "img": "/IMG/daniell.jpg",
+      "img": "IMG/daniell.jpg",
       "page": "/perfiles/daniel",
       "description": "Estudiante de Ingeniería de Sistemas y Computación."
     },
     {
       "name": "Vanessa Penagos Rios",
-      "img": "/IMG/vanessa/vanessa.jpg",
+      "img": "IMG/vanessa/vanessa.jpg",
       "page": "/perfiles/vanessa",
       "description": "Estudiante de Ingeniería de Sistemas y Computación."
     },
     {
       "name": "Daniela Zuluaga Ocampo",
-      "img": "/IMG/danielaz/danielaz.jpg",
+      "img": "IMG/danielaz/danielaz.jpg",
       "page": "/perfiles/daniela",
       "description": "Estudiante de Ingeniería de Sistemas y Computación."
     }
