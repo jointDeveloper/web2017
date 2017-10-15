@@ -182,46 +182,6 @@
               <% } %>
             </div>
           </div>
-          <h2>Colaboradores</h2>
-          <div class="carousel slide" id="myCarousel2" data-ride="carousel">
-            <% amount = 4, keys = Object.keys(other_profiles); %>
-            <div>
-              <!-- Indicators -->
-              <ol class="carousel-indicators other_profiles">
-                <% for (let i = 0; i < Math.ceil(keys.length / amount); i++) { %>
-                  <% if (i == 0) { %>
-                    <li data-target="#myCarousel2" data-slide-to="<%= i %>" class="active"></li>
-                  <% } else { %>
-                    <li data-target="#myCarousel2" data-slide-to="<%= i %>"></li>
-                  <% } %>
-                <% } %>
-              </ol>
-            </div>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <% for (let i = 0; i < keys.length; i++) { %>
-                <% let cls = (i === 0) ? "item active" : "item" %>
-                <% if (i % amount === 0) { %>
-                  <div class="<%= cls %>">
-                <% } %>
-                <% if (i % 4 === 0) { %>
-                  <div class="row">
-                <% } %>
-
-                <div class="col-lg-3 col-sm-6 col-xs-6 person">
-                  <img src="<%= other_profiles[keys[i]].img %>" class="profileImg" alt="<%= other_profiles[keys[i]].name %>" />
-                  <h4><%= other_profiles[keys[i]].name %></h4>
-                </div>
-
-                <% if (i % 4 === 3 || i === keys.length - 1) { %>
-                  </div>
-                <% } %>
-                <% if (i % amount === amount - 1 || i === keys.length - 1) { %>
-                  </div>
-                <% } %>
-              <% } %>
-            </div>
-          </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
           <div class="col-lg-4 col-sm-6 col-xs-6 col-lg-offset-4 col-sm-offset-3 col-xs-offset-3">

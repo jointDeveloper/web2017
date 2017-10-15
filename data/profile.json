@@ -36,26 +36,12 @@
         "email": "mvgasca@utp.edu.co",
         "description": "Ingeniera Electricista."
       },
-      "alejandro": {
-        "name": "Alejandro E. Rendón",
-        "img": "img/profile/alejandro/profile.jpg",
-        "page": "./HTML/perfiles/carogt.html",
-        "email": "caro_gomezt@utp.edu.co",
-        "description": "Estudiante Ingeniería de Sistemas y Computación"
-      },
       "angelica": {
         "name": "Angelica Aguirre Castro",
         "img": "img/profile/angelica/profile.jpg",
         "page": "./HTML/perfiles/angelicaaguirre.html",
         "email": "anaguirre@utp.edu.co",
         "description": "Ingeniera de Sistemas y Computación"
-      },
-      "carolinaGomez": {
-        "name": "Carolina Gómez Trejos",
-        "img": "img/profile/carolinaGomez/profile.jpg",
-        "page": "./HTML/perfiles/carogt.html",
-        "email": "caro_gomezt@utp.edu.co",
-        "description": "Estudiante Ingeniería de Sistemas y Computación"
       },
       "carolinaJimenez": {
         "name": "Carolina Jiménez Gómez",
@@ -113,22 +99,13 @@
         "email": "cadavidoriana@gmail.com",
         "description": "Estudiante de Ingeniería Física."
       },
-      "vega": {
-        "name": "Juan Sebastián Vega Patiño",
-        "img": "img/profile/vega/profile.jpg",
-        "page": "./HTML/perfiles/daniela.html",
-        "email": "daniela-zuluaga@utp.edu.co",
-        "description": "Estudiante de Ingeniería de Sistemas y Computación."
-      },
       "manuel": {
         "name": "Manuel Fernando Sabogal",
         "img": "img/profile/manuel/profile.jpg",
         "page": "./HTML/perfiles/daniela.html",
         "email": "daniela-zuluaga@utp.edu.co",
         "description": "Estudiante de Ingeniería de Sistemas y Computación."
-      }
-    },
-    {
+      },
       "lorena": {
         "name": "Angie Lorena Campeón Díaz",
         "img": "img/profile/lorena/profile.jpg",
