@@ -57,13 +57,6 @@
         "email": "sebas.duque@utp.edu.co",
         "description": "Estudiante Ingeniería de Sistemas y Computación"
       },
-      "leiver": {
-        "name": "Leiver Campeón",
-        "img": "img/profile/leiver/profile.jpg",
-        "page": "./HTML/perfiles/leiver.html",
-        "email": "leiverandres@utp.edu.co",
-        "description": "Estudiante Ingeniería de Sistemas y Computación"
-      },
       "melissa": {
         "name": "Angie Melissa Delgado",
         "img": "img/profile/melissa/profile.jpg",
