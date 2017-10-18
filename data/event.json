@@ -2,7 +2,7 @@
   "next": [
     {
       "alert": "Próximo Charla",
-      "title": "Fundametos Android/Django Channels",
+      "title": "",
       "author": "",
       "profile": {
         "username": ""
@@ -34,6 +34,21 @@
     }
   ],
   "charlas":[
+    {
+      "title": "Fundametos Android/Django Channels",
+      "author": "",
+      "profile": {
+        "username": ""
+      },
+      "Resume": "",
+      "content": "",
+      "date": "2 Sep 2017",
+      "hour": "14:00-17:00",
+      "place": "Edificio 15-305(Universidad Tecnológica de Pereira)",
+      "placeLink": "https://utp.edu.co",
+      "room": "",
+      "image": "django"
+    },
     {
       "title": "Info: Scaleconf Colombia 2017",
       "author": "",
