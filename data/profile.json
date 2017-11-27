@@ -43,13 +43,6 @@
         "email": "carolina.jimenez@utp.edu.co",
         "description": "Estudiante Ingeniería de Sistemas y Computación."
       },
-      "baldor": {
-        "name": "Sebastian Duque",
-        "img": "img/profile/baldor/profile.jpg",
-        "page": "./HTML/perfiles/sduque.html",
-        "email": "sebas.duque@utp.edu.co",
-        "description": "Estudiante Ingeniería de Sistemas y Computación"
-      },
       "melissa": {
         "name": "Angie Melissa Delgado",
         "img": "img/profile/melissa/profile.jpg",
